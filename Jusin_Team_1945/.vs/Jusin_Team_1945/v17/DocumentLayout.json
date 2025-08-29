@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\",
   "Documents": [
     {
@@ -72,6 +73,80 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\MainGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\SceneMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\SceneMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\MainGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Jusin_Team_1945.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Obj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Obj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\AbstractFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Stage01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Stage01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Stage02.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Stage02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Scene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Scene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+>>>>>>> origin/aneunsoo
       "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -85,22 +160,43 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+<<<<<<< HEAD
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+=======
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainGame.h",
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\MainGame.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.h",
+              "RelativeToolTip": "Jusin_Team_1945\\MainGame.h",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAcwB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T14:55:04.709Z"
+>>>>>>> origin/aneunsoo
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "SceneMgr.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\SceneMgr.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.h",
               "RelativeToolTip": "Jusin_Team_1945\\SceneMgr.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\SceneMgr.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.h",
+              "RelativeToolTip": "Jusin_Team_1945\\SceneMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowBIAAAAAAAAAAAAAAA==",
+>>>>>>> origin/aneunsoo
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-28T15:00:37.242Z",
               "EditorCaption": ""
@@ -122,9 +218,15 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Stage01.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage01.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage01.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Stage01.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -134,9 +236,15 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Scene.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Scene.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Scene.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Scene.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -146,9 +254,15 @@
               "$type": "Document",
               "DocumentIndex": 11,
               "Title": "Stage02.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage02.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage02.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Stage02.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -158,9 +272,15 @@
               "$type": "Document",
               "DocumentIndex": 16,
               "Title": "Player.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Player.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Player.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Player.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -170,9 +290,15 @@
               "$type": "Document",
               "DocumentIndex": 17,
               "Title": "pch.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\pch.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\pch.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\pch.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -188,11 +314,19 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MainGame.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\MainGame.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.cpp",
               "RelativeToolTip": "Jusin_Team_1945\\MainGame.cpp",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACMAAAAoAAAAAAAAAA==",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\MainGame.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\MainGame.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\MainGame.cpp",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAwB4AAAALAAAAAAAAAA==",
+>>>>>>> origin/aneunsoo
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-28T14:55:06.072Z",
               "IsPinned": true,
@@ -202,14 +336,21 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Define.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Define.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Define.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Define.h",
               "ViewState": "AQIAADQAAAAAAAAAAIAwwEAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-29T01:21:01.427Z",
               "IsPinned": true
+<<<<<<< HEAD
             },
             {
               "$type": "Bookmark",
@@ -218,14 +359,22 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+=======
+>>>>>>> origin/aneunsoo
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Obj.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Obj.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Obj.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Obj.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Obj.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Obj.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Obj.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Obj.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -233,11 +382,19 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "SceneMgr.cpp",
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\SceneMgr.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.cpp",
+=======
+              "DocumentIndex": 2,
+              "Title": "SceneMgr.cpp",
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\SceneMgr.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\SceneMgr.cpp",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\SceneMgr.cpp",
               "ViewState": "AQIAAB0AAAAAAAAAAAAMwCQAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -247,9 +404,15 @@
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "Stage02.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage02.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.cpp",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage02.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage02.cpp",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Stage02.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -259,9 +422,15 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "Stage01.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage01.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.cpp",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Stage01.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Stage01.cpp",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Stage01.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -271,9 +440,15 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "Bullet.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Bullet.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Bullet.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Bullet.cpp",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Bullet.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Bullet.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Bullet.cpp",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Bullet.cpp",
               "ViewState": "AQIAACMAAAAAAAAAAAAwwDQAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -283,9 +458,15 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "AbstractFactory.h",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\AbstractFactory.h",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\AbstractFactory.h",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\AbstractFactory.h",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -295,9 +476,15 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Jusin_Team_1945.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Jusin_Team_1945.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Jusin_Team_1945.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Jusin_Team_1945.cpp",
               "ViewState": "AQIAAC0BAAAAAAAAAIAwwDwBAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -307,9 +494,15 @@
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "Scene.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Scene.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.cpp",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Scene.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Scene.cpp",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Scene.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -319,9 +512,15 @@
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "Player.cpp",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\Player.cpp",
               "ToolTip": "C:\\Users\\\uD669\uC720\uB9BC\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.cpp",
+=======
+              "DocumentMoniker": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Player.cpp",
+              "ToolTip": "C:\\Users\\LG\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Player.cpp",
+>>>>>>> origin/aneunsoo
               "RelativeToolTip": "Jusin_Team_1945\\Player.cpp",
               "ViewState": "AQIAAEIAAAAAAAAAAAAwwEoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
