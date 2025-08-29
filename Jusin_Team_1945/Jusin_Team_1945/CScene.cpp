@@ -4,6 +4,7 @@
 #include "AbstractFactory.h"
 #include "CPlayer.h"
 #include "CCollisionMgr.h"
+#include "CMonster.h"
 
 CScene::CScene() : m_pPlayer(nullptr)
 {
@@ -19,6 +20,7 @@ void CScene::Initialize()
 {
 	m_ObjList[PLAYER].push_back(AbstractFactory<CPlayer>::Create());
 	dynamic_cast<CPlayer*>(m_ObjList[PLAYER].front())->Set_Bullet(&m_ObjList[BULLET]);
+
 
 }
 
@@ -53,8 +55,8 @@ void CScene::LateUpdate()
 		}
 	}
 
-	//CollisionMgr::Collision_Rect(m_ObjList[MOUSE], m_ObjList[MONSTER]);
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER]);
+	//CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
 }
 
 void CScene::Render(HDC hdc)

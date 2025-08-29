@@ -21,12 +21,16 @@ void CStage01::Initialize()
 {
 	CScene::Initialize();
 
-	m_ObjList[MONSTER].push_back(AbstractFactory<CMonster>::Create(600,200));
+	// 문인수 : 테스트용
+	m_ObjList[MONSTER].push_back(AbstractFactory<CMonster>::Create(600, 200));
+	dynamic_cast<CMonster*>(m_ObjList[MONSTER].front())->Set_Bullet(&m_ObjList[BULLET]);
 }
 
 void CStage01::Update()
 {
 	CScene::Update();
+
+	
 }
 
 void CStage01::LateUpdate()

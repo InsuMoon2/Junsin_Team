@@ -16,14 +16,14 @@ void CBullet::Initialize()
 	m_tInfo.fCY = 30.f;
 
 	m_fSpeed = 5.f;
+
+	__super::Update_Rect();
 }
 
 int CBullet::Update()
 {
 	if (m_bDead)
 		return OBJ_DEAD;
-
-	__super::Update_Rect();
 
 	switch (m_eDir)
 	{
@@ -54,14 +54,17 @@ int CBullet::Update()
 		m_tInfo.fY -= m_fSpeed;
 		break;
 	}
+	
+	__super::Update_Rect();
+
 
 	return OBJ_NOEVENT;
 }
 
 void CBullet::Late_Update()
 {
-	if (0 >= m_tRect.left || WINCX <= m_tRect.right ||
-		0 >= m_tRect.top || WINCY  <= m_tRect.bottom)
+	if (100 >= m_tRect.left || WINCX  <= m_tRect.right ||
+		100 >= m_tRect.top  || WINCY  <= m_tRect.bottom)
 	{
 		m_bDead = true;
 	}

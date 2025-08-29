@@ -3,7 +3,7 @@
 #include "CBullet.h"
 #include "AbstractFactory.h"
 
-CPlayer::CPlayer() : m_pBullet(nullptr)
+CPlayer::CPlayer()
 {
 }
 
@@ -77,7 +77,7 @@ void CPlayer::Key_Input()
 	}
 
 	else if (GetAsyncKeyState(VK_UP))
-	{
+	{	
 		m_tInfo.fY -= m_fSpeed;
 	}
 
@@ -86,22 +86,10 @@ void CPlayer::Key_Input()
 		m_tInfo.fY += m_fSpeed;
 	}
 
-	else if (GetAsyncKeyState(VK_SPACE) & 0x0001)
+	if (GetAsyncKeyState(VK_SPACE) & 0x0001)
 	{
 		m_pBullet->push_back(Create_Bullet(DIR_UP));
 	}
-}
-
-CObj* CPlayer::Create_Bullet(DIRECTION eDir)
-{
-	//Obj* pBullet = new Bullet;
-	//pBullet->Initialize();
-
-	CObj* pBullet = AbstractFactory<CBullet>::Create(m_tInfo.fX, m_tInfo.fY);
-
-	pBullet->Set_Direction(eDir);
-
-	return pBullet;
 }
 
 void CPlayer::Late_Update()
