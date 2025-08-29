@@ -5,9 +5,9 @@
 #include "CStage01.h"
 #include "CStage02.h"
 #include "CStage03.h"
+#include "CTempStage.h"
 
-CSceneMgr::CSceneMgr()
-	: m_Scene(nullptr), m_SceneType(ESceneType::None)
+CSceneMgr::CSceneMgr() : m_Scene(nullptr), m_SceneType(ESceneType::None)
 {
 
 }
@@ -72,6 +72,11 @@ int CSceneMgr::ChangeScene(ESceneType _eSceneType)
 
 	case ESceneType::Stage03:
 		newScene = new CStage03();
+		m_StageNumber = 3;
+		break;
+
+	case ESceneType::TempStage:
+		newScene = new CTempStage();
 		m_StageNumber = 3;
 		break;
 	}

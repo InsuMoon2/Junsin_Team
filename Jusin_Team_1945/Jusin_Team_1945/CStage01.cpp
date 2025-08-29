@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CStage01.h"
 #include "AbstractFactory.h"
+#include "CCollisionMgr.h"
 #include "CMonster.h"
 #include "CPlayer.h"
 #include "CSceneMgr.h"
@@ -21,24 +22,28 @@ void CStage01::Initialize()
 {
 	CScene::Initialize();
 
-	m_ObjList[MONSTER].push_back(AbstractFactory<CMonster>::Create(600,200));
+
 }
 
 void CStage01::Update()
 {
 	CScene::Update();
+
+	
 }
 
 void CStage01::LateUpdate()
 {
 	CScene::LateUpdate();
+
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER]);
+	//CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
 }
 
 void CStage01::Render(HDC hdc)
 {
 	CScene::Render(hdc);
 
-	//Rectangle(hdc, 100, 100, 250, 250);
 }
 
 void CStage01::Release()

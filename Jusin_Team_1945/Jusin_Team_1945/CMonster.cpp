@@ -1,6 +1,9 @@
 #include "pch.h"
 #include "CMonster.h"
 
+#include "AbstractFactory.h"
+#include "CBullet.h"
+
 CMonster::CMonster()
 {
 }
@@ -41,6 +44,8 @@ void CMonster::Late_Update()
 void CMonster::Render(HDC hDC)
 {
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+
+
 }
 
 void CMonster::Release()

@@ -18,8 +18,8 @@ public:
 	static CObj* Create(float fX, float fY)
 	{
 		CObj* pObj = new T;
-		pObj->Initialize();
 		pObj->Set_Pos(fX, fY);
+		pObj->Initialize();
 
 		return pObj;
 	}
