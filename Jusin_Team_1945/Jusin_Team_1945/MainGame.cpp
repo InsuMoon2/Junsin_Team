@@ -26,7 +26,9 @@ void MainGame::Initialize()
 
 	// 초기 스테이지 설정
 	SceneMgr::GetInstance()->Initialize();
-	SceneMgr::GetInstance()->ChangeScene(ESceneType::Stage02);
+	SceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
+
+	//ffffffff
 }
 
 void MainGame::Update()
