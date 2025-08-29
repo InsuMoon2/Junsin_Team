@@ -104,9 +104,7 @@
     <ClInclude Include="CStage03.h">
       <Filter>소스 파일\04. Scene\00. Stage</Filter>
     </ClInclude>
-    <ClInclude Include="CBoss02.h">
-      <Filter>소스 파일\05.Boss</Filter>
-    </ClInclude>
+    <ClInclude Include="CBoss02.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jusin_Team_1945.cpp">
@@ -152,7 +150,7 @@
       <Filter>소스 파일\04. Scene\00. Stage</Filter>
     </ClCompile>
     <ClCompile Include="CBoss02.cpp">
-      <Filter>소스 파일\05.Boss</Filter>
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

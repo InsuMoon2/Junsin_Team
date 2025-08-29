@@ -1,7 +1,7 @@
 #pragma once
-#include "Obj.h"
+#include "CObj.h"
 class CBoss02 :
-    public Obj
+    public CObj
 {
 public:
     CBoss02();
@@ -19,16 +19,16 @@ public:
     void Release() override;
 
 public:
-    Obj* Create_Bullet(DIRECTION eDir);
+    CObj* Create_Bullet(DIRECTION eDir);
 
 
-    void		Set_Bullet(list<Obj*>* pBullet)
+    void		Set_Bullet(list<CObj*>* pBullet)
     {
         m_pBossBullet = pBullet;
     }
 
 private:
-    list<Obj*>* m_pBossBullet;
+    list<CObj*>* m_pBossBullet;
 
 
 };

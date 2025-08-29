@@ -12,7 +12,7 @@ CBoss02::~CBoss02()
 
 void CBoss02::Initialize()
 {
-    m_tInfo = { WINCX / 2, WINCY / 2, 50, 50 };
+    m_tInfo = { WINCX / 2,WINCY / 2, 50, 50 };
     m_fSpeed = 10.f;
 
 
@@ -21,6 +21,7 @@ void CBoss02::Initialize()
 
 int CBoss02::Update()
 {
+    Update_Rect();
     return 0;
 }
 
@@ -30,8 +31,8 @@ void CBoss02::Late_Update()
 
 void CBoss02::Render(HDC hDC)
 {
-    Rectangle(hDC, m_tRect.right, m_tRect.top, m_tRect.right, m_tRect.bottom);
-    Rectangle(hDC, m_tRect.right+10, m_tRect.top+10, m_tRect.right-10, m_tRect.bottom-10);
+    Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+    Rectangle(hDC, m_tRect.left+10, m_tRect.top+10, m_tRect.right-10, m_tRect.bottom-10);
 
 }
 
