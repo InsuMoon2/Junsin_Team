@@ -23,7 +23,7 @@ void CMainGame::Initialize()
 
 	// 시작 스테이지 설정
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
 
 }
 

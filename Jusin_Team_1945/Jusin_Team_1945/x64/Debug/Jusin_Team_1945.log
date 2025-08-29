@@ -1,3 +1,4 @@
-﻿  CItem_AddBullet.cpp
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem_AddBullet.cpp(31): warning C4715: 'CItem_AddBullet::Update': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
+﻿  CMainGame.cpp
+  CStage01.cpp
+  코드를 생성하고 있습니다...
+  Jusin_Team_1945.vcxproj -> C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
