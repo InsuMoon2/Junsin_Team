@@ -36,11 +36,18 @@ public:
 	int				Get_Attack() { return m_iAttack; }
 	int				Get_Def()    { return m_iDef; }
 
+public:
+	// 문인수 : Player-> Obj로 Set,Create Bullet 이동
+	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
+	virtual CObj* Create_Bullet(DIRECTION eDir);
 
+public:
+	// 문인수 : Monster의 총알이 자기 자신과 충돌, 자기 자신을 무시하기 위해서 
+	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
+	CObj* Get_Owner()			   { return m_pOwner; }
 protected:
 	void		Update_Rect();
 
-protected:
 	INFO		m_tInfo;
 	RECT		m_tRect;
 	DIRECTION	m_eDir;
@@ -51,6 +58,9 @@ protected:
 	int			m_iHp;
 	int			m_iAttack;
 	int			m_iDef;
+		
+	CObj*		 m_pOwner;
 
+	list<CObj*>* m_pBullet;
 };
 

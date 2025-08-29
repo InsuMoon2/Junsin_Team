@@ -8,6 +8,8 @@ public:
     CBullet();
     virtual ~CBullet();
 
+
+
 public:
     void Initialize() override;
     int  Update() override;
