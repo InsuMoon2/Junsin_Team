@@ -6,8 +6,7 @@
 #include "CStage02.h"
 #include "CStage03.h"
 
-CSceneMgr::CSceneMgr()
-	: m_Scene(nullptr), m_SceneType(ESceneType::None)
+CSceneMgr::CSceneMgr() : m_Scene(nullptr), m_SceneType(ESceneType::None)
 {
 
 }

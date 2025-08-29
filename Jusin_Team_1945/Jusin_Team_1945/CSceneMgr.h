@@ -30,14 +30,11 @@ public:
 
 public:
 	int ChangeScene(ESceneType _eSceneType);
-	void AddObject(OBJID type, CObj* obj);
 
 private:
 	CScene*	   m_Scene;
 	ESceneType m_SceneType;
 
 	int		   m_StageNumber = 0;
-
-	list<CObj*>* m_pObjList;
 };
 

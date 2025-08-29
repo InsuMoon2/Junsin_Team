@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "CObj.h"
 #include "CBoss02.h"
 
 CBoss02::CBoss02()
