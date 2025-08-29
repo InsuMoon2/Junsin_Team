@@ -5,12 +5,14 @@
 #include "Bullet.h"
 #include "Player.h"
 
+//ggg
+
 class MainGame
 {
 public:
 	MainGame();
 	~MainGame();
-
+//gdgd
 public:
 	void		Initialize();
 	void		Update();
