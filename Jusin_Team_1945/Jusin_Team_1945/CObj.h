@@ -25,6 +25,7 @@ public:
 	void			Set_Hp(int _iHp)         { m_iHp = _iHp; }
 	void			Set_Attack(int _iAttack) { m_iAttack = _iAttack; }
 	void			Set_Def(int _iDef)       { m_iDef = _iDef; }
+	void			Set_Speed(float _fSpeed) { m_fSpeed = _fSpeed; }
 
 	void			Set_Direction(DIRECTION eDir) { m_eDir = eDir; }
 
@@ -35,16 +36,17 @@ public:
 	int			    Get_Hp()	 { return m_iHp; }
 	int				Get_Attack() { return m_iAttack; }
 	int				Get_Def()    { return m_iDef; }
+	float			Get_Speed()  { return m_fSpeed; }
 
 public:
 	// 문인수 : Player-> Obj로 Set,Create Bullet 이동
 	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
 	virtual CObj* Create_Bullet(DIRECTION eDir);
 
-public:
 	// 문인수 : Monster의 총알이 자기 자신과 충돌, 자기 자신을 무시하기 위해서 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
 	CObj* Get_Owner()			   { return m_pOwner; }
+
 protected:
 	void		Update_Rect();
 
@@ -54,7 +56,7 @@ protected:
 
 	float		m_fSpeed;
 	bool		m_bDead;
-
+	
 	int			m_iHp;
 	int			m_iAttack;
 	int			m_iDef;

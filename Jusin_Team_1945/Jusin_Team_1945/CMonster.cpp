@@ -30,12 +30,6 @@ int CMonster::Update()
 
 	__super::Update_Rect();
 
-	// 문인수 : 테스트용
-  	if (GetAsyncKeyState(VK_SPACE))
-	{
-		m_pBullet->push_back(Create_Bullet(DIR_DOWN));
-	}
-
 	return OBJ_NOEVENT;
 }
 

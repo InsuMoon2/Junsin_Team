@@ -1,6 +1,8 @@
 #include "pch.h"
 #include "CCollisionMgr.h"
 
+#include "CItem.h"
+
 void CCollisionMgr::Collision_Rect(list<CObj*> _Dst, list<CObj*> _Src)
 {
 	RECT	rcCol{};
@@ -52,3 +54,21 @@ bool CCollisionMgr::Check_Circle(CObj* _Dst, CObj* _Src)
 
 	return fRadius >= fDiagonal;
 }
+
+void CCollisionMgr::Collision_Item(list<CObj*> _pPlayer, list<CObj*> _pItem)
+{
+	for (auto& player : _pPlayer)
+	{
+		for (auto& item : _pItem)
+		{
+			RECT	rcCol{};
+
+			if (IntersectRect(&rcCol, player->Get_Rect(), item->Get_Rect()))
+			{
+				dynamic_cast<CItem*>(item)->Use_Item(player);
+				item->Set_Dead();
+			}
+		}
+	}
+}
+

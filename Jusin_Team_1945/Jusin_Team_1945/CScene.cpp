@@ -55,8 +55,6 @@ void CScene::LateUpdate()
 		}
 	}
 
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER]);
-	//CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
 }
 
 void CScene::Render(HDC hdc)
