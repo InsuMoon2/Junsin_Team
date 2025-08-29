@@ -6,6 +6,8 @@
 #include "CollisionMgr.h"
 #include "SceneMgr.h"
 
+#include "CBoss02.h"
+
 MainGame::MainGame() : m_dwTime(GetTickCount()), m_iFPS(0)
 {
 	ZeroMemory(m_szFPS, sizeof(m_szFPS));
@@ -23,6 +25,10 @@ void MainGame::Initialize()
 
 	m_ObjList[PLAYER].push_back(AbstractFactory<Player>::Create());
 	dynamic_cast<Player*>(m_ObjList[PLAYER].front())->Set_Bullet(&m_ObjList[BULLET]);
+
+
+	m_ObjList[PLAYER].push_back(AbstractFactory<Player>::Create());
+
 
 	// 초기 스테이지 설정
 	SceneMgr::GetInstance()->Initialize();

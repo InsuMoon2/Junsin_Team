@@ -1,19 +1,5 @@
-<<<<<<< HEAD
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Bullet.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Bullet.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CollisionMgr.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CollisionMgr.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Jusin_Team_1945.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\MainGame.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\MainGame.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Monster.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Monster.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Mouse.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Mouse.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Obj.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Obj.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\pch.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\pch.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Player.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Player.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Scene.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Scene.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\SceneMgr.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\SceneMgr.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Stage01.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Stage01.obj
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Stage02.cpp;C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Stage02.obj
-=======
 C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Bullet.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Bullet.obj
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CBoss02.obj
 C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CollisionMgr.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CollisionMgr.obj
 C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Jusin_Team_1945.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.obj
 C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\MainGame.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\MainGame.obj
@@ -26,4 +12,3 @@ C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Scene.c
 C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\SceneMgr.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\SceneMgr.obj
 C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Stage01.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Stage01.obj
 C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Stage02.cpp;C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\Stage02.obj
->>>>>>> origin/aneunsoo
