@@ -1,6 +1,6 @@
 #pragma once
-#include "Obj.h"
-class Mouse :  public Obj
+#include "CObj.h"
+class Mouse :  public CObj
 {
 public:
 	Mouse();

@@ -1,23 +1,23 @@
 #pragma once
 
-#include "Obj.h"
+#include "CObj.h"
 
 template<typename T>
 class AbstractFactory
 {
 public:
-	static Obj* Create()
+	static CObj* Create()
 	{
-		Obj* pObj = new T;
+		CObj* pObj = new T;
 		pObj->Initialize();
 
 		return pObj;
 	}
 
 	// ÁÂÇ¥ ¼³Á¤
-	static Obj* Create(float fX, float fY)
+	static CObj* Create(float fX, float fY)
 	{
-		Obj* pObj = new T;
+		CObj* pObj = new T;
 		pObj->Initialize();
 		pObj->Set_Pos(fX, fY);
 

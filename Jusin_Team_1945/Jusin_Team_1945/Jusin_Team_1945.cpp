@@ -4,7 +4,7 @@
 #include "pch.h"
 #include "framework.h"
 #include "Jusin_Team_1945.h"
-#include "MainGame.h"
+#include "CMainGame.h"
 
 #define MAX_LOADSTRING 100
 
@@ -49,7 +49,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,         // 현재 프로그램�
     MSG msg;
     msg.message = WM_NULL;
 
-    MainGame        MainGameClass;
+    CMainGame        MainGameClass;
 
     MainGameClass.Initialize();
 

@@ -37,6 +37,9 @@ enum class ESceneType
 	None,
 	Stage01,
 	Stage02,
+	Stage03,
+
+	Stage_End
 };
 
 enum OBJID { PLAYER, BULLET, MONSTER, MOUSE, SHIELD, OBJ_END };
