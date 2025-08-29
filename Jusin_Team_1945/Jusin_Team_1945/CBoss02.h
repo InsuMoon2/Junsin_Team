@@ -19,17 +19,13 @@ public:
     void Release() override;
 
 public:
-    CObj* Create_Bullet(DIRECTION eDir);
 
-
-    void		Set_Bullet(list<CObj*>* pBullet)
-    {
-        m_pBossBullet = pBullet;
-    }
 
 private:
-    list<CObj*>* m_pBossBullet;
 
+
+
+    void Key_Input();
 
 };
 

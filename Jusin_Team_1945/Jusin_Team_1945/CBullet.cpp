@@ -17,6 +17,8 @@ void CBullet::Initialize()
 
 	m_fSpeed = 5.f;
 
+	m_iAttack = 10;
+
 	__super::Update_Rect();
 }
 

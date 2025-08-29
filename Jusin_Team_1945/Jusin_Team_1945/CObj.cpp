@@ -27,6 +27,21 @@ CObj* CObj::Create_Bullet(DIRECTION eDir)
 	return pBullet;
 }
 
+
+CObj* CObj::Create_Bullet(float angle)
+{
+	CObj* bullet = AbstractFactory<CBullet>::Create();
+
+	bullet->Set_Angle(angle);
+	bullet->Set_Owner(this);
+
+	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
+
+	return bullet;
+	
+}
+
+
 void CObj::Update_Rect()
 {
 	m_tRect.left	= long(m_tInfo.fX - (m_tInfo.fCX / 2.f));

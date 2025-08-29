@@ -23,7 +23,7 @@ void CMainGame::Initialize()
 
 	// 시작 스테이지 설정
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage03);
 
 }
 
@@ -64,6 +64,7 @@ void CMainGame::Render()
 		swprintf_s(m_szStage, L"Stage : %d", stage);
 		TextOut(m_hDC, 50, 50, m_szStage, lstrlen(m_szStage));
 	}
+
 	
 }
 
