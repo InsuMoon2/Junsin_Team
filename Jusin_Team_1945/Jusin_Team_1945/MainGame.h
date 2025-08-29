@@ -12,7 +12,7 @@ class MainGame
 public:
 	MainGame();
 	~MainGame();
-
+//gdgd
 public:
 	void		Initialize();
 	void		Update();
