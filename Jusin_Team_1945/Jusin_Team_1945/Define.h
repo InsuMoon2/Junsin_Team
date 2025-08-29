@@ -37,9 +37,12 @@ enum class ESceneType
 	None,
 	Stage01,
 	Stage02,
-};
+	Stage03,
 
-enum OBJID { PLAYER, BULLET, MONSTER, MOUSE, SHIELD, OBJ_END };
+	Stage_End
+};
+//보스 추가
+enum OBJID { PLAYER, BULLET, MONSTER, MOUSE, SHIELD, BOSS, OBJ_END };
 
 template<typename T>
 void	Safe_Delete(T& P)

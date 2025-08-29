@@ -1,2 +1,17 @@
-﻿  MainGame.cpp
+﻿  CBullet.cpp
+  CCollisionMgr.cpp
+  CMainGame.cpp
+  CMonster.cpp
+  CObj.cpp
+  CPlayer.cpp
+  CScene.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CScene.cpp(73,22): warning C4477: 'swprintf_s' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'unsigned __int64'입니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CScene.cpp(73,22): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+  CSceneMgr.cpp
+  CStage01.cpp
+  CStage02.cpp
+  CStage03.cpp
+  Jusin_Team_1945.cpp
+  Mouse.cpp
+  코드를 생성하고 있습니다...
   Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
