@@ -28,7 +28,6 @@ void MainGame::Initialize()
 	SceneMgr::GetInstance()->Initialize();
 	SceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
 
-	//ffffffff
 }
 
 void MainGame::Update()
