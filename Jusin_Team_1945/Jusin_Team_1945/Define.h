@@ -42,8 +42,8 @@ enum class ESceneType
 
 	Stage_End
 };
-//보스 추가
-enum OBJID { PLAYER, BULLET, MONSTER, MOUSE, SHIELD, BOSS, OBJ_END };
+//몬스터 종류 추가
+enum OBJID { PLAYER, BULLET, MONSTER01, MONSTER02, MOUSE, SHIELD, BOSS, OBJ_END };
 
 template<typename T>
 void	Safe_Delete(T& P)

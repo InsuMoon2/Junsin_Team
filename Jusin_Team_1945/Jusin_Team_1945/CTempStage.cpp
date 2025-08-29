@@ -18,8 +18,8 @@ void CTempStage::Initialize()
 {
 	CScene::Initialize();
 
-	m_ObjList[MONSTER].push_back(AbstractFactory<CMonster>::Create(600, 200));
-	dynamic_cast<CMonster*>(m_ObjList[MONSTER].front())->Set_Bullet(&m_ObjList[BULLET]);
+	m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster>::Create(600, 200));
+	dynamic_cast<CMonster*>(m_ObjList[MONSTER01].front())->Set_Bullet(&m_ObjList[BULLET]);
 
 	// TODO :: 테스트용 Shield -> Item으로 변경 예정
 	m_ObjList[SHIELD].push_back(AbstractFactory<CItem_AddBullet>::Create(200, 500));
@@ -36,7 +36,7 @@ void CTempStage::LateUpdate()
 	CScene::LateUpdate();
 
 	// 공격 충돌처리
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
 
 	// 아이템 충돌 처리

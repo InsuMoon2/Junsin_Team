@@ -17,8 +17,11 @@ void CMonster::Initialize()
 {
 	m_tInfo.fCX = 150.f;
 	m_tInfo.fCY = 150.f;
-	
+	//m_tInfo.fX = 300;
+	//m_tInfo.fY = 300;
 	m_fSpeed = 3.f;
+
+	m_iHp = 100;
 }
 
 int CMonster::Update()
