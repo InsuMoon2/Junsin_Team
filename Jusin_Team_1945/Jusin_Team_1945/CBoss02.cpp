@@ -1,4 +1,5 @@
 #include "pch.h"
+#include "CObj.h"
 #include "CBoss02.h"
 #include "AbstractFactory.h"
 #include "CBullet.h"

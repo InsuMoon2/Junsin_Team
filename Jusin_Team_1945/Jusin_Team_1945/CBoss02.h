@@ -18,14 +18,7 @@ public:
 
     void Release() override;
 
-public:
 
-
-private:
-
-
-
-    void Key_Input();
 
 };
 
