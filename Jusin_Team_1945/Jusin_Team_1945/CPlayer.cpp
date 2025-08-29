@@ -86,7 +86,7 @@ void CPlayer::Key_Input()
 		m_tInfo.fY += m_fSpeed;
 	}
 
-	else if (GetAsyncKeyState(VK_SPACE) & 0x0001)
+	if (GetAsyncKeyState(VK_SPACE))
 	{
 		m_pBullet->push_back(Create_Bullet(DIR_UP));
 	}
