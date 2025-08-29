@@ -110,5 +110,7 @@ void MainGame::Release()
 		m_ObjList[i].clear();
 	}
 
+	// asdf
+
 	ReleaseDC(g_hWnd, m_hDC);
 }
