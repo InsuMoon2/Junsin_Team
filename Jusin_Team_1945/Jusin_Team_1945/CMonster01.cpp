@@ -2,6 +2,7 @@
 #include "CMonster01.h"
 #include "AbstractFactory.h"
 #include "CBullet.h"
+#include "CTimerMgr.h"
 
 CMonster01::CMonster01()
 {
@@ -37,13 +38,12 @@ int CMonster01::Update()
 		m_tInfo.fX += m_fSpeed;
 	}
 
-	m_Time = GetTickCount()/100000;
+	timeAttack = CTimerMgr::GetCurrentTimeCount(5);
 
-	if (m_Time + 50000000)
+	if (timeAttack == 5)
 	{
 		m_pBullet->push_back(Create_Bullet(DIR_DOWN));
 
-		m_Time = GetTickCount()/100000;
 	}
 
 	__super::Update_Rect();
@@ -76,7 +76,9 @@ void CMonster01::Render(HDC hDC)
 {
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
-
+	TCHAR szBuff[32] = L"";
+	swprintf_s(szBuff, L"Time : %d", timeAttack);
+	TextOut(hDC, 50, 120, szBuff, lstrlen(szBuff));
 }
 
 void CMonster01::Release()

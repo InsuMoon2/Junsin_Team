@@ -51,9 +51,7 @@ void CStage03::Render(HDC hdc)
 		TCHAR szBuff[32] = L"";
 		swprintf_s(szBuff, L"HP : %d", m_ObjList[BOSS].front()->Get_Hp());
 		TextOut(hdc, 50, 200, szBuff, lstrlen(szBuff));
-
 	}
-
 
 }
 
