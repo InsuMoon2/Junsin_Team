@@ -71,4 +71,3 @@ void CCollisionMgr::Collision_Item(list<CObj*> _pPlayer, list<CObj*> _pItem)
 		}
 	}
 }
-

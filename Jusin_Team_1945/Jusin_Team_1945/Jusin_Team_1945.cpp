@@ -64,7 +64,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,         // 현재 프로그램�
     }*/
 
 
-    DWORD       dwTime = GetTickCount();        // 100
+    DWORD       dwTime = GetTickCount64();        // 100
 
     while (true)
     {
