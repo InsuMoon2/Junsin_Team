@@ -90,10 +90,11 @@ void CPlayer::Key_Input()
 
 	if (GetAsyncKeyState(VK_SPACE) & 0x0001)
 	{
-		//m_pBullet->push_back(Create_Bullet(DIR_UP));
+		m_pBullet->push_back(Create_Bullet(DIR_UP));
 	}
 }
 
 void CPlayer::Late_Update()
 {
+
 }

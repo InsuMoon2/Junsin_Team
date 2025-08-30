@@ -6,6 +6,7 @@
 #include "CPlayer.h"
 #include "CSceneMgr.h"
 #include "CCollisionMgr.h"
+#include "CTimerMgr.h"
 
 // 몬스터, 잡몹 스테이지
 
@@ -23,8 +24,6 @@ void CStage01::Initialize()
 {
     CScene::Initialize();
 
-
-    
     m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)360, (float)200, 2));
     m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)100, (float)200, 1));
     m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)620, (float)200, 1));

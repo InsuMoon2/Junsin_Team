@@ -20,7 +20,6 @@ public:
 
 public:
 
-
 private:
 	//list<CObj*>	m_ObjList[OBJ_END];
 };

@@ -1,7 +1,7 @@
 #include "pch.h"
 #include "CMainGame.h"
 #include "AbstractFactory.h"
-#include "CMonster.h"
+#include "CMonster01.h"
 #include "Mouse.h"
 #include "CCollisionMgr.h"
 #include "CSceneMgr.h"
@@ -23,7 +23,7 @@ void CMainGame::Initialize()
 
 	// 시작 스테이지 설정
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage03);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
 
 }
 

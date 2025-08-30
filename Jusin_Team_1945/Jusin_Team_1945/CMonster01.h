@@ -18,5 +18,7 @@ public:
 private:
 	DWORD	m_Time = 0;
 
+	int		timeAttack  = 0;
+
 };
 
