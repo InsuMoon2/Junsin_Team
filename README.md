@@ -3,10 +3,6 @@
 # Developers
 | 문인수 | 이순재 | 황유림 | 안은수 |
 |:------:|:------:|:------:|:------:|
-| <img src="https://github.com/user-attachments/assets/2140b59a-51a4-4728-bb3e-72fdd90dc162" alt="문인수" width="150"> | <img src="https://github.com/user-attachments/assets/be99f147-5870-4ec5-9f5e-07466cd984cd" alt="이순재" width="150"> | <img src="https://github.com/user-attachments/assets/e5481457-2413-4353-88f6-255cacd952be" alt="황유림" width="150"> | <img src="https://github.com/user-attachments/assets/3166e867-71d8-4973-a814-43c72599bf57" alt="안은수" width="150">
-
-
-
-
-
-
+| <img src="https://github.com/user-attachments/assets/fee705f7-934c-4f29-a76f-5f95311cf833" alt="문인수" width="150"> | <img src="https://github.com/user-attachments/assets/e8964125-a282-4645-8c6c-7657f9ac9df3" alt="이순재" width="150"> | <img src="https://github.com/user-attachments/assets/ecbd9e77-a3bd-4e1d-8e5c-37de161ad0ca" alt="황유림" width="150"> | <img src="https://github.com/user-attachments/assets/e8964125-a282-4645-8c6c-7657f9ac9df3" alt="안은수" width="150">
+| PL | FE | FE | FE |
+| [GitHub](https://github.com/InsuMoon2) | [GitHub](https://github.com/Ryugakusei) | [GitHub](https://github.com/Yurim-Hwang) | [GitHub](https://github.com/aes011204) |
