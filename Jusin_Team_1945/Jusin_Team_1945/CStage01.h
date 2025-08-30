@@ -17,11 +17,5 @@ public:
 	void LateUpdate() override;
 	void Render(HDC hdc) override;
 	void Release() override;
-
-public:
-
-
-private:
-	list<CObj*>	m_ObjList[OBJ_END];
 };
 
