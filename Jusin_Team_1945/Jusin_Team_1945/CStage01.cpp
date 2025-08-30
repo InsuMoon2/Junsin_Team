@@ -14,7 +14,7 @@ CStage01::CStage01()
 
 CStage01::~CStage01()
 {
-
+    Release();
 }
 
 void CStage01::Initialize()

@@ -16,6 +16,8 @@ void CPlayer::Initialize()
 {
 	m_tInfo = { (WINCX >> 1), (WINCY >> 1) + 230, 100.f, 100.f };
 	m_fSpeed = 10.f;
+	m_iHp = 100;
+	
 }
 
 int CPlayer::Update()
@@ -88,7 +90,7 @@ void CPlayer::Key_Input()
 
 	if (GetAsyncKeyState(VK_SPACE) & 0x0001)
 	{
-		m_pBullet->push_back(Create_Bullet(DIR_UP));
+		//m_pBullet->push_back(Create_Bullet(DIR_UP));
 	}
 }
 

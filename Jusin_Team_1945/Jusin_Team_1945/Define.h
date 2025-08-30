@@ -67,3 +67,10 @@ struct DeleteObj
 		}
 	}
 };
+
+// 포신용 구조체
+typedef struct POSINFO
+{
+	float X;
+	float Y;
+}POS;

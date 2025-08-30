@@ -15,9 +15,9 @@ public:
 	}
 
 	// ÁÂÇ¥ ¼³Á¤
-	static CObj* Create(float fX, float fY)
+	static T* Create(float fX, float fY)
 	{
-		CObj* pObj = new T;
+		T* pObj = new T;
 		pObj->Set_Pos(fX, fY);
 		pObj->Initialize();
 

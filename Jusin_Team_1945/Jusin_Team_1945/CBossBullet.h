@@ -1,33 +1,23 @@
 #pragma once
-#include "CObj.h"
-class CBoss02 :
-    public CObj
+#include "CBullet.h"
+class CBossBullet :
+    public CBullet
 {
 public:
-    CBoss02();
-    ~CBoss02();
+    CBossBullet();
+    ~CBossBullet();
 
-    // Obj을(를) 통해 상속됨
+public:
     void Initialize() override;
-
     int Update() override;
-
     void Late_Update() override;
-
     void Render(HDC hDC) override;
-
     void Release() override;
+
 public:
 
-    void Key_Input();
-
-    RECT m_tHpUi;
-
-    bool m_bHp;
 
     void Attack_Circular();
     void Attack_Cos();
-
-
 };
 
