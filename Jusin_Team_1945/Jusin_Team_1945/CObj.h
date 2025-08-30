@@ -39,12 +39,14 @@ public:
 	float			Get_Speed()  { return m_fSpeed; }
 
 public:
+
 	// 문인수 : Player-> Obj로 Set,Create Bullet 이동
 	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
 	virtual CObj* Create_Bullet(DIRECTION eDir);
 
 	// create_Bullet 오버로딩
 	virtual CObj* Create_Bullet(float angle);
+	virtual CObj* Create_BossBullet(float angle);
 
 
 	// 문인수 : Monster의 총알이 자기 자신과 충돌, 자기 자신을 무시하기 위해서 
@@ -55,6 +57,7 @@ public:
 	
 	// 안은수: 총알 발사 셋팅
 	 void Set_Angle(float angle) { m_fAngle = angle; }
+
 
 protected:
 	void		Update_Rect();
@@ -74,8 +77,15 @@ protected:
 
 	list<CObj*>* m_pBullet;
 
-	// 안은수 :
+	
+
+	// 안은수 : 포신 + 타겟 설정
 	float m_fAngle;
+	POS m_tBarrel_Pos;
+	int m_iBarrel_Len;
+
+	CObj* m_tTarget;
+
 
 };
 

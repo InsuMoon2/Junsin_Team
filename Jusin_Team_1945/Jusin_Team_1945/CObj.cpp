@@ -3,6 +3,7 @@
 
 #include "AbstractFactory.h"
 #include "CBullet.h"
+#include "CBossBullet.h"
 
 CObj::CObj()
 	: m_fSpeed(0.f), m_eDir(DIR_END), m_bDead(false),
@@ -38,8 +39,21 @@ CObj* CObj::Create_Bullet(float angle)
 	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
 
 	return bullet;
-	
+
 }
+
+CObj* CObj::Create_BossBullet(float angle)
+{
+	CObj* bullet = AbstractFactory<CBossBullet>::Create();
+
+	bullet->Set_Angle(angle);
+	bullet->Set_Owner(this);
+
+	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
+
+	return bullet;
+}
+
 
 
 void CObj::Update_Rect()

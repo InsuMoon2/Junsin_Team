@@ -1,6 +1,7 @@
 #pragma once
 
 #include "CObj.h"
+#include "AbstractFactory.h"
 
 class CBullet : public CObj
 {
@@ -15,6 +16,10 @@ public:
     int  Update() override;
     void Late_Update() override;
     void Render(HDC hDC) override;
-    void Release() override;    
+    void Release() override;  
+
+
+
+
 };
 

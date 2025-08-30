@@ -114,7 +114,13 @@
       <Filter>소스 파일\04. Scene\00. Stage</Filter>
     </ClInclude>
     <ClInclude Include="CItem_AddBullet.h" />
-    <ClInclude Include="CBoss02.h" />
+    <ClInclude Include="CBoss02.h">
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoss01.h">
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossBullet.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jusin_Team_1945.cpp">
@@ -169,6 +175,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="CBoss02.cpp">
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CBoss01.cpp">
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossBullet.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

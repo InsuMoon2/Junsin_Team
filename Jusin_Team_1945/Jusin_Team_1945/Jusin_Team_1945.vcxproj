@@ -130,7 +130,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="CBoss01.h" />
     <ClInclude Include="CBoss02.h" />
+    <ClInclude Include="CBossBullet.h" />
     <ClInclude Include="CBullet.h" />
     <ClInclude Include="CCollisionMgr.h" />
     <ClInclude Include="CItem.h" />
@@ -154,7 +156,9 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CBoss01.cpp" />
     <ClCompile Include="CBoss02.cpp" />
+    <ClCompile Include="CBossBullet.cpp" />
     <ClCompile Include="CBullet.cpp" />
     <ClCompile Include="CCollisionMgr.cpp" />
     <ClCompile Include="CItem.cpp" />

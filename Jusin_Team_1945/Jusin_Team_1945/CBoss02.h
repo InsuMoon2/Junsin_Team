@@ -17,7 +17,16 @@ public:
     void Render(HDC hDC) override;
 
     void Release() override;
+public:
 
+    void Key_Input();
+
+    RECT m_tHpUi;
+
+    bool m_bHp;
+
+    void Attack_Circular();
+    void Attack_Cos();
 
 
 };
