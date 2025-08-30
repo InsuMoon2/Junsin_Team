@@ -4,7 +4,7 @@
 #include "AbstractFactory.h"
 #include "CCollisionMgr.h"
 #include "CItem_AddBullet.h"
-#include "CMonster.h"
+#include "CMonster01.h"
 
 CTempStage::CTempStage()
 {
@@ -18,8 +18,8 @@ void CTempStage::Initialize()
 {
 	CScene::Initialize();
 
-	m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster>::Create(600, 200));
-	dynamic_cast<CMonster*>(m_ObjList[MONSTER01].front())->Set_Bullet(&m_ObjList[BULLET]);
+	m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create(600, 200));
+	dynamic_cast<CMonster01*>(m_ObjList[MONSTER01].front())->Set_Bullet(&m_ObjList[BULLET]);
 
 	// TODO :: 테스트용 Shield -> Item으로 변경 예정
 	m_ObjList[SHIELD].push_back(AbstractFactory<CItem_AddBullet>::Create(200, 500));

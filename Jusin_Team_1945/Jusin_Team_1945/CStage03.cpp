@@ -3,7 +3,9 @@
 #include "AbstractFactory.h"
 #include "CBoss02.h"
 #include "CCollisionMgr.h"
-#include "CMonster.h"
+#include "CMonster01.h"
+
+
 
 // 보스 스테이지
 
@@ -22,7 +24,7 @@ void CStage03::Initialize()
 	CScene::Initialize();
 
 	m_ObjList[BOSS].push_back(AbstractFactory<CBoss02>::Create());
-	m_ObjList[MONSTER].push_back(AbstractFactory<CMonster>::Create(300,400));
+	m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create(300,400));
 	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Bullet(&m_ObjList[BULLET]);
 
 }

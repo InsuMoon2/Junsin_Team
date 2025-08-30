@@ -24,9 +24,6 @@
     <Filter Include="소스 파일\01. Object\00. Player">
       <UniqueIdentifier>{5b5b225b-7d7e-40ab-ad8e-ae7f8359f192}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\01. Object\01. Monster">
-      <UniqueIdentifier>{90873ec5-d724-4f71-aa58-00f836cf62bf}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\01. Object\02. Bullet">
       <UniqueIdentifier>{3d175c31-97a7-4f6c-92df-b99846a7446b}</UniqueIdentifier>
     </Filter>
@@ -48,6 +45,15 @@
     <Filter Include="소스 파일\06. Item">
       <UniqueIdentifier>{bcfe00cf-89e8-473c-961a-b372208962bb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\01. Object\01. Monster">
+      <UniqueIdentifier>{90873ec5-d724-4f71-aa58-00f836cf62bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object\01. Monster\00. Monster01">
+      <UniqueIdentifier>{cc8a9ca9-849b-42b1-a704-f16f122dbc4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object\01. Monster\01. Monster02">
+      <UniqueIdentifier>{494be0dd-4f52-4ff5-a3bb-d2d479a03436}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Jusin_Team_1945.h">
@@ -61,9 +67,6 @@
     </ClInclude>
     <ClInclude Include="CBullet.h">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="CMonster.h">
-      <Filter>소스 파일\01. Object\01. Monster</Filter>
     </ClInclude>
     <ClInclude Include="CPlayer.h">
       <Filter>소스 파일\01. Object\00. Player</Filter>
@@ -114,7 +117,18 @@
       <Filter>소스 파일\04. Scene\00. Stage</Filter>
     </ClInclude>
     <ClInclude Include="CItem_AddBullet.h" />
-    <ClInclude Include="CBoss02.h" />
+    <ClInclude Include="CBoss01.h">
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoss02.h">
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonster01.h">
+      <Filter>소스 파일\01. Object\01. Monster\00. Monster01</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonster02.h">
+      <Filter>소스 파일\01. Object\01. Monster\01. Monster02</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jusin_Team_1945.cpp">
@@ -128,9 +142,6 @@
     </ClCompile>
     <ClCompile Include="CBullet.cpp">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="CMonster.cpp">
-      <Filter>소스 파일\01. Object\01. Monster</Filter>
     </ClCompile>
     <ClCompile Include="CPlayer.cpp">
       <Filter>소스 파일\01. Object\00. Player</Filter>
@@ -168,8 +179,17 @@
     <ClCompile Include="CItem_AddBullet.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="CBoss01.cpp">
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClCompile>
     <ClCompile Include="CBoss02.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\05.Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonster01.cpp">
+      <Filter>소스 파일\01. Object\01. Monster\00. Monster01</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonster02.cpp">
+      <Filter>소스 파일\01. Object\01. Monster\01. Monster02</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -4,6 +4,7 @@
 #include "AbstractFactory.h"
 #include "CBullet.h"
 
+
 CBoss02::CBoss02()
 {
 

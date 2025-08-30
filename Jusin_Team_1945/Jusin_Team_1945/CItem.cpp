@@ -21,7 +21,7 @@ int CItem::Update()
 	if (m_bDead)
 		return OBJ_DEAD;
 
-
+	return OBJ_NOEVENT;
 }
 
 void CItem::Late_Update()

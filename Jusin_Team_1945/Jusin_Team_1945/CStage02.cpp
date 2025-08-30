@@ -18,7 +18,7 @@ CStage02::~CStage02()
 void CStage02::Initialize()
 {
 	CScene::Initialize();
-	m_ObjList[MONSTER].push_back(AbstractFactory<CBoss01>::Create(300, 200));
+	m_ObjList[MONSTER01].push_back(AbstractFactory<CBoss01>::Create(300, 200));
 }
 
 void CStage02::Update()
