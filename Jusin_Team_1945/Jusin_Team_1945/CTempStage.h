@@ -15,9 +15,7 @@ public:
 	void Render(HDC hdc) override;
 	void Release() override;
 
-public:
-
-
 private:
+
 };
 

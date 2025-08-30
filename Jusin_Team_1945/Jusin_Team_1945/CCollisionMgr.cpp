@@ -26,9 +26,9 @@ void CCollisionMgr::Collision_Rect(list<CObj*> _Dst, list<CObj*> _Src)
 
 void CCollisionMgr::Collision_Circle(list<CObj*> _bullet, list<CObj*> _monster)
 {
-	for (auto& Dst : _monster)
+	for (auto& Dst : _bullet)
 	{
-		for (auto& Src : _bullet)
+		for (auto& Src : _monster)
 		{
 			// Dst(총알)의 생성자가 Src(몬스터)와 같으면 충돌 검사 무시
 			if (Dst->Get_Owner() == Src)
@@ -36,8 +36,8 @@ void CCollisionMgr::Collision_Circle(list<CObj*> _bullet, list<CObj*> _monster)
 
 			if (Check_Circle(Dst, Src))
 			{
-				Dst->Set_Hp(Dst->Get_Hp() - Src->Get_Attack());
-				Src->Set_Dead();
+				Src->Set_Hp(Src->Get_Hp() - Dst->Get_Attack());
+				Dst->Set_Dead();
 			}
 		}
 	}

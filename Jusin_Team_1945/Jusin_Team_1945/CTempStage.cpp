@@ -5,13 +5,16 @@
 #include "CCollisionMgr.h"
 #include "CItem_AddBullet.h"
 #include "CMonster.h"
+#include "CTimerMgr.h"
 
 CTempStage::CTempStage()
 {
+
 }
 
 CTempStage::~CTempStage()
 {
+
 }
 
 void CTempStage::Initialize()
@@ -29,6 +32,8 @@ void CTempStage::Initialize()
 void CTempStage::Update()
 {
 	CScene::Update();
+
+	
 }
 
 void CTempStage::LateUpdate()
@@ -47,6 +52,12 @@ void CTempStage::LateUpdate()
 void CTempStage::Render(HDC hdc)
 {
 	CScene::Render(hdc);
+
+	int time = CTimerMgr::GetCurrentTimeCount(10);
+
+	TCHAR szBuff[32] = L"";
+	swprintf_s(szBuff, L"Ω√∞£ √  : %d", time);
+	TextOut(hdc, 50, 150, szBuff, lstrlen(szBuff));
 }
 
 void CTempStage::Release()

@@ -21,8 +21,6 @@ void CBoss01::Initialize()
 
 int CBoss01::Update()
 {
-
-
 	__super::Update_Rect();
 
 	return OBJ_NOEVENT;
@@ -36,6 +34,7 @@ void CBoss01::Late_Update()
 void CBoss01::Render(HDC hDC)
 {
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+
 }
 
 void CBoss01::Release()

@@ -130,12 +130,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h" />
+    <ClInclude Include="CBoss01.h" />
     <ClInclude Include="CBoss02.h" />
     <ClInclude Include="CBullet.h" />
     <ClInclude Include="CCollisionMgr.h" />
     <ClInclude Include="CItem.h" />
     <ClInclude Include="CItem_AddBullet.h" />
     <ClInclude Include="CTempStage.h" />
+    <ClInclude Include="CTimerMgr.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Jusin_Team_1945.h" />
@@ -154,12 +156,14 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CBoss01.cpp" />
     <ClCompile Include="CBoss02.cpp" />
     <ClCompile Include="CBullet.cpp" />
     <ClCompile Include="CCollisionMgr.cpp" />
     <ClCompile Include="CItem.cpp" />
     <ClCompile Include="CItem_AddBullet.cpp" />
     <ClCompile Include="CTempStage.cpp" />
+    <ClCompile Include="CTimerMgr.cpp" />
     <ClCompile Include="Jusin_Team_1945.cpp" />
     <ClCompile Include="CMainGame.cpp" />
     <ClCompile Include="CMonster.cpp" />
