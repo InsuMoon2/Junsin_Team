@@ -28,6 +28,6 @@ public:
     void Attack_Circular();
     void Attack_Cos();
 
-
+    void Key_Input();
 };
 

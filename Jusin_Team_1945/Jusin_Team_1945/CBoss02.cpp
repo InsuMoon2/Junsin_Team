@@ -5,6 +5,7 @@
 #include "CBullet.h"
 #include "CBossBullet.h"
 
+
 CBoss02::CBoss02()
 {
 	ZeroMemory(&m_tHpUi, sizeof(m_tHpUi));

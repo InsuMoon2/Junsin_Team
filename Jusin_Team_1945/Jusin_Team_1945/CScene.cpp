@@ -4,7 +4,7 @@
 #include "AbstractFactory.h"
 #include "CPlayer.h"
 #include "CCollisionMgr.h"
-#include "CMonster.h"
+#include "CMonster01.h"
 
 CScene::CScene() : m_pPlayer(nullptr)
 {

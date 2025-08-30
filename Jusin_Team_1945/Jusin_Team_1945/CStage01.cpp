@@ -1,9 +1,11 @@
 #include "pch.h"
 #include "CStage01.h"
 #include "AbstractFactory.h"
-#include "CMonster.h"
+#include "CMonster01.h"
+#include "CMonster02.h"
 #include "CPlayer.h"
 #include "CSceneMgr.h"
+#include "CCollisionMgr.h"
 
 // 몬스터, 잡몹 스테이지
 
@@ -21,16 +23,29 @@ void CStage01::Initialize()
 {
     CScene::Initialize();
 
-    // 문인수 : 테스트용
-    m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster>::Create(600, 200));
-    dynamic_cast<CMonster*>(m_ObjList[MONSTER01].front())->Set_Bullet(&m_ObjList[BULLET]);
+
+    
+    m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)360, (float)200, 2));
+    m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)100, (float)200, 1));
+    m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)620, (float)200, 1));
+
+    //for (auto& monster : m_ObjList[MONSTER01])
+    //{
+    //    monster->Set_Bullet(&m_ObjList[BULLET]);
+    //}
+
+    for (auto iter = m_ObjList[MONSTER01].begin(); iter != m_ObjList[MONSTER01].end(); iter++)
+    {
+         dynamic_cast<CMonster01*>(*iter)->Set_Bullet(&m_ObjList[BULLET]);
+    }
+    
 }
 
 void CStage01::Update()
 {
     CScene::Update();
 
-
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
 }
 
 void CStage01::LateUpdate()
