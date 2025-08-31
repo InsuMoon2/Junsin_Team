@@ -58,10 +58,17 @@ int CBoss02::Update()
 	
 	if (m_dwTime + 100 < GetTickCount())
 	{
-		//Attack_Circular();
+		
+	if (m_iHp <= 50)
+	{
 		Attack_Cos();
 
+	}
+	else
+	{
+		Attack_Circular();
 
+	}
 		m_dwTime = GetTickCount();
 	}
 

@@ -1,23 +1,23 @@
 ﻿  CBoss02.cpp
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(91,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(98,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(91,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(98,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(92,44): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(99,44): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(92,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(99,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(170,40): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(177,40): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(170,19): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(177,19): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(176,24): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(183,24): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
   Jusin_Team_1945.vcxproj -> C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
