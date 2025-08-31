@@ -132,6 +132,12 @@
       <Filter>소스 파일\06. Item</Filter>
     </ClInclude>
     <ClInclude Include="CPlayerBullet.h" />
+    <ClInclude Include="CBullet_Monster01.h">
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CBullet_Monster02.h">
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jusin_Team_1945.cpp">
@@ -202,6 +208,12 @@
     </ClCompile>
     <ClCompile Include="CPlayerBullet.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CBullet_Monster01.cpp">
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="CBullet_Monster02.cpp">
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

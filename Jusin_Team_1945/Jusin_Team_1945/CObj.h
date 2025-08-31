@@ -51,7 +51,8 @@ public:
 	virtual CObj* Create_Bullet(float angle);
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
 	virtual CObj* Create_BossBullet(float angle);
-
+	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
+	virtual CObj* Create_MonsterBullet02(DIRECTION eDir);
 
 	// 문인수 : Monster의 총알이 자기 자신과 충돌, 자기 자신을 무시하기 위해서 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
