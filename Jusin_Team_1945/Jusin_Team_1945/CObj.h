@@ -59,7 +59,7 @@ public:
 	
 	// 안은수: 총알 발사 셋팅
 	 void Set_Angle(float angle) { m_fAngle = angle; }
-
+	 void Set_Target(CObj* target) { m_tTarget = target; }
 	 // 황유림: 몬스터 ID 설정
 	 void Set_ID(int _ID) { m_iID = _ID; }
 

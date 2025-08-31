@@ -6,7 +6,7 @@
 #include "CBossBullet.h"
 
 
-CBoss02::CBoss02()
+CBoss02::CBoss02(): m_dwTime(GetTickCount())
 {
 	ZeroMemory(&m_tHpUi, sizeof(m_tHpUi));
 }
@@ -18,14 +18,18 @@ CBoss02::~CBoss02()
 
 void CBoss02::Initialize()
 {
-	m_tInfo = { WINCX / 2, -10, 50, 50 };
-	m_fSpeed = 2.f;
+	m_tInfo = { WINCX / 2, -10, 100, 100 };
+	m_fSpeed = 7.f;
 
 	m_iHp = 100;
 
 	m_tHpUi = { 50,50,WINCX - 50,70 };
 
 	m_iBarrel_Len = 100;
+
+	m_fAngle = 90.f;
+
+
 
 	Update_Rect();
 
@@ -38,16 +42,31 @@ int CBoss02::Update()
 
 	Update_Rect();
 
-	if (m_tInfo.fY <= 200)
+	if (m_tInfo.fY <= 150)
 	{
 		m_tInfo.fY += m_fSpeed;
 	}
 	m_bHp = true;
 
-	m_pBullet->push_back(Create_BossBullet(m_fAngle));
+	
+	m_tBarrel_Pos.X = m_tInfo.fX + (m_iBarrel_Len * cosf(m_fAngle * (PI / 180)));
+	m_tBarrel_Pos.Y = m_tInfo.fY + (m_iBarrel_Len * sinf(m_fAngle * (PI / 180)));
 
 
-	Key_Input();
+
+	
+
+	if (m_dwTime + 500 < GetTickCount())
+	{
+		//Attack_Circular();
+		Attack_Cos();
+
+
+		m_dwTime = GetTickCount();
+	}
+
+
+	Key_Input();  
 
 	return 0;
 }
@@ -59,8 +78,6 @@ void CBoss02::Late_Update()
 		m_bDead = true;
 	}
 
-	m_tBarrel_Pos.X = m_tInfo.fX + (m_iBarrel_Len * cosf(m_fAngle * (PI / 180)));
-	m_tBarrel_Pos.Y = m_tInfo.fY + (m_iBarrel_Len * sinf(m_fAngle * (PI / 180)));
 
 
 }
@@ -109,18 +126,70 @@ void CBoss02::Key_Input()
 	if (GetAsyncKeyState('8'))
 	{
 		m_pBullet->push_back(Create_BossBullet( m_fAngle));
+
+	}
+
+	if (GetAsyncKeyState(VK_RIGHT))
+	{
+
+		{
+			m_tInfo.fX += m_fSpeed;
+		}
+	}
+
+	if (GetAsyncKeyState(VK_LEFT))
+	{
+
+		{
+			m_tInfo.fX -= m_fSpeed;
+		}
+	}
+
+
+	if (GetAsyncKeyState(VK_UP))
+	{
+		m_tInfo.fY -= m_fSpeed;
+	}
+
+	if (GetAsyncKeyState(VK_DOWN))
+	{
+		m_tInfo.fY += m_fSpeed;
 	}
 }
 
 void CBoss02::Attack_Circular()
 {
+	float tmp_Angle;
 
+	if (m_tTarget)
+	{
 
+		float x = m_tTarget->Get_Info().fX - m_tInfo.fX;
+		float y = m_tTarget->Get_Info().fY - m_tInfo.fY;
+
+		tmp_Angle = acos(x / sqrtf(pow(x, 2) + pow(y, 2)));
+
+		// tmp_Angle *= (180 / PI);
+		if (y < 0)
+			tmp_Angle = 2 * PI - tmp_Angle;
+
+		m_fAngle = tmp_Angle * (180.0 / PI);
+
+		//m_tInfo.FX += (cos(tmp_Angle) * m_fSpeed);
+		//m_tInfo.FY += (sin(tmp_Angle) * m_fSpeed);
+
+		m_pBullet->push_back(Create_BossBullet(m_fAngle + 10));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle - 10));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle + 20));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle - 20));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle));
+	}
 }
 
 void CBoss02::Attack_Cos()
 {
 
+	m_pBullet->push_back(Create_BossBullet(m_fAngle));
 
 }
 
