@@ -1,6 +1,7 @@
 #pragma once
 
 #include "CObj.h"
+#include "CTimerMgr.h"
 
 class CBoss01 : public CObj
 {
@@ -15,6 +16,12 @@ public:
     void Render(HDC hDC) override;
     void Release() override;
 
+private:
+    
+    CTimerMgr Mgr1;
+    int AttackTime = 0;
 
+    CTimerMgr Mgr2;
+    int SkillTime = 0;
 };
 

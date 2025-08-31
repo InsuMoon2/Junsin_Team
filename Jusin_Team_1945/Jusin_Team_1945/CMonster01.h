@@ -17,7 +17,6 @@ public:
 	void Release() override;
 
 private:
-	DWORD   m_Time = 0;
 
 	CTimerMgr Mgr1;
 	int attackTime1 = 0;

@@ -10,7 +10,6 @@ CMainGame::CMainGame() : m_dwTime(GetTickCount()), m_iFPS(0)
 {
 	ZeroMemory(m_szFPS, sizeof(m_szFPS));
 	ZeroMemory(m_szStage, sizeof(m_szStage));
-
 }
 
 CMainGame::~CMainGame()
@@ -24,7 +23,7 @@ void CMainGame::Initialize()
 
 	// 시작 스테이지 설정
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage02);
 
 }
 
