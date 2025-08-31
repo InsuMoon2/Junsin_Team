@@ -25,6 +25,10 @@ public:
 
     bool m_bHp;
 
+
+    DWORD		m_dwTime;
+
+
     void Attack_Circular();
     void Attack_Cos();
 

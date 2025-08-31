@@ -10,75 +10,78 @@ CMonster01::CMonster01()
 
 CMonster01::~CMonster01()
 {
-	Release();
+    Release();
 }
 
 void CMonster01::Initialize()
 {
-	m_tInfo.fCX = 50.f;
-	m_tInfo.fCY = 50.f;
-	//m_tInfo.fX = 300;
-	//m_tInfo.fY = 300;
-	m_fSpeed = 2.f;
+    m_tInfo.fCX = 50.f;
+    m_tInfo.fCY = 50.f;
+    //m_tInfo.fX = 300;
+    //m_tInfo.fY = 300;
+    m_fSpeed = 2.f;
 
-	m_iHp = 100;
+    m_iHp = 100;
 }
 
 int CMonster01::Update()
 {
-	if (m_bDead)
-		return OBJ_DEAD;
-	
-	if (m_iID==1)
-	{
-		m_tInfo.fY += m_fSpeed;
-	}
-	else
-	{
-		m_tInfo.fX += m_fSpeed;
-	}
+    if (m_bDead)
+        return OBJ_DEAD;
 
-	timeAttack = CTimerMgr::GetCurrentTimeCount(5);
+    if (m_iID == 1)
+    {
+        m_tInfo.fY += m_fSpeed;
+    }
+    else
+    {
+        m_tInfo.fX += m_fSpeed;
+    }
 
-	if (timeAttack == 5)
-	{
-		m_pBullet->push_back(Create_Bullet(DIR_DOWN));
+    __super::Update_Rect();
 
-	}
+    attackTime1 = Mgr1.GetCurrentTimeCount(5);
+    attackTime2 = Mgr2.GetCurrentTimeCount(10);
 
-	__super::Update_Rect();
+    if (attackTime1 == 5)
+    {
+        m_pBullet->push_back(Create_Bullet(DIR_DOWN));
+    }
 
-
-	return OBJ_NOEVENT;
+    return OBJ_NOEVENT;
 }
 
 void CMonster01::Late_Update()
 {
-	if (m_iID == 1)
-	{
-		if (170 >= m_tRect.top || 550 <= m_tRect.bottom)
-		{
-			m_fSpeed *= -1.f;
-		}
-	}
-	if (m_iID==2)
-	{
-		if (170 >= m_tRect.left || 550 <= m_tRect.right)
-		{
-			m_fSpeed *= -1.f;
-		}
-	}
+    if (m_iID == 1)
+    {
+        if (170 >= m_tRect.top || 550 <= m_tRect.bottom)
+        {
+            m_fSpeed *= -1.f;
+        }
+    }
+    if (m_iID == 2)
+    {
+        if (170 >= m_tRect.left || 550 <= m_tRect.right)
+        {
+            m_fSpeed *= -1.f;
+        }
+    }
 
 
 }
 
 void CMonster01::Render(HDC hDC)
 {
-	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+    Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
-	TCHAR szBuff[32] = L"";
-	swprintf_s(szBuff, L"Time : %d", timeAttack);
-	TextOut(hDC, 50, 120, szBuff, lstrlen(szBuff));
+    TCHAR szBuff[32] = L"";
+    swprintf_s(szBuff, L"Time : %d", attackTime1);
+    TextOut(hDC, 50, 120, szBuff, lstrlen(szBuff));
+
+    TCHAR szBuff2[32] = L"";
+    swprintf_s(szBuff2, L"Time : %d", attackTime2);
+    TextOut(hDC, 50, 140, szBuff2, lstrlen(szBuff2));
 }
 
 void CMonster01::Release()

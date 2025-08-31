@@ -53,11 +53,11 @@ void CTempStage::Render(HDC hdc)
 {
 	CScene::Render(hdc);
 
-	int time = CTimerMgr::GetCurrentTimeCount(10);
-
-	TCHAR szBuff[32] = L"";
-	swprintf_s(szBuff, L"시간 초 : %d", time);
-	TextOut(hdc, 50, 150, szBuff, lstrlen(szBuff));
+	//int time = CTimerMgr::GetCurrentTimeCount(10);
+	//
+	//TCHAR szBuff[32] = L"";
+	//swprintf_s(szBuff, L"시간 초 : %d", time);
+	//TextOut(hdc, 50, 150, szBuff, lstrlen(szBuff));
 }
 
 void CTempStage::Release()
