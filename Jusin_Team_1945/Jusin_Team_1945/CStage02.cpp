@@ -48,8 +48,6 @@ void CStage02::Render(HDC hdc)
 		swprintf_s(szBuff, L"BOSS HP : %d", m_ObjList[BOSS].front()->Get_Hp());
 		TextOut(hdc, 50, 120, szBuff, lstrlen(szBuff));
 	}
-	
-
 }
 
 void CStage02::Release()

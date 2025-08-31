@@ -41,12 +41,14 @@ int CMonster01::Update()
     __super::Update_Rect();
 
     attackTime1 = Mgr1.GetCurrentTimeCount(2);
-    attackTime2 = Mgr2.GetCurrentTimeCount(10);
+    //attackTime2 = Mgr2.GetCurrentTimeCount(10);
 
     if (attackTime1 == 2)
     {
-        m_pBullet->push_back(Create_Bullet(DIR_DOWN));
+        m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
     }
+
+    
 
     return OBJ_NOEVENT;
 }
@@ -71,6 +73,7 @@ void CMonster01::Late_Update()
     if (m_iHp <= 0)
     {
         m_bDead = true;
+
     }
 
 
@@ -84,9 +87,9 @@ void CMonster01::Render(HDC hDC)
     swprintf_s(szBuff, L"Time : %d", attackTime1);
     TextOut(hDC, 50, 120, szBuff, lstrlen(szBuff));
 
-    TCHAR szBuff2[32] = L"";
-    swprintf_s(szBuff2, L"Time : %d", attackTime2);
-    TextOut(hDC, 50, 140, szBuff2, lstrlen(szBuff2));
+    //TCHAR szBuff2[32] = L"";
+    //swprintf_s(szBuff2, L"Time : %d", attackTime2);
+    //TextOut(hDC, 50, 140, szBuff2, lstrlen(szBuff2));
 }
 
 void CMonster01::Release()

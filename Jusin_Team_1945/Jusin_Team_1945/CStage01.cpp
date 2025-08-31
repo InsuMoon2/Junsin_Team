@@ -45,27 +45,48 @@ void CStage01::Update()
 {
     CScene::Update();
 
-    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
-    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
+    
 
-
-    if (size(m_ObjList[MONSTER01]) == 0) //|| m_bCreate = false)
-    {
-        m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)360, (float)-100));
-        //Set_Create();
-    }
+   
 }
 
 void CStage01::LateUpdate()
 {
+
     CScene::LateUpdate();
+
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
+
+
+    for (auto iter : m_ObjList[MONSTER01])
+    {
+        if (dynamic_cast<CMonster01*>(iter)->Get_DeadState() == true)
+        {
+            m_iKillCount++;
+
+            if (m_iKillCount == 3)
+            {
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)100, (float)-30,1));
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)270, (float)-90,2));
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)490, (float)-90,2));
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)660, (float)-30,1));
+            }
+
+        }
+    }
+
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER02]);
 }
 
 void CStage01::Render(HDC hdc)
 {
     CScene::Render(hdc);
 
-   
+    TCHAR szBuff[32] = L"";
+    swprintf_s(szBuff, L"Kill : %d", m_iKillCount);
+    TextOut(hdc, 50, 170, szBuff, lstrlen(szBuff));
 }
 
 void CStage01::Release()

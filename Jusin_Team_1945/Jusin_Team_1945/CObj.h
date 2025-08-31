@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #include "Define.h"
 
@@ -43,26 +43,25 @@ public:
 
 public:
 
-	// ¹®ÀÎ¼ö : Player-> Obj·Î Set,Create Bullet ÀÌµ¿
 	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
 	virtual CObj* Create_Bullet(DIRECTION eDir);
-
-	// create_Bullet ¿À¹ö·Îµù
 	virtual CObj* Create_Bullet(float angle);
+
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
-	virtual CObj* Create_BossBullet(float angle);
+
+	virtual CObj* Create_BossBullet(float angle, BT type);
+
 	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
 	virtual CObj* Create_Boss01Bullet(float angle);
+	
+	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
+	virtual CObj* Create_MonsterBullet02(DIRECTION eDir);
 
-
-	// ¹®ÀÎ¼ö : MonsterÀÇ ÃÑ¾ËÀÌ ÀÚ±â ÀÚ½Å°ú Ãæµ¹, ÀÚ±â ÀÚ½ÅÀ» ¹«½ÃÇÏ±â À§ÇØ¼­ 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
 	CObj* Get_Owner()			   { return m_pOwner; }
 	
-	// ¾ÈÀº¼ö: ÃÑ¾Ë ¹ß»ç ¼ÂÆÃ
 	 void Set_Angle(float angle) { m_fAngle = angle; }
 	 void Set_Target(CObj* target) { m_tTarget = target; }
-	 // È²À¯¸²: ¸ó½ºÅÍ ID ¼³Á¤
 	 void Set_ID(int _ID) { m_iID = _ID; }
 
 protected:
@@ -83,17 +82,17 @@ protected:
 
 	list<CObj*>* m_pBullet;
 
-	// ¾ÈÀº¼ö : Æ÷½Å + Å¸°Ù ¼³Á¤
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ + Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	float m_fAngle;
 	POS m_tBarrel_Pos;
 	int m_iBarrel_Len;
 
 	CObj* m_tTarget;
 
-	// È²À¯¸² :
+	// È²ï¿½ï¿½ï¿½ï¿½ :
 	int m_iID;
 
-	// ¹®ÀÎ¼ö : Æ÷½Å °³¼ö
+	// ï¿½ï¿½ï¿½Î¼ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	int m_iBarrel_Number;
 };
 

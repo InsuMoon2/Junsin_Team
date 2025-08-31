@@ -36,8 +36,7 @@ enum DIRECTION
 
 enum class ESceneType
 {
-	None,
-	Stage01,
+	Stage01 = 0,
 	Stage02,
 	Stage03,
 	TempStage,
@@ -76,6 +75,8 @@ typedef struct POSINFO
 	float X;
 	float Y;
 }POS;
+// 안은수 보스 불릿용
+enum BT { Circular, Cos, Guided, BT_END };
 
 // 귀찮으니까 출력 복붙용
 //TCHAR szBuff[32] = L"";

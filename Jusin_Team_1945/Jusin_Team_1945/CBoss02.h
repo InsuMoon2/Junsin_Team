@@ -28,9 +28,12 @@ public:
 
     DWORD		m_dwTime;
 
+    float m_fBarrel_Speed;
 
     void Attack_Circular();
     void Attack_Cos();
+    void Attack_Guided();
+
 
 };
 

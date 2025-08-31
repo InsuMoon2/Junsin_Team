@@ -43,9 +43,24 @@ void CCollisionMgr::Collision_Circle(list<CObj*> _bullet, list<CObj*> _monster)
 	}
 }
 
+void CCollisionMgr::Collision_Circle(list<CObj*> _bullet, CObj* _HitObject)
+{
+	for (auto& bullet : _bullet)
+	{
+		if (bullet->Get_Owner() == _HitObject)
+			continue;
+
+		if (Check_Circle(bullet, _HitObject))
+		{
+			_HitObject->Set_Hp(_HitObject->Get_Hp() - bullet->Get_Attack());
+			bullet->Set_Dead();
+		}
+	}
+}
+
 bool CCollisionMgr::Check_Circle(CObj* _Dst, CObj* _Src)
 {
-	float	fWidth  = fabsf(_Dst->Get_Info().fX - _Src->Get_Info().fX);
+	float	fWidth = fabsf(_Dst->Get_Info().fX - _Src->Get_Info().fX);
 	float	fHeight = fabsf(_Dst->Get_Info().fY - _Src->Get_Info().fY);
 
 	float	fDiagonal = sqrtf(fWidth * fWidth + fHeight * fHeight);
@@ -55,19 +70,19 @@ bool CCollisionMgr::Check_Circle(CObj* _Dst, CObj* _Src)
 	return fRadius >= fDiagonal;
 }
 
-void CCollisionMgr::Collision_Item(list<CObj*> _pPlayer, list<CObj*> _pItem)
+void CCollisionMgr::Collision_Item(CObj* _pPlayer, list<CObj*> _pItem)
 {
-	for (auto& player : _pPlayer)
-	{
-		for (auto& item : _pItem)
-		{
-			RECT	rcCol{};
+	if (!_pPlayer) return;
 
-			if (IntersectRect(&rcCol, player->Get_Rect(), item->Get_Rect()))
-			{
-				dynamic_cast<CItem*>(item)->Use_Item(player);
-				item->Set_Dead();
-			}
+	for (auto& item : _pItem)
+	{
+		RECT	rcCol{};
+
+		if (IntersectRect(&rcCol, _pPlayer->Get_Rect(), item->Get_Rect()))
+		{
+			dynamic_cast<CItem*>(item)->Use_Item(_pPlayer);
+			item->Set_Dead();
 		}
 	}
+
 }
