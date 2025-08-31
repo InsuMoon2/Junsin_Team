@@ -50,7 +50,7 @@ public:
 	// create_Bullet 오버로딩
 	virtual CObj* Create_Bullet(float angle);
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
-	virtual CObj* Create_BossBullet(float angle);
+	virtual CObj* Create_BossBullet(float angle, BT type);
 
 
 	// 문인수 : Monster의 총알이 자기 자신과 충돌, 자기 자신을 무시하기 위해서 

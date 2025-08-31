@@ -6,7 +6,7 @@
 #include "CBossBullet.h"
 
 
-CBoss02::CBoss02(): m_dwTime(GetTickCount())
+CBoss02::CBoss02(): m_dwTime(GetTickCount()), m_fBarrel_Speed(0)
 {
 	ZeroMemory(&m_tHpUi, sizeof(m_tHpUi));
 }
@@ -28,10 +28,10 @@ void CBoss02::Initialize()
 	m_iBarrel_Len = 100;
 
 	m_fAngle = 90.f;
+	m_fBarrel_Speed = 10.f;
 
 
-
-	Update_Rect();
+	__super::Update_Rect();
 
 }
 
@@ -40,7 +40,7 @@ int CBoss02::Update()
 	if (m_bDead == true)
 		return OBJ_DEAD;
 
-	Update_Rect();
+	__super::Update_Rect();
 
 	if (m_tInfo.fY <= 150)
 	{
@@ -55,8 +55,8 @@ int CBoss02::Update()
 
 
 	
-
-	if (m_dwTime + 500 < GetTickCount())
+	
+	if (m_dwTime + 100 < GetTickCount())
 	{
 		//Attack_Circular();
 		Attack_Cos();
@@ -125,7 +125,7 @@ void CBoss02::Key_Input()
 {
 	if (GetAsyncKeyState('8'))
 	{
-		m_pBullet->push_back(Create_BossBullet( m_fAngle));
+		Attack_Guided();
 
 	}
 
@@ -178,18 +178,40 @@ void CBoss02::Attack_Circular()
 		//m_tInfo.FX += (cos(tmp_Angle) * m_fSpeed);
 		//m_tInfo.FY += (sin(tmp_Angle) * m_fSpeed);
 
-		m_pBullet->push_back(Create_BossBullet(m_fAngle + 10));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle - 10));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle + 20));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle - 20));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle + 10, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle - 10, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle + 20, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle - 20, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle, Circular));
+
+
 	}
 }
 
 void CBoss02::Attack_Cos()
 {
 
-	m_pBullet->push_back(Create_BossBullet(m_fAngle));
+	m_iBarrel_Len = 200;
+
+	m_fAngle += m_fBarrel_Speed;
+	if (m_fAngle >= 135 || m_fAngle <= 45)
+	{
+		m_fBarrel_Speed *= -1;
+	}
+	
+	
+	m_pBullet->push_back(Create_BossBullet(m_fAngle, Cos));
+
+}
+
+void CBoss02::Attack_Guided()
+{
+	CObj* bullet = Create_BossBullet(m_fAngle, Guided);
+	if (m_tTarget)
+	{
+		bullet->Set_Target(this->m_tTarget);
+	}
+	m_pBullet->push_back(bullet);
 
 }
 

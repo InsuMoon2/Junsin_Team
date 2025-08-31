@@ -55,20 +55,21 @@ CObj* CObj::Create_PlayerBullet(DIRECTION eDir)
 	return pBullet;
 }
 
-CObj* CObj::Create_BossBullet(float angle)
+CObj* CObj::Create_BossBullet(float angle, BT type)
 {
-	CObj* bullet = AbstractFactory<CBossBullet>::Create();
+	CBossBullet* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);
 
-	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
+	bullet->Set_Type(type);
 
 	return bullet;
 }
 
 void CObj::Update_Rect()
 {
+
 	m_tRect.left	= long(m_tInfo.fX - (m_tInfo.fCX / 2.f));
 	m_tRect.top		= long(m_tInfo.fY - (m_tInfo.fCY / 2.f));
 	m_tRect.right	= long(m_tInfo.fX + (m_tInfo.fCX / 2.f));

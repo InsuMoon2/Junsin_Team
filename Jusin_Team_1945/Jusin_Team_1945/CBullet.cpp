@@ -46,15 +46,15 @@ int CBullet::Update()
 		m_tInfo.fY += m_fSpeed;
 		break;
 
-	case DIR_LU:
-		m_tInfo.fX -= m_fSpeed;
-		m_tInfo.fY -= m_fSpeed;
-		break;
-
-	case DIR_RU:
-		m_tInfo.fX += m_fSpeed;
-		m_tInfo.fY -= m_fSpeed;
-		break;
+	//case DIR_LU:
+	//	m_tInfo.fX -= m_fSpeed;
+	//	m_tInfo.fY -= m_fSpeed;
+	//	break;
+	//
+	//case DIR_RU:
+	//	m_tInfo.fX += m_fSpeed;
+	//	m_tInfo.fY -= m_fSpeed;
+	//	break;
 	}
 	
 	__super::Update_Rect();

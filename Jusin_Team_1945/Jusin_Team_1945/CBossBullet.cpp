@@ -6,8 +6,9 @@
 
 
 
-CBossBullet::CBossBullet()
+CBossBullet::CBossBullet(): m_bulletType(BT_END), m_dwTime(GetTickCount())
 {
+
 }
 
 CBossBullet::~CBossBullet()
@@ -25,7 +26,8 @@ void CBossBullet::Initialize()
     m_iAttack = 10;
 
  
-    
+          m_fDistance =0;
+          //prev_Degree = 0.f;
     __super::Update_Rect();
 }
 
@@ -36,36 +38,35 @@ int CBossBullet::Update()
     if (m_bDead == true)
         return OBJ_DEAD;
 
-    __super::Update_Rect();
+
 
 
    // {
    //     m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed)+ m_tBarrel_Pos.X;
    //     m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed)+ m_tBarrel_Pos.Y;
    // }
-   //
-    //Attack_Circular();
-    Attack_Cos();
-    switch (m_eDir)
+
+
+    switch (m_bulletType)
     {
-    case DIR_LEFT:
-        m_tInfo.fX -= m_fSpeed;
+    case Cos:
+        Attack_Cos();
         break;
-
-    case DIR_RIGHT:
-        m_tInfo.fX += m_fSpeed;
-
+    case Circular:
+        Attack_Circular();
         break;
-
-    case DIR_UP:
-        m_tInfo.fY -= m_fSpeed;
+    case Guided:
+        Attack_Guided();
         break;
-
-    case DIR_DOWN:
-        m_tInfo.fY += m_fSpeed;
-        break;
-
     }
+
+
+    //Attack_Circular();
+  // Attack_Cos();
+
+    __super::Update_Rect();
+
+
     return 0;
 }
 
@@ -99,40 +100,98 @@ void CBossBullet::Attack_Circular()
 
 void CBossBullet::Attack_Cos()
 {
+ //   {
+ //       // 1) 각도(rad)
+ //       const float rad = m_fAngle * (PI / 180.0f);
+ //
+ //       // 2) 진행 방향(단위)
+ //       const float dirX = cosf(rad);
+ //       const float dirY = sinf(rad);
+ //
+ //       // 3) 직진 성분
+ //       m_tInfo.fX += dirX * m_fSpeed;
+ //       m_tInfo.fY += dirY * m_fSpeed;
+ //
+ //       // 4) 진행 방향 수직(좌측) 단위 벡터
+ //       const float sideX = -dirY;
+ //       const float sideY = dirX;
+ //
+ //       // 5) 거리 기반 사인 오프셋 (완화된 튜닝)
+ //       m_fDistance += m_fSpeed;              // 누적 거리
+ //       const float amplitude = 10.f;        // 흔들림 폭(px)
+ //       const float wavelength = 200.0f;       // 한 주기 길이(px)
+ //       const float k = (2.0f * PI) / wavelength;
+ //       const float offset = sinf(m_fDistance * k) * amplitude;
+ //
+ //       const float delta = offset - m_fPrevOffset;
+ //       m_fPrevOffset = offset;
+ //
+ //       // 6) 최종 좌표
+ //       m_tInfo.fX += sideX * offset;
+ //       m_tInfo.fY += sideY * offset;
+ //   }
+ //
+ //   
+
+    m_tInfo.fY += m_fSpeed;
+
+}
+
+void CBossBullet::Attack_Guided()
+{
+    m_fSpeed = 1.f;
+
+
     {
-        // float tmpfX = (cos(m_fAngle * (PI / 180)));
-        // float tmpfY = (sin(m_fAngle * (PI / 180)));
-        // 
-        // m_tInfo.fX += tmpfX * m_fSpeed - tmpfY;
-        // m_tInfo.fY += tmpfY * m_fSpeed + tmpfX;
-        // 
-        
-        //+ 10 * cos(10 * m_tInfo.fX);
-        // m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.X;
-     //   m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed);
-     //   m_tInfo.fX = m_tInfo.fX+  sin( m_tInfo.fY)* 10;
+        float tmp_Angle;
+        if (m_tTarget)
+        {
 
+            float x = m_tTarget->Get_Info().fX - m_tInfo.fX;
+            float y = m_tTarget->Get_Info().fY - m_tInfo.fY;
 
-        
-    
-        float rad = m_fAngle * (PI / 180.0f);
+            tmp_Angle = acos(x / sqrtf(pow(x, 2) + pow(y, 2)));
 
-        // 기본 직진
-        float dx = cos(rad) * m_fSpeed;
-        float dy = sin(rad) * m_fSpeed;
+            if (y < 0)
+                tmp_Angle = 2 * PI - tmp_Angle;
 
-        // 진행 누적 (예: 총알이 얼마나 전진했는지)
-        m_fDistance += m_fSpeed;   // 매 프레임 속도만큼 전진 누적
+            
+            float tmp_Degree = tmp_Angle * (180.f / PI);
 
-        // 파장 계산
-        float frequency = 0.1f;           // 파도 주기
-        float amplitude = 10.0f;          // 좌우 흔들림 크기
-        float offset = sin(m_fDistance * frequency) * amplitude;
+    if (m_dwTime + 1000 < GetTickCount())
+    {
+     //   prev_Degree = tmp_Degree;
 
-        // 최종 이동
-        m_tInfo.fX += dx + (-sin(rad)) * offset;
-        m_tInfo.fY += dy + (cos(rad)) * offset; 
-  
+        m_dwTime = GetTickCount();
     }
+
+       //         if (tmp_Degree-prev_Degree > 10.f || tmp_Degree- prev_Degree < -10.f)
+       //         {
+       //
+       //
+       //
+       //             m_tInfo.fX += cos(prev_Degree * (PI/180)) * m_fSpeed;
+       //             m_tInfo.fY += sin(prev_Degree * (PI/180)) * m_fSpeed;
+       //         }
+       //         else
+       //         {
+       //
+       //             m_tInfo.fX += cos(tmp_Angle)*m_fSpeed;
+       //             m_tInfo.fY += sin(tmp_Angle)*m_fSpeed;
+       //
+       //         }
+       //     
+
+
+
+        }
+        else
+        {
+            m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.X;
+            m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.Y;
+        }
+    }
+
+
 }
 
