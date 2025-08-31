@@ -27,4 +27,9 @@ private:
 	TCHAR		m_szFPS[16];
 
 	TCHAR		m_szStage[32];
+
+	// 더블 버퍼링 추가
+	RECT	    m_rect		= {};
+	HDC			m_hDC_back  = {};
+	HBITMAP		m_bmpBack	= {};
 };

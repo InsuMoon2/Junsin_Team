@@ -3,6 +3,7 @@
 #include "Define.h"
 
 class CObj;
+class CPlayer;
 
 class CScene
 {
@@ -17,11 +18,6 @@ public:
 	virtual void Render(HDC hdc);
 	virtual void Release();
 
-public:
-	void Set_Player(CObj* obj);
-
 protected:
-	CObj* m_pPlayer;
-
 	list<CObj*>	m_ObjList[OBJ_END];
 };

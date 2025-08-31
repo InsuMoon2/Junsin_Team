@@ -5,8 +5,9 @@
 #include "CPlayer.h"
 #include "CCollisionMgr.h"
 #include "CMonster01.h"
+#include "CSceneMgr.h"
 
-CScene::CScene() : m_pPlayer(nullptr)
+CScene::CScene()
 {
 
 }
@@ -18,8 +19,13 @@ CScene::~CScene()
 
 void CScene::Initialize()
 {
-	m_ObjList[PLAYER].push_back(AbstractFactory<CPlayer>::Create());
-	dynamic_cast<CPlayer*>(m_ObjList[PLAYER].front())->Set_Bullet(&m_ObjList[BULLET]);
+	// TODO :: 플레이어 SceneMgr로 관리 -> 모든 스테이지에 같은 플레이어가 있도록
+	// m_ObjList[PLAYER].push_back(AbstractFactory<CPlayer>::Create());
+	// dynamic_cast<CPlayer*>(m_ObjList[PLAYER].front())->Set_Bullet(&m_ObjList[BULLET]);
+
+	//CSceneMgr::GetInstance()->Get_Player();
+	if (CSceneMgr::GetInstance()->Get_Player() != nullptr)
+		CSceneMgr::GetInstance()->Get_Player()->Set_Bullet(&m_ObjList[BULLET]);
 
 
 }
@@ -59,7 +65,6 @@ void CScene::LateUpdate()
 
 void CScene::Render(HDC hdc)
 {
-
 	for (UINT i = 0; i < OBJ_END; ++i)
 	{
 		for (auto& iter : m_ObjList[i])
@@ -84,12 +89,3 @@ void CScene::Release()
 		m_ObjList[i].clear();
 	}
 }
-
-void CScene::Set_Player(CObj* obj)
-{
-	m_pPlayer = dynamic_cast<CPlayer*>(obj);
-
-	if (m_pPlayer == nullptr)
-		return;
-}
-

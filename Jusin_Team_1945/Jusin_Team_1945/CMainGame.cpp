@@ -21,9 +21,19 @@ void CMainGame::Initialize()
 {
 	m_hDC = GetDC(g_hWnd);
 
+	GetClientRect(g_hWnd, &m_rect);
+
+	// 더블 버퍼링
+	{
+		m_hDC_back = CreateCompatibleDC(m_hDC);	// hDC와 호환되는 DC를 생성
+		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom); // hDC와 호환되는 비트맵 생성
+		HBITMAP prev = (HBITMAP)::SelectObject(m_hDC_back, m_bmpBack);
+		DeleteObject(prev);
+	}
+	
 	// 시작 스테이지 설정
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage03);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
 
 }
 
@@ -53,11 +63,17 @@ void CMainGame::Render()
 		m_dwTime = GetTickCount();
 	}
 
-	Rectangle(m_hDC, 0, 0, WINCX, WINCY);
 
 	// Scene Render
-	CSceneMgr::GetInstance()->Render(m_hDC);
+	CSceneMgr::GetInstance()->Render(m_hDC_back);
 
+	// 기존 Rectangle 을 그려서 깜빡임을 최소화한걸 더블 버퍼링 적용
+	{
+		//Rectangle(m_hDC, 0, 0, WINCX, WINCY);
+		BitBlt(m_hDC, 0, 0, m_rect.right, m_rect.bottom, m_hDC_back, 0, 0, SRCCOPY);
+		PatBlt(m_hDC_back, 0, 0, m_rect.right, m_rect.bottom, WHITENESS);
+	}
+	
 	// Stage 출력
 	{
 		int stage = CSceneMgr::GetInstance()->Get_Stage();
@@ -70,4 +86,5 @@ void CMainGame::Render()
 void CMainGame::Release()
 {
 	ReleaseDC(g_hWnd, m_hDC);
+	ReleaseDC(g_hWnd, m_hDC_back);
 }

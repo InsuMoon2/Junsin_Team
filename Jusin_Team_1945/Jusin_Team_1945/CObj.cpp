@@ -4,6 +4,7 @@
 #include "AbstractFactory.h"
 #include "CBullet.h"
 #include "CBossBullet.h"
+#include "CPlayerBullet.h"
 
 CObj::CObj()
 	: m_fSpeed(0.f), m_eDir(DIR_END), m_bDead(false),
@@ -44,25 +45,22 @@ CObj* CObj::Create_Bullet(float angle)
 
 CObj* CObj::Create_PlayerBullet(DIRECTION eDir)
 {
-	CObj* pBullet = AbstractFactory<CBullet>::Create();
+	CObj* pBullet = AbstractFactory<CPlayerBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 	
-	//Set_Direction(eDir);
-
 	pBullet->Set_Direction(eDir);
 	pBullet->Set_Owner(this);
-	pBullet->Set_Pos(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	return pBullet;
 }
 
 CObj* CObj::Create_BossBullet(float angle)
 {
-	CObj* bullet = AbstractFactory<CBossBullet>::Create();
+	CObj* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);
 
-	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
+	//bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
 
 	return bullet;
 }

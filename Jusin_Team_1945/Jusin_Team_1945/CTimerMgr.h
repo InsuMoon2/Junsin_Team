@@ -13,6 +13,7 @@ public:
         DWORD dwCurrentTime = GetTickCount();
         DWORD dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
 
+        // 잘 안돼서 그냥 강제로 종료
         if (m_iTimeCount == seconds)
         {
             m_iTimeCount++;

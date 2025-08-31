@@ -6,8 +6,10 @@
 #include "CStage02.h"
 #include "CStage03.h"
 #include "CTempStage.h"
+#include "CPlayer.h"
 
-CSceneMgr::CSceneMgr() : m_Scene(nullptr), m_SceneType(ESceneType::None)
+CSceneMgr::CSceneMgr()
+	: m_Scene(nullptr), m_SceneType(ESceneType::Stage_End), m_pPlayer(nullptr)
 {
 
 }
@@ -19,36 +21,44 @@ CSceneMgr::~CSceneMgr()
 
 void CSceneMgr::Initialize()
 {
-	
+	// 플레이어는 Scene과 별개로 한 번만 생성
+	if (m_pPlayer == nullptr)
+	{
+		m_pPlayer = (AbstractFactory<CPlayer>::Create(WINCX >> 1, (WINCY >> 1) + 200));
+	}
 }
 
 void CSceneMgr::Update()
 {
 	if (m_Scene)
-	{
 		m_Scene->Update();
-	}
+
+	if (m_pPlayer)
+		m_pPlayer->Update();
 }
 
 void CSceneMgr::LateUpdate()
 {
 	if (m_Scene)
-	{
 		m_Scene->LateUpdate();
-	}
+
+	if (m_pPlayer)
+		m_pPlayer->Late_Update();
 }
 
 void CSceneMgr::Render(HDC hdc)
 {
 	if (m_Scene)
-	{
 		m_Scene->Render(hdc);
-	}
+
+	if (m_pPlayer)
+		m_pPlayer->Render(hdc);
 }
 
 void CSceneMgr::Release()
 {
 	Safe_Delete(m_Scene);
+	Safe_Delete(m_pPlayer);
 }
 
 int CSceneMgr::ChangeScene(ESceneType _eSceneType)
@@ -77,7 +87,7 @@ int CSceneMgr::ChangeScene(ESceneType _eSceneType)
 
 	case ESceneType::TempStage:
 		newScene = new CTempStage();
-		m_StageNumber = 3;
+		m_StageNumber = 4;
 		break;
 	}
 

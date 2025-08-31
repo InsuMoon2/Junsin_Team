@@ -34,8 +34,7 @@ enum DIRECTION
 
 enum class ESceneType
 {
-	None,
-	Stage01,
+	Stage01 = 0,
 	Stage02,
 	Stage03,
 	TempStage,

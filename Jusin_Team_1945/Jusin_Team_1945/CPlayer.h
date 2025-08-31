@@ -16,8 +16,9 @@ public:
 	void Release() override;
 
 public:
+
 	// 비행기 그리기
-	inline LONG IRound(float v)
+	LONG IRound(float v)
 	{
 		return (v >= 0.f) ? static_cast<LONG>(v + 0.5f)
 			: static_cast<LONG>(v - 0.5f);

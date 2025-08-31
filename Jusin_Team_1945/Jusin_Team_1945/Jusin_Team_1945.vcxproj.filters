@@ -131,7 +131,9 @@
     <ClInclude Include="CItem_AddBullet.h">
       <Filter>소스 파일\06. Item</Filter>
     </ClInclude>
-    <ClInclude Include="CPlayerBullet.h" />
+    <ClInclude Include="CPlayerBullet.h">
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jusin_Team_1945.cpp">
@@ -201,7 +203,7 @@
       <Filter>소스 파일\06. Item</Filter>
     </ClCompile>
     <ClCompile Include="CPlayerBullet.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

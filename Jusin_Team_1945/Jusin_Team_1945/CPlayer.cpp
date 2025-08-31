@@ -4,6 +4,8 @@
 #include "AbstractFactory.h"
 #include <cmath>
 
+#include "CSceneMgr.h"
+
 CPlayer::CPlayer()
 {
 
@@ -66,6 +68,10 @@ void CPlayer::Render(HDC hDC)
     TCHAR szBuff[32] = L"";
     swprintf_s(szBuff, L"포신 개수 : %d", m_iBarrel_Number);
     TextOut(hDC, 50, 160, szBuff, lstrlen(szBuff));
+
+    TCHAR szBuff2[32] = L"";
+    swprintf_s(szBuff2, L"플레이어 HP : %d", m_iHp);
+    TextOut(hDC, 50, 240, szBuff2, lstrlen(szBuff2));
 }
 
 void CPlayer::Release()
@@ -204,6 +210,13 @@ void CPlayer::Key_Input()
 	{
 		m_pBullet->push_back(Create_PlayerBullet(DIR_UP));
 	}
+
+    if (GetAsyncKeyState('G') & 0x0001)
+    {
+        auto cur = CSceneMgr::GetInstance()->Get_SceneType();
+        int next = (static_cast<int>(cur) + 1) % static_cast<int>(ESceneType::Stage_End);
+        CSceneMgr::GetInstance()->ChangeScene(static_cast<ESceneType>(next));
+    }
 }
 
 

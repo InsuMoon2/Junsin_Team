@@ -1,10 +1,12 @@
 #include "pch.h"
 #include "CTempStage.h"
-
 #include "AbstractFactory.h"
-#include "CCollisionMgr.h"
 #include "CItem_AddBullet.h"
+#include "CObj.h"
 #include "CMonster01.h"
+
+#include "CCollisionMgr.h"
+#include "CSceneMgr.h"
 #include "CTimerMgr.h"
 
 CTempStage::CTempStage()
@@ -32,26 +34,26 @@ void CTempStage::Update()
 {
 	CScene::Update();
 
-	
 }
 
 void CTempStage::LateUpdate()
 {
 	CScene::LateUpdate();
 
-
 	// 공격 충돌처리
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
 
 	// 아이템 충돌 처리
-	CCollisionMgr::Collision_Item(m_ObjList[PLAYER], m_ObjList[ITEM]);
+	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[ITEM]);
 
 }
 
 void CTempStage::Render(HDC hdc)
 {
 	CScene::Render(hdc);
+
+
 }
 
 void CTempStage::Release()

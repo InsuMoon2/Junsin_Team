@@ -19,7 +19,9 @@ public:
 		return &s_Instance;
 	}
 
-	int Get_Stage() { return m_StageNumber; }
+	int			 Get_Stage()		{ return m_StageNumber; }
+	CObj*		 Get_Player()		{ return m_pPlayer; }
+	ESceneType	 Get_SceneType()	{ return m_SceneType; }
 
 public:
 	void Initialize();
@@ -34,7 +36,8 @@ public:
 private:
 	CScene*	   m_Scene;
 	ESceneType m_SceneType;
-
 	int		   m_StageNumber = 0;
+
+	CObj*      m_pPlayer;
 };
 
