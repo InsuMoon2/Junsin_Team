@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #include "Define.h"
 
@@ -43,15 +43,12 @@ public:
 
 public:
 
-	// ���μ� : Player-> Obj�� Set,Create Bullet �̵�
 	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
 	virtual CObj* Create_Bullet(DIRECTION eDir);
-
-	// create_Bullet �����ε�
 	virtual CObj* Create_Bullet(float angle);
+
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
 
-	virtual CObj* Create_BossBullet(float angle);
 	virtual CObj* Create_BossBullet(float angle, BT type);
 
 	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
@@ -60,14 +57,11 @@ public:
 	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
 	virtual CObj* Create_MonsterBullet02(DIRECTION eDir);
 
-	// ���μ� : Monster�� �Ѿ��� �ڱ� �ڽŰ� �浹, �ڱ� �ڽ��� �����ϱ� ���ؼ� 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
 	CObj* Get_Owner()			   { return m_pOwner; }
 	
-	// ������: �Ѿ� �߻� ����
 	 void Set_Angle(float angle) { m_fAngle = angle; }
 	 void Set_Target(CObj* target) { m_tTarget = target; }
-	 // Ȳ����: ���� ID ����
 	 void Set_ID(int _ID) { m_iID = _ID; }
 
 protected:
