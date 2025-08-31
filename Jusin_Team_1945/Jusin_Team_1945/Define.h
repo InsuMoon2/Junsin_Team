@@ -29,6 +29,8 @@ enum DIRECTION
 	DIR_DOWN,
 	DIR_LU,
 	DIR_RU,
+	DIR_LD,
+	DIR_RD,
 	DIR_END
 };
 

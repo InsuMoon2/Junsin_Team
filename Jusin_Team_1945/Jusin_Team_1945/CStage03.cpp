@@ -28,7 +28,7 @@ void CStage03::Initialize()
 	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Bullet(&m_ObjList[BULLET]);
 
 	
-		dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Target(m_ObjList[PLAYER].front());
+	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Target(m_ObjList[PLAYER].front());
 
 }
 

@@ -44,28 +44,28 @@ int CBossBullet::Update()
    //     m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed)+ m_tBarrel_Pos.Y;
    // }
    //
-    //Attack_Circular();
-    Attack_Cos();
-    switch (m_eDir)
-    {
-    case DIR_LEFT:
-        m_tInfo.fX -= m_fSpeed;
-        break;
-
-    case DIR_RIGHT:
-        m_tInfo.fX += m_fSpeed;
-
-        break;
-
-    case DIR_UP:
-        m_tInfo.fY -= m_fSpeed;
-        break;
-
-    case DIR_DOWN:
-        m_tInfo.fY += m_fSpeed;
-        break;
-
-    }
+    Attack_Circular();
+   // Attack_Cos();
+    //switch (m_eDir)
+    //{
+    //case DIR_LEFT:
+    //    m_tInfo.fX -= m_fSpeed;
+    //    break;
+    //
+    //case DIR_RIGHT:
+    //    m_tInfo.fX += m_fSpeed;
+    //
+    //    break;
+    //
+    //case DIR_UP:
+    //    m_tInfo.fY -= m_fSpeed;
+    //    break;
+    //
+    //case DIR_DOWN:
+    //    m_tInfo.fY += m_fSpeed;
+    //    break;
+    //
+    //}
     return 0;
 }
 
@@ -106,11 +106,11 @@ void CBossBullet::Attack_Cos()
         // m_tInfo.fX += tmpfX * m_fSpeed - tmpfY;
         // m_tInfo.fY += tmpfY * m_fSpeed + tmpfX;
         // 
-        
-        //+ 10 * cos(10 * m_tInfo.fX);
+        // 
+        // + 10 * cos(10 * m_tInfo.fX);
         // m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.X;
-     //   m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed);
-     //   m_tInfo.fX = m_tInfo.fX+  sin( m_tInfo.fY)* 10;
+        // m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed);
+        // m_tInfo.fX = m_tInfo.fX+  sin( m_tInfo.fY)* 10;
 
 
         
