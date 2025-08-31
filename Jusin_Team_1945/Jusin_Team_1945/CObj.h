@@ -52,11 +52,13 @@ public:
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
 
 	virtual CObj* Create_BossBullet(float angle);
-	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
-	
-	virtual CObj* Create_Boss01Bullet(float angle);
 	virtual CObj* Create_BossBullet(float angle, BT type);
 
+	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
+	virtual CObj* Create_Boss01Bullet(float angle);
+	
+	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
+	virtual CObj* Create_MonsterBullet02(DIRECTION eDir);
 
 	// ���μ� : Monster�� �Ѿ��� �ڱ� �ڽŰ� �浹, �ڱ� �ڽ��� �����ϱ� ���ؼ� 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }

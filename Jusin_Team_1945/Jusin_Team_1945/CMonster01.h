@@ -16,7 +16,12 @@ public:
 	void Render(HDC hDC) override;
 	void Release() override;
 
+
+public:
+
+	BOOL Get_DeadState() { return m_bDead; }
 private:
+
 
 	CTimerMgr Mgr1;
 	int attackTime1 = 0;

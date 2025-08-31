@@ -16,7 +16,6 @@ public:
 	void Release() override;
 
 private:
-	DWORD	m_Time = 0;
-
+	int	AttackTime = 0;
 };
 

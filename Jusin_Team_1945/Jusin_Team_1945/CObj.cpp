@@ -6,6 +6,8 @@
 #include "CBossBullet.h"
 #include "CPlayerBullet.h"
 #include "CBoss01Bullet.h"
+#include "CBullet_Monster01.h"
+#include "CBullet_Monster02.h"
 
 CObj::CObj()
 	: m_fSpeed(0.f), m_eDir(DIR_END), m_bDead(false),
@@ -57,14 +59,36 @@ CObj* CObj::Create_PlayerBullet(DIRECTION eDir)
 CObj* CObj::Create_BossBullet(float angle, BT type)
 {
 	CBossBullet* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
+	CObj* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);
 
 	bullet->Set_Type(type);
+	//bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
 
 	return bullet;
 
+}
+
+CObj* CObj::Create_MonsterBullet01(DIRECTION	eDir)
+{
+	CObj* pBullet = AbstractFactory<CBullet_Monster01>::Create();
+
+	pBullet->Set_Direction(eDir);
+	pBullet->Set_Owner(this);
+
+	return pBullet;
+}
+
+CObj* CObj::Create_MonsterBullet02(DIRECTION	eDir)
+{
+	CObj* pBullet = AbstractFactory<CBullet_Monster02>::Create();
+
+	pBullet->Set_Direction(eDir);
+	pBullet->Set_Owner(this);
+
+	return pBullet;
 }
 
 void CObj::Update_Rect()

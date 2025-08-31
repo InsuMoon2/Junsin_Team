@@ -23,17 +23,17 @@ void CMainGame::Initialize()
 
 	GetClientRect(g_hWnd, &m_rect);
 
-	// ´õºí ¹öÆÛ¸µ
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Û¸ï¿½
 	{
-		m_hDC_back = CreateCompatibleDC(m_hDC);	// hDC¿Í È£È¯µÇ´Â DC¸¦ »ý¼º
-		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom); // hDC¿Í È£È¯µÇ´Â ºñÆ®¸Ê »ý¼º
+		m_hDC_back = CreateCompatibleDC(m_hDC);	// hDCï¿½ï¿½ È£È¯ï¿½Ç´ï¿½ DCï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom); // hDCï¿½ï¿½ È£È¯ï¿½Ç´ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		HBITMAP prev = (HBITMAP)::SelectObject(m_hDC_back, m_bmpBack);
 		DeleteObject(prev);
 	}
 	
-	// ½ÃÀÛ ½ºÅ×ÀÌÁö ¼³Á¤
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
 
 }
 
@@ -51,7 +51,7 @@ void CMainGame::Late_Update()
 
 void CMainGame::Render()
 {
-	// FPS Ãâ·Â
+	// FPS ï¿½ï¿½ï¿½
 	++m_iFPS;
 
 	if (m_dwTime + 1000 < GetTickCount())
@@ -67,14 +67,14 @@ void CMainGame::Render()
 	// Scene Render
 	CSceneMgr::GetInstance()->Render(m_hDC_back);
 
-	// ±âÁ¸ Rectangle À» ±×·Á¼­ ±ôºýÀÓÀ» ÃÖ¼ÒÈ­ÇÑ°É ´õºí ¹öÆÛ¸µ Àû¿ë
+	// ï¿½ï¿½ï¿½ï¿½ Rectangle ï¿½ï¿½ ï¿½×·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼ï¿½È­ï¿½Ñ°ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Û¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 	{
 		//Rectangle(m_hDC, 0, 0, WINCX, WINCY);
 		BitBlt(m_hDC, 0, 0, m_rect.right, m_rect.bottom, m_hDC_back, 0, 0, SRCCOPY);
 		PatBlt(m_hDC_back, 0, 0, m_rect.right, m_rect.bottom, WHITENESS);
 	}
 	
-	// Stage Ãâ·Â
+	// Stage ï¿½ï¿½ï¿½
 	{
 		int stage = CSceneMgr::GetInstance()->Get_Stage();
 		swprintf_s(m_szStage, L"Stage : %d", stage);
