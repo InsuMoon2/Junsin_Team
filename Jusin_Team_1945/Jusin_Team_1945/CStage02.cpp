@@ -9,7 +9,7 @@
 CStage02::CStage02()
 {
 
-}
+}	
 
 CStage02::~CStage02()
 {
@@ -29,8 +29,8 @@ void CStage02::Update()
 	CScene::Update();
 
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[BOSS]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
 
-	// m_Time += GetTickCount() / 1000;
 }
 
 void CStage02::LateUpdate()
@@ -44,13 +44,14 @@ void CStage02::Render(HDC hdc)
 {
 	CScene::Render(hdc);
 	
-	TCHAR szBuff[32] = L"";
-	swprintf_s(szBuff, L"BOSS HP : %d", m_ObjList[BOSS].front()->Get_Hp());
-	TextOut(hdc, 50, 120, szBuff, lstrlen(szBuff));
+	if (!m_ObjList[BOSS].empty())
+	{
+		TCHAR szBuff[32] = L"";
+		swprintf_s(szBuff, L"BOSS HP : %d", m_ObjList[BOSS].front()->Get_Hp());
+		TextOut(hdc, 50, 120, szBuff, lstrlen(szBuff));
+	}
 	
-	// TCHAR szBuff[32] = L"";
-	// swprintf_s(szBuff, L"Time : %d", m_Time);
-	// TextOut(hdc, 50, 120, szBuff, lstrlen(szBuff));
+
 }
 
 void CStage02::Release()

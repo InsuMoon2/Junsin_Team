@@ -1,26 +1,39 @@
 #pragma once
+#include <Windows.h>
+
 class CTimerMgr
 {
-public:
-    static int GetCurrentTimeCount(int seconds)
-    {
-        static DWORD g_dwLastUpdateTime = GetTickCount();
-        static int   g_iTimeCount = 1;
+private:
+    DWORD m_dwLastUpdateTime = GetTickCount();
+    int m_iTimeCount = 0;
 
+public:
+    int GetCurrentTimeCount(int seconds)
+    {
         DWORD dwCurrentTime = GetTickCount();
-        DWORD dwElapsedTime = dwCurrentTime - g_dwLastUpdateTime;
+        DWORD dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
+
+        if (m_iTimeCount == seconds)
+        {
+            m_iTimeCount++;
+            m_iTimeCount = 0;
+
+            m_dwLastUpdateTime = dwCurrentTime;
+
+            return m_iTimeCount;
+        }
 
         if (dwElapsedTime >= 1000)
         {
-            g_iTimeCount++;
-            if (g_iTimeCount > seconds)
+            m_iTimeCount++;
+
+            if (m_iTimeCount > seconds)
             {
-                g_iTimeCount = 1;
+                m_iTimeCount = 0;
             }
-            g_dwLastUpdateTime = dwCurrentTime;
+            m_dwLastUpdateTime = dwCurrentTime;
         }
 
-        return g_iTimeCount;
+        return m_iTimeCount;
     }
 };
-
