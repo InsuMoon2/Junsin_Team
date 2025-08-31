@@ -44,12 +44,12 @@ CObj* CObj::Create_Bullet(float angle)
 
 CObj* CObj::Create_BossBullet(float angle)
 {
-	CObj* bullet = AbstractFactory<CBossBullet>::Create();
+	CObj* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);
 
-	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
+	//bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
 
 	return bullet;
 }

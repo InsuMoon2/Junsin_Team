@@ -134,6 +134,8 @@
     <ClInclude Include="CBoss02.h" />
     <ClInclude Include="CBossBullet.h" />
     <ClInclude Include="CBullet.h" />
+    <ClInclude Include="CBullet_Monster01.h" />
+    <ClInclude Include="CBullet_Monster02.h" />
     <ClInclude Include="CCollisionMgr.h" />
     <ClInclude Include="CItem.h" />
     <ClInclude Include="CItem_AddBullet.h" />
@@ -162,6 +164,8 @@
     <ClCompile Include="CBoss02.cpp" />
     <ClCompile Include="CBossBullet.cpp" />
     <ClCompile Include="CBullet.cpp" />
+    <ClCompile Include="CBullet_Monster01.cpp" />
+    <ClCompile Include="CBullet_Monster02.cpp" />
     <ClCompile Include="CCollisionMgr.cpp" />
     <ClCompile Include="CItem.cpp" />
     <ClCompile Include="CItem_AddBullet.cpp" />
