@@ -19,6 +19,6 @@ public:
 
 
 private:
-	DWORD m_Time = 0;
+	
 };
 

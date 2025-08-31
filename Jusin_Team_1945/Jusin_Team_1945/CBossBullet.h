@@ -16,7 +16,7 @@ public:
 
 public:
 
-
+    float m_fDistance;
     void Attack_Circular();
     void Attack_Cos();
 };

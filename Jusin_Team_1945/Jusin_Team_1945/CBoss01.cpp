@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "CBoss01.h"
 #include "CObj.h"
+#include "CTimerMgr.h"
 
 CBoss01::CBoss01()
 {
@@ -30,9 +31,19 @@ int CBoss01::Update()
 
 	__super::Update_Rect();
 
-	if (m_tInfo.fX == 300.f)
+	AttackTime = Mgr1.GetCurrentTimeCount(5);
+	SkillTime = Mgr2.GetCurrentTimeCount(8);
+
+	if (AttackTime == 5)
 	{
 		m_pBullet->push_back(Create_Bullet(DIR_DOWN));
+
+	}
+
+	if (SkillTime == 8)
+	{
+		m_pBullet->push_back(Create_Bullet(DIR_DOWN));
+
 	}
 
 	return OBJ_NOEVENT;
@@ -55,7 +66,13 @@ void CBoss01::Render(HDC hDC)
 {
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
-	
+	TCHAR szBuff[32] = L"";
+	swprintf_s(szBuff, L"AttackTime : %d", AttackTime);
+	TextOut(hDC, 50, 160, szBuff, lstrlen(szBuff));
+
+	TCHAR szBuff2[32] = L"";
+	swprintf_s(szBuff2, L"SkillTime : %d", SkillTime);
+	TextOut(hDC, 50, 200, szBuff2, lstrlen(szBuff2));
 }
 
 void CBoss01::Release()
