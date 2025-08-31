@@ -59,7 +59,6 @@ CObj* CObj::Create_PlayerBullet(DIRECTION eDir)
 CObj* CObj::Create_BossBullet(float angle, BT type)
 {
 	CBossBullet* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
-	CObj* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);
