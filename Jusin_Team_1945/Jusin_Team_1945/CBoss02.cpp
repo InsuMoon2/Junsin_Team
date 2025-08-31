@@ -27,9 +27,6 @@ void CBoss02::Initialize()
 
 	m_iBarrel_Len = 100;
 
-	
-
-
 	Update_Rect();
 
 }

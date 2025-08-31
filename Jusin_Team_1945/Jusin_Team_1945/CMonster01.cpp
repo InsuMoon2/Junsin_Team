@@ -38,16 +38,15 @@ int CMonster01::Update()
 		m_tInfo.fX += m_fSpeed;
 	}
 
-	timeAttack = CTimerMgr::GetCurrentTimeCount(5);
-
-	if (timeAttack == 5)
-	{
-		m_pBullet->push_back(Create_Bullet(DIR_DOWN));
-
-	}
-
 	__super::Update_Rect();
 
+	attackTime1 = Mgr1.GetCurrentTimeCount(5);
+	attackTime2 = Mgr2.GetCurrentTimeCount(10);
+
+	if (attackTime1 == 5)
+	{
+		m_pBullet->push_back(Create_Bullet(DIR_DOWN));
+	}
 
 	return OBJ_NOEVENT;
 }
@@ -77,8 +76,12 @@ void CMonster01::Render(HDC hDC)
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
 	TCHAR szBuff[32] = L"";
-	swprintf_s(szBuff, L"Time : %d", timeAttack);
+	swprintf_s(szBuff, L"Time : %d", attackTime1);
 	TextOut(hDC, 50, 120, szBuff, lstrlen(szBuff));
+
+	TCHAR szBuff2[32] = L"";
+	swprintf_s(szBuff2, L"Time : %d", attackTime2);
+	TextOut(hDC, 50, 140, szBuff2, lstrlen(szBuff2));
 }
 
 void CMonster01::Release()
