@@ -58,8 +58,8 @@ int CBoss02::Update()
 
 	if (m_dwTime + 500 < GetTickCount())
 	{
-		//Attack_Circular();
-		Attack_Cos();
+		Attack_Circular();
+		//Attack_Cos();
 
 
 		m_dwTime = GetTickCount();

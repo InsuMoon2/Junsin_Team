@@ -16,8 +16,13 @@ public:
     void Render(HDC hDC) override;
     void Release() override;
 
+public:
+    RECT m_tHpUi;
+
+    bool m_bHp;
+
 private:
-    
+
     CTimerMgr Mgr1;
     int AttackTime = 0;
 
