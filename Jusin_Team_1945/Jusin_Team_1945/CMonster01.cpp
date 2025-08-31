@@ -40,10 +40,10 @@ int CMonster01::Update()
 
     __super::Update_Rect();
 
-    attackTime1 = Mgr1.GetCurrentTimeCount(5);
+    attackTime1 = Mgr1.GetCurrentTimeCount(2);
     attackTime2 = Mgr2.GetCurrentTimeCount(10);
 
-    if (attackTime1 == 5)
+    if (attackTime1 == 2)
     {
         m_pBullet->push_back(Create_Bullet(DIR_DOWN));
     }
@@ -66,6 +66,11 @@ void CMonster01::Late_Update()
         {
             m_fSpeed *= -1.f;
         }
+    }
+
+    if (m_iHp <= 0)
+    {
+        m_bDead = true;
     }
 
 

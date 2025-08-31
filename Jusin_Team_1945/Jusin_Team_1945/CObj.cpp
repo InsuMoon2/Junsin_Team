@@ -7,7 +7,7 @@
 
 CObj::CObj()
 	: m_fSpeed(0.f), m_eDir(DIR_END), m_bDead(false),
-	  m_iHp(0), m_iAttack(0), m_iDef(0), m_pBullet(nullptr), m_pOwner(nullptr)
+	  m_iHp(0), m_iAttack(0), m_iDef(0), m_pBullet(nullptr), m_pOwner(nullptr), m_iBarrel_Number(1), m_tTarget(nullptr)
 {
 	ZeroMemory(&m_tInfo, sizeof(INFO));
 	ZeroMemory(&m_tRect, sizeof(RECT));
@@ -42,6 +42,19 @@ CObj* CObj::Create_Bullet(float angle)
 
 }
 
+CObj* CObj::Create_PlayerBullet(DIRECTION eDir)
+{
+	CObj* pBullet = AbstractFactory<CBullet>::Create();
+	
+	//Set_Direction(eDir);
+
+	pBullet->Set_Direction(eDir);
+	pBullet->Set_Owner(this);
+	pBullet->Set_Pos(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
+
+	return pBullet;
+}
+
 CObj* CObj::Create_BossBullet(float angle)
 {
 	CObj* bullet = AbstractFactory<CBossBullet>::Create();
@@ -53,8 +66,6 @@ CObj* CObj::Create_BossBullet(float angle)
 
 	return bullet;
 }
-
-
 
 void CObj::Update_Rect()
 {

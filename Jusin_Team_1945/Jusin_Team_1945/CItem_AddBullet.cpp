@@ -39,7 +39,13 @@ void CItem_AddBullet::Render(HDC hDC)
 {
 	CItem::Render(hDC);
 
+	HBRUSH hBrush = CreateSolidBrush(RGB(135, 206, 250));
+	HBRUSH hOldBrush = (HBRUSH)SelectObject(hDC, hBrush);
+
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+
+	SelectObject(hDC, hOldBrush);
+	DeleteObject(hBrush);
 }
 
 void CItem_AddBullet::Release()
@@ -53,4 +59,7 @@ void CItem_AddBullet::Use_Item(CObj* _pObj)
 
 	// 임시로 스피드 증가
 	_pObj->Set_Speed(_pObj->Get_Speed() * 2);
+
+	// 포신 개수 늘려야함
+	_pObj->Set_PosinNumber(_pObj->Get_PosinNumber() + 1);
 }

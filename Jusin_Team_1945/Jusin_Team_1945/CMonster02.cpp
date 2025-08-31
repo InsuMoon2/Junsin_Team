@@ -14,8 +14,8 @@ CMonster02::~CMonster02()
 
 void CMonster02::Initialize()
 {
-	m_tInfo.fCX = 50.f;
-	m_tInfo.fCY = 50.f;
+	m_tInfo.fCX = 100.f;
+	m_tInfo.fCY = 100.f;
 	//m_tInfo.fX = 300;
 	//m_tInfo.fY = 300;
 	m_fSpeed = 2.f;
@@ -25,10 +25,10 @@ void CMonster02::Initialize()
 
 int CMonster02::Update()
 {
-	
+	if(m_tInfo.fY < 200)
+	m_tInfo.fY += m_fSpeed;
+
 	__super::Update_Rect();
-
-
 
 
 	return OBJ_NOEVENT;
@@ -43,8 +43,8 @@ void CMonster02::Late_Update()
 
 void CMonster02::Render(HDC hDC)
 {
-	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
+	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
 }
 

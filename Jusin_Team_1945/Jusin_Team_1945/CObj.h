@@ -28,6 +28,7 @@ public:
 	void			Set_Speed(float _fSpeed) { m_fSpeed = _fSpeed; }
 
 	void			Set_Direction(DIRECTION eDir) { m_eDir = eDir; }
+	void			Set_PosinNumber(int _iNumber) { m_iBarrel_Number = _iNumber; }
 
 	const RECT*		Get_Rect()	 { return &m_tRect; }
 	void			Set_Dead()	 { m_bDead = true; }
@@ -38,6 +39,8 @@ public:
 	int				Get_Def()    { return m_iDef; }
 	float			Get_Speed()  { return m_fSpeed; }
 
+	int				Get_PosinNumber() { return m_iBarrel_Number; }
+
 public:
 
 	// 문인수 : Player-> Obj로 Set,Create Bullet 이동
@@ -46,6 +49,7 @@ public:
 
 	// create_Bullet 오버로딩
 	virtual CObj* Create_Bullet(float angle);
+	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
 	virtual CObj* Create_BossBullet(float angle);
 
 
@@ -55,7 +59,7 @@ public:
 	
 	// 안은수: 총알 발사 셋팅
 	 void Set_Angle(float angle) { m_fAngle = angle; }
-
+	 void Set_Target(CObj* target) { m_tTarget = target; }
 	 // 황유림: 몬스터 ID 설정
 	 void Set_ID(int _ID) { m_iID = _ID; }
 
@@ -86,5 +90,8 @@ protected:
 
 	// 황유림 :
 	int m_iID;
+
+	// 문인수 : 포신 개수
+	int m_iBarrel_Number;
 };
 

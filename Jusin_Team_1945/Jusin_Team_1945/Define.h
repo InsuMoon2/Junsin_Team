@@ -43,7 +43,7 @@ enum class ESceneType
 	Stage_End
 };
 //몬스터 종류 추가
-enum OBJID { PLAYER, BULLET, MONSTER01, MONSTER02, MOUSE, SHIELD, BOSS, OBJ_END };
+enum OBJID { PLAYER, BULLET, MONSTER01, MONSTER02, MOUSE, ITEM, BOSS, OBJ_END };
 
 template<typename T>
 void	Safe_Delete(T& P)
@@ -74,3 +74,8 @@ typedef struct POSINFO
 	float X;
 	float Y;
 }POS;
+
+// 귀찮으니까 출력 복붙용
+//TCHAR szBuff[32] = L"";
+//swprintf_s(szBuff, L" : %d", temp);
+//TextOut(hDC, 50, 140, szBuff, lstrlen(temp));
