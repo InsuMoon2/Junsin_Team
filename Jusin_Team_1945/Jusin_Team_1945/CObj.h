@@ -43,26 +43,29 @@ public:
 
 public:
 
-	// ¹®ÀÎ¼ö : Player-> Obj·Î Set,Create Bullet ÀÌµ¿
+	// ï¿½ï¿½ï¿½Î¼ï¿½ : Player-> Objï¿½ï¿½ Set,Create Bullet ï¿½Ìµï¿½
 	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
 	virtual CObj* Create_Bullet(DIRECTION eDir);
 
-	// create_Bullet ¿À¹ö·Îµù
+	// create_Bullet ï¿½ï¿½ï¿½ï¿½ï¿½Îµï¿½
 	virtual CObj* Create_Bullet(float angle);
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
+
 	virtual CObj* Create_BossBullet(float angle);
 	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
+	
 	virtual CObj* Create_Boss01Bullet(float angle);
+	virtual CObj* Create_BossBullet(float angle, BT type);
 
 
-	// ¹®ÀÎ¼ö : MonsterÀÇ ÃÑ¾ËÀÌ ÀÚ±â ÀÚ½Å°ú Ãæµ¹, ÀÚ±â ÀÚ½ÅÀ» ¹«½ÃÇÏ±â À§ÇØ¼­ 
+	// ï¿½ï¿½ï¿½Î¼ï¿½ : Monsterï¿½ï¿½ ï¿½Ñ¾ï¿½ï¿½ï¿½ ï¿½Ú±ï¿½ ï¿½Ú½Å°ï¿½ ï¿½æµ¹, ï¿½Ú±ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
 	CObj* Get_Owner()			   { return m_pOwner; }
 	
-	// ¾ÈÀº¼ö: ÃÑ¾Ë ¹ß»ç ¼ÂÆÃ
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ï¿½Ñ¾ï¿½ ï¿½ß»ï¿½ ï¿½ï¿½ï¿½ï¿½
 	 void Set_Angle(float angle) { m_fAngle = angle; }
 	 void Set_Target(CObj* target) { m_tTarget = target; }
-	 // È²À¯¸²: ¸ó½ºÅÍ ID ¼³Á¤
+	 // È²ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ ID ï¿½ï¿½ï¿½ï¿½
 	 void Set_ID(int _ID) { m_iID = _ID; }
 
 protected:
@@ -83,17 +86,17 @@ protected:
 
 	list<CObj*>* m_pBullet;
 
-	// ¾ÈÀº¼ö : Æ÷½Å + Å¸°Ù ¼³Á¤
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ : ï¿½ï¿½ï¿½ï¿½ + Å¸ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	float m_fAngle;
 	POS m_tBarrel_Pos;
 	int m_iBarrel_Len;
 
 	CObj* m_tTarget;
 
-	// È²À¯¸² :
+	// È²ï¿½ï¿½ï¿½ï¿½ :
 	int m_iID;
 
-	// ¹®ÀÎ¼ö : Æ÷½Å °³¼ö
+	// ï¿½ï¿½ï¿½Î¼ï¿½ : ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	int m_iBarrel_Number;
 };
 

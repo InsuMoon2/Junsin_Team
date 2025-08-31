@@ -6,7 +6,7 @@
 #include "CBossBullet.h"
 
 
-CBoss02::CBoss02(): m_dwTime(GetTickCount())
+CBoss02::CBoss02(): m_dwTime(GetTickCount()), m_fBarrel_Speed(0)
 {
 	ZeroMemory(&m_tHpUi, sizeof(m_tHpUi));
 }
@@ -28,10 +28,10 @@ void CBoss02::Initialize()
 	m_iBarrel_Len = 100;
 
 	m_fAngle = 90.f;
+	m_fBarrel_Speed = 10.f;
 
 
-
-	Update_Rect();
+	__super::Update_Rect();
 
 }
 
@@ -40,7 +40,7 @@ int CBoss02::Update()
 	if (m_bDead == true)
 		return OBJ_DEAD;
 
-	Update_Rect();
+	__super::Update_Rect();
 
 	if (m_tInfo.fY <= 150)
 	{
@@ -55,13 +55,20 @@ int CBoss02::Update()
 
 
 	
-
-	if (m_dwTime + 500 < GetTickCount())
+	
+	if (m_dwTime + 100 < GetTickCount())
+	{
+		
+	if (m_iHp <= 50)
 	{
 		Attack_Circular();
-		//Attack_Cos();
+		Attack_Cos();
+	}
+	else
+	{
+		Attack_Circular();
 
-
+	}
 		m_dwTime = GetTickCount();
 	}
 
@@ -87,11 +94,11 @@ void CBoss02::Render(HDC hDC)
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 	Rectangle(hDC, m_tRect.left + 10, m_tRect.top + 10, m_tRect.right - 10, m_tRect.bottom - 10);
 	
-	// Æ÷½Å ·£´õ (¾µÁö ¸»Áö´Â ¼±ÅÃ ÇÏ¼î)
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¼ï¿½)
 	MoveToEx(hDC, m_tInfo.fX, m_tInfo.fY, NULL);
 	LineTo(hDC, m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
-	// hp ui ¼ÂÆÃ
+	// hp ui ï¿½ï¿½ï¿½ï¿½
 	{
 		if (m_bHp == true)
 		{
@@ -125,7 +132,7 @@ void CBoss02::Key_Input()
 {
 	if (GetAsyncKeyState('8'))
 	{
-		m_pBullet->push_back(Create_BossBullet( m_fAngle));
+		Attack_Guided();
 
 	}
 
@@ -178,18 +185,40 @@ void CBoss02::Attack_Circular()
 		//m_tInfo.FX += (cos(tmp_Angle) * m_fSpeed);
 		//m_tInfo.FY += (sin(tmp_Angle) * m_fSpeed);
 
-		m_pBullet->push_back(Create_BossBullet(m_fAngle + 10));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle - 10));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle + 20));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle - 20));
-		m_pBullet->push_back(Create_BossBullet(m_fAngle));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle + 10, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle - 10, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle + 20, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle - 20, Circular));
+		m_pBullet->push_back(Create_BossBullet(m_fAngle, Circular));
+
+
 	}
 }
 
 void CBoss02::Attack_Cos()
 {
 
-	m_pBullet->push_back(Create_BossBullet(m_fAngle));
+	m_iBarrel_Len = 200;
+
+	m_fAngle += m_fBarrel_Speed;
+	if (m_fAngle >= 135 || m_fAngle <= 45)
+	{
+		m_fBarrel_Speed *= -1;
+	}
+	
+	
+	m_pBullet->push_back(Create_BossBullet(m_fAngle, Cos));
+
+}
+
+void CBoss02::Attack_Guided()
+{
+	CObj* bullet = Create_BossBullet(m_fAngle, Guided);
+	if (m_tTarget)
+	{
+		bullet->Set_Target(this->m_tTarget);
+	}
+	m_pBullet->push_back(bullet);
 
 }
 

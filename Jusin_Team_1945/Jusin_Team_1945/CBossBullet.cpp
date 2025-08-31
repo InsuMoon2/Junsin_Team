@@ -3,11 +3,9 @@
 #include "CBossBullet.h"
 #include "AbstractFactory.h"
 
-
-
-
-CBossBullet::CBossBullet()
+CBossBullet::CBossBullet(): m_bulletType(BT_END), m_dwTime(GetTickCount())
 {
+
 }
 
 CBossBullet::~CBossBullet()
@@ -25,7 +23,8 @@ void CBossBullet::Initialize()
     m_iAttack = 10;
 
  
-    
+          m_fDistance =0;
+          //prev_Degree = 0.f;
     __super::Update_Rect();
 }
 
@@ -36,7 +35,7 @@ int CBossBullet::Update()
     if (m_bDead == true)
         return OBJ_DEAD;
 
-    __super::Update_Rect();
+
 
 
    // {
@@ -45,27 +44,27 @@ int CBossBullet::Update()
    // }
    //
     Attack_Circular();
-   // Attack_Cos();
-    //switch (m_eDir)
-    //{
-    //case DIR_LEFT:
-    //    m_tInfo.fX -= m_fSpeed;
-    //    break;
-    //
-    //case DIR_RIGHT:
-    //    m_tInfo.fX += m_fSpeed;
-    //
-    //    break;
-    //
-    //case DIR_UP:
-    //    m_tInfo.fY -= m_fSpeed;
-    //    break;
-    //
-    //case DIR_DOWN:
-    //    m_tInfo.fY += m_fSpeed;
-    //    break;
-    //
-    //}
+
+    switch (m_bulletType)
+    {
+    case Cos:
+        Attack_Cos();
+        break;
+    case Circular:
+        Attack_Circular();
+        break;
+    case Guided:
+        Attack_Guided();
+        break;
+    }
+
+
+    //Attack_Circular();
+  // Attack_Cos();
+
+    __super::Update_Rect();
+
+
     return 0;
 }
 
@@ -111,28 +110,98 @@ void CBossBullet::Attack_Cos()
         // m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.X;
         // m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed);
         // m_tInfo.fX = m_tInfo.fX+  sin( m_tInfo.fY)* 10;
+ //   {
+ //       // 1) ï¿½ï¿½ï¿½ï¿½(rad)
+ //       const float rad = m_fAngle * (PI / 180.0f);
+ //
+ //       // 2) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½)
+ //       const float dirX = cosf(rad);
+ //       const float dirY = sinf(rad);
+ //
+ //       // 3) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ //       m_tInfo.fX += dirX * m_fSpeed;
+ //       m_tInfo.fY += dirY * m_fSpeed;
+ //
+ //       // 4) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+ //       const float sideX = -dirY;
+ //       const float sideY = dirX;
+ //
+ //       // 5) ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ (ï¿½ï¿½È­ï¿½ï¿½ Æ©ï¿½ï¿½)
+ //       m_fDistance += m_fSpeed;              // ï¿½ï¿½ï¿½ï¿½ ï¿½Å¸ï¿½
+ //       const float amplitude = 10.f;        // ï¿½ï¿½é¸² ï¿½ï¿½(px)
+ //       const float wavelength = 200.0f;       // ï¿½ï¿½ ï¿½Ö±ï¿½ ï¿½ï¿½ï¿½ï¿½(px)
+ //       const float k = (2.0f * PI) / wavelength;
+ //       const float offset = sinf(m_fDistance * k) * amplitude;
+ //
+ //       const float delta = offset - m_fPrevOffset;
+ //       m_fPrevOffset = offset;
+ //
+ //       // 6) ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ç¥
+ //       m_tInfo.fX += sideX * offset;
+ //       m_tInfo.fY += sideY * offset;
+ //   }
+ //
+ //   
+
+    m_tInfo.fY += m_fSpeed;
+
+}
+
+void CBossBullet::Attack_Guided()
+{
+    m_fSpeed = 1.f;
 
 
-        
-    
-        float rad = m_fAngle * (PI / 180.0f);
+    {
+        float tmp_Angle;
+        if (m_tTarget)
+        {
 
-        // ±âº» Á÷Áø
-        float dx = cos(rad) * m_fSpeed;
-        float dy = sin(rad) * m_fSpeed;
+            float x = m_tTarget->Get_Info().fX - m_tInfo.fX;
+            float y = m_tTarget->Get_Info().fY - m_tInfo.fY;
 
-        // ÁøÇà ´©Àû (¿¹: ÃÑ¾ËÀÌ ¾ó¸¶³ª ÀüÁøÇß´ÂÁö)
-        m_fDistance += m_fSpeed;   // ¸Å ÇÁ·¹ÀÓ ¼Óµµ¸¸Å­ ÀüÁø ´©Àû
+            tmp_Angle = acos(x / sqrtf(pow(x, 2) + pow(y, 2)));
 
-        // ÆÄÀå °è»ê
-        float frequency = 0.1f;           // ÆÄµµ ÁÖ±â
-        float amplitude = 10.0f;          // ÁÂ¿ì Èçµé¸² Å©±â
-        float offset = sin(m_fDistance * frequency) * amplitude;
+            if (y < 0)
+                tmp_Angle = 2 * PI - tmp_Angle;
 
-        // ÃÖÁ¾ ÀÌµ¿
-        m_tInfo.fX += dx + (-sin(rad)) * offset;
-        m_tInfo.fY += dy + (cos(rad)) * offset; 
-  
+            
+            float tmp_Degree = tmp_Angle * (180.f / PI);
+
+    if (m_dwTime + 1000 < GetTickCount())
+    {
+     //   prev_Degree = tmp_Degree;
+
+        m_dwTime = GetTickCount();
     }
+
+       //         if (tmp_Degree-prev_Degree > 10.f || tmp_Degree- prev_Degree < -10.f)
+       //         {
+       //
+       //
+       //
+       //             m_tInfo.fX += cos(prev_Degree * (PI/180)) * m_fSpeed;
+       //             m_tInfo.fY += sin(prev_Degree * (PI/180)) * m_fSpeed;
+       //         }
+       //         else
+       //         {
+       //
+       //             m_tInfo.fX += cos(tmp_Angle)*m_fSpeed;
+       //             m_tInfo.fY += sin(tmp_Angle)*m_fSpeed;
+       //
+       //         }
+       //     
+
+
+
+        }
+        else
+        {
+            m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.X;
+            m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.Y;
+        }
+    }
+
+
 }
 

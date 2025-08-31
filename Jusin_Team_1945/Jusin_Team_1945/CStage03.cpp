@@ -34,14 +34,16 @@ void CStage03::Update()
 {
 	CScene::Update();
 
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[BOSS]);
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+
 }
 
 
 void CStage03::LateUpdate()
 {
 	CScene::LateUpdate();
+
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[BOSS]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
 }
 
 void CStage03::Render(HDC hdc)
