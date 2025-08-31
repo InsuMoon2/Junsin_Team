@@ -46,17 +46,16 @@ void CStage01::Update()
     CScene::Update();
 
     
-
    
 }
 
 void CStage01::LateUpdate()
 {
-
     CScene::LateUpdate();
 
-    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
     CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER02]);
 
 
     for (auto iter : m_ObjList[MONSTER01])
@@ -76,8 +75,6 @@ void CStage01::LateUpdate()
         }
     }
 
-    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
-    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER02]);
 }
 
 void CStage01::Render(HDC hdc)

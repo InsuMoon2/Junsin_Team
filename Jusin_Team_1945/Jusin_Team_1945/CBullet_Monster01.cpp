@@ -3,6 +3,7 @@
 
 CBullet_Monster01::CBullet_Monster01()
 {
+
 }
 
 CBullet_Monster01::~CBullet_Monster01()
@@ -19,8 +20,7 @@ void CBullet_Monster01::Initialize()
 
 	m_iAttack = 10;
 
-
-
+	__super::Update_Rect();
 }
 
 int CBullet_Monster01::Update()
@@ -43,8 +43,8 @@ int CBullet_Monster01::Update()
 
 void CBullet_Monster01::Late_Update()
 {
-	if (0 >= m_tRect.left || WINCX <= m_tRect.right
-		|| 0 >= m_tRect.top || WINCY <= m_tRect.bottom)
+	if (0 >= m_tRect.left   || WINCX <= m_tRect.right ||
+		0 >= m_tRect.top	|| WINCY <= m_tRect.bottom)
 	{
 		m_bDead = true;
 	}
@@ -52,6 +52,7 @@ void CBullet_Monster01::Late_Update()
 
 void CBullet_Monster01::Render(HDC hDC)
 {
+	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 }
 
 void CBullet_Monster01::Release()

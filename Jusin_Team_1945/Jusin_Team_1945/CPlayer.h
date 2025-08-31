@@ -1,6 +1,7 @@
 #pragma once
 
 #include "CObj.h"
+#include <vector>
 
 class CPlayer : public CObj
 {
@@ -28,5 +29,7 @@ public:
 
 private:
 	void		Key_Input();
+
+	vector<POS> m_Barrel_Position;
 };
 

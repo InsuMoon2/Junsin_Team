@@ -40,8 +40,6 @@ int CMonster01::Update()
 
     __super::Update_Rect();
 
-    attackTime1 = Mgr1.GetCurrentTimeCount(2);
-    //attackTime2 = Mgr2.GetCurrentTimeCount(10);
 
     if (attackTime1 == 2)
     {

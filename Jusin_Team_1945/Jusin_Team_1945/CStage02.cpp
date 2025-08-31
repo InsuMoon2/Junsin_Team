@@ -3,6 +3,7 @@
 #include "AbstractFactory.h"
 #include "CCollisionMgr.h"
 #include "CBoss01.h"
+#include "CSceneMgr.h"
 
 // 보스 스테이지
 
@@ -35,7 +36,7 @@ void CStage02::LateUpdate()
 	CScene::LateUpdate();
 
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[BOSS]);
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
 }
 
 void CStage02::Render(HDC hdc)

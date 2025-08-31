@@ -1,5 +1,7 @@
 ﻿#pragma once
 
+#include <vector>
+
 #include "Define.h"
 
 class CObj
@@ -48,6 +50,7 @@ public:
 	virtual CObj* Create_Bullet(float angle);
 
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
+	virtual void Create_PlayerBullet(vector<POS>& vPos, float angle);
 
 	virtual CObj* Create_BossBullet(float angle, BT type);
 
@@ -82,17 +85,17 @@ protected:
 
 	list<CObj*>* m_pBullet;
 
-	// ������ : ���� + Ÿ�� ����
+	// 안은수 : 포신
 	float m_fAngle;
 	POS m_tBarrel_Pos;
 	int m_iBarrel_Len;
 
 	CObj* m_tTarget;
 
-	// Ȳ���� :
+	// 황유림 : 몬스터 ID
 	int m_iID;
 
-	// ���μ� : ���� ����
+	// 문인수 : 포신 개수
 	int m_iBarrel_Number;
 };
 
