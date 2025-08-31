@@ -56,10 +56,32 @@ CObj* CObj::Create_PlayerBullet(DIRECTION eDir)
 	return pBullet;
 }
 
+CObj* CObj::Create_Boss01Bullet(DIRECTION eDir)
+{
+	CObj* pBullet = AbstractFactory<CBoss01Bullet>::Create(m_tInfo.fX, m_tInfo.fY);
+
+	pBullet->Set_Owner(this);
+	pBullet->Set_Direction(eDir);
+
+	return pBullet;
+}
+
+CObj* CObj::Create_Boss01Bullet(float angle)
+{
+	CObj* bullet = AbstractFactory<CBoss01Bullet>::Create();
+
+	bullet->Set_Angle(angle);
+	bullet->Set_Owner(this);
+
+	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
+
+	return bullet;
+
+}
+
 CObj* CObj::Create_BossBullet(float angle, BT type)
 {
 	CBossBullet* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
-	CObj* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);
@@ -71,7 +93,7 @@ CObj* CObj::Create_BossBullet(float angle, BT type)
 
 }
 
-CObj* CObj::Create_MonsterBullet01(DIRECTION	eDir)
+CObj* CObj::Create_MonsterBullet01(DIRECTION eDir)
 {
 	CObj* pBullet = AbstractFactory<CBullet_Monster01>::Create();
 
@@ -81,7 +103,7 @@ CObj* CObj::Create_MonsterBullet01(DIRECTION	eDir)
 	return pBullet;
 }
 
-CObj* CObj::Create_MonsterBullet02(DIRECTION	eDir)
+CObj* CObj::Create_MonsterBullet02(DIRECTION eDir)
 {
 	CObj* pBullet = AbstractFactory<CBullet_Monster02>::Create();
 

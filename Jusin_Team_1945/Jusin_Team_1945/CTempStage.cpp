@@ -42,6 +42,10 @@ void CTempStage::LateUpdate()
 
 	// 공격 충돌처리
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
+
+	// 기존 플레이어 충돌처리
+	//CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+	// 새로운 플레이어 충돌처리
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
 
 	// 아이템 충돌 처리
