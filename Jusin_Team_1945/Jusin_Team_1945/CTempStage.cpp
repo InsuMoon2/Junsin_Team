@@ -53,11 +53,6 @@ void CTempStage::Render(HDC hdc)
 {
 	CScene::Render(hdc);
 
-	int time = CTimerMgr::GetCurrentTimeCount(10);
-
-	TCHAR szBuff[32] = L"";
-	swprintf_s(szBuff, L"Ω√∞£ √  : %d", time);
-	TextOut(hdc, 50, 150, szBuff, lstrlen(szBuff));
 }
 
 void CTempStage::Release()

@@ -59,6 +59,7 @@ void CScene::LateUpdate()
 
 void CScene::Render(HDC hdc)
 {
+
 	for (UINT i = 0; i < OBJ_END; ++i)
 	{
 		for (auto& iter : m_ObjList[i])

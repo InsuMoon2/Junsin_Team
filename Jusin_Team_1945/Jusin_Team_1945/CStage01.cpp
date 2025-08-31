@@ -10,7 +10,7 @@
 
 // 몬스터, 잡몹 스테이지
 
-CStage01::CStage01()
+CStage01::CStage01() //: m_bCreate(false)
 {
 
 }
@@ -24,9 +24,10 @@ void CStage01::Initialize()
 {
     CScene::Initialize();
 
+    m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)620, (float)200, 1));
     m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)360, (float)200, 2));
     m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)100, (float)200, 1));
-    m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create((float)620, (float)200, 1));
+   
 
     //for (auto& monster : m_ObjList[MONSTER01])
     //{
@@ -45,6 +46,14 @@ void CStage01::Update()
     CScene::Update();
 
     CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
+
+
+    if (size(m_ObjList[MONSTER01]) == 0) //|| m_bCreate = false)
+    {
+        m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)360, (float)-100));
+        //Set_Create();
+    }
 }
 
 void CStage01::LateUpdate()
@@ -56,7 +65,7 @@ void CStage01::Render(HDC hdc)
 {
     CScene::Render(hdc);
 
-    //Rectangle(hdc, 100, 100, 250, 250);
+   
 }
 
 void CStage01::Release()

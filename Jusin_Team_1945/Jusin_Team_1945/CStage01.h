@@ -18,9 +18,11 @@ public:
 	void Render(HDC hdc) override;
 	void Release() override;
 
-public:
+//public:
+//	void Set_Create() { m_bCreate = true; }
 
 private:
+	//BOOL m_bCreate;
 	//list<CObj*>	m_ObjList[OBJ_END];
 };
 
