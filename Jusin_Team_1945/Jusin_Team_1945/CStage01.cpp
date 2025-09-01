@@ -83,14 +83,10 @@ void CStage01::LateUpdate()
             }
         }
 
-<<<<<<< HEAD
-
     }
     CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
     CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER02]);
 
-=======
->>>>>>> Insu
 }
 
 void CStage01::Render(HDC hdc)

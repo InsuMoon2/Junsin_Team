@@ -23,11 +23,7 @@ void CBullet_Monster01::Initialize()
 
 	m_iAttack = 60;
 
-<<<<<<< HEAD
-
-=======
 	__super::Update_Rect();
->>>>>>> Insu
 }
 
 int CBullet_Monster01::Update()

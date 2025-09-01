@@ -40,16 +40,9 @@ int CMonster01::Update()
 
     __super::Update_Rect();
 
-<<<<<<< HEAD
-    attackTime1 = Mgr1.GetCurrentTimeCount(1);
-    
-    if (attackTime1 == 1)
-=======
-
     attackTime1 = Mgr1.GetCurrentTimeCount(2);
 
     if (attackTime1 == 2)
->>>>>>> Insu
     {
         m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
         
