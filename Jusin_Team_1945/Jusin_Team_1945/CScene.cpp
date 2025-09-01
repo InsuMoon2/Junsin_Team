@@ -76,7 +76,7 @@ void CScene::Render(HDC hdc)
 	// Bullet Ãâ·Â
 	{
 		TCHAR szBuff[32] = L"";
-		swprintf_s(szBuff, L"Bullets : %d", m_ObjList[BULLET].size());
+		swprintf_s(szBuff, L"Bullets : %zd", m_ObjList[BULLET].size());
 		TextOut(hdc, 50, 80, szBuff, lstrlen(szBuff));
 	}
 }

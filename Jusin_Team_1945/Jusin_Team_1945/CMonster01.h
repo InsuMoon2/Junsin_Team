@@ -21,12 +21,11 @@ public:
 
 	BOOL Get_DeadState() { return m_bDead; }
 private:
-
-
 	CTimerMgr Mgr1;
 	int attackTime1 = 0;
 
 	CTimerMgr Mgr2;
 	int attackTime2 = 0;
+
 
 };

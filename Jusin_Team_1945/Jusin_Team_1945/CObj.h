@@ -1,4 +1,6 @@
-#pragma once
+﻿#pragma once
+
+#include <vector>
 
 #include "Define.h"
 
@@ -30,6 +32,8 @@ public:
 	void			Set_Direction(DIRECTION eDir) { m_eDir = eDir; }
 	void			Set_PosinNumber(int _iNumber) { m_iBarrel_Number = _iNumber; }
 
+	void			Set_ShieldAngle(float fShieldAngle) { m_fShieldAngle = fShieldAngle; }
+
 	const RECT*		Get_Rect()	 { return &m_tRect; }
 	void			Set_Dead()	 { m_bDead = true; }
 	INFO			Get_Info()	 { return m_tInfo; }
@@ -43,30 +47,26 @@ public:
 
 public:
 
-	// ���μ� : Player-> Obj�� Set,Create Bullet �̵�
 	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
 	virtual CObj* Create_Bullet(DIRECTION eDir);
-
-	// create_Bullet �����ε�
 	virtual CObj* Create_Bullet(float angle);
-	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
 
-	//virtual CObj* Create_BossBullet(float angle);
+	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
+	virtual void  Create_PlayerBullet(vector<POS>& vPos, float angle);
+
 	virtual CObj* Create_BossBullet(float angle, BT type);
 
-
+	virtual CObj* Create_Boss01Bullet(float angle);
+	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
 	
 	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
-	virtual CObj* Create_MonsterBullet02(DIRECTION eDir);
+	virtual CObj* Create_MonsterBullet02(DIRECTION eDir,float angle);
 
-	// ���μ� : Monster�� �Ѿ��� �ڱ� �ڽŰ� �浹, �ڱ� �ڽ��� �����ϱ� ���ؼ� 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
 	CObj* Get_Owner()			   { return m_pOwner; }
 	
-	// ������: �Ѿ� �߻� ����
 	 void Set_Angle(float angle) { m_fAngle = angle; }
 	 void Set_Target(CObj* target) { m_tTarget = target; }
-	 // Ȳ����: ���� ID ����
 	 void Set_ID(int _ID) { m_iID = _ID; }
 
 protected:
@@ -86,18 +86,22 @@ protected:
 	CObj*		 m_pOwner;
 
 	list<CObj*>* m_pBullet;
+	list<CObj*>* m_pShield;
 
-	// ������ : ���� + Ÿ�� ����
+
+	// 안은수 : 포신
 	float m_fAngle;
 	POS m_tBarrel_Pos;
 	int m_iBarrel_Len;
 
 	CObj* m_tTarget;
 
-	// Ȳ���� :
+	float m_fDistance;
+	float m_fShieldAngle;
+
 	int m_iID;
 
-	// ���μ� : ���� ����
+
 	int m_iBarrel_Number;
 };
 

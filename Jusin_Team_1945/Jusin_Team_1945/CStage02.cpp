@@ -3,8 +3,9 @@
 #include "AbstractFactory.h"
 #include "CCollisionMgr.h"
 #include "CBoss01.h"
+#include "CSceneMgr.h"
 
-// º¸½º ½ºÅ×ÀÌÁö
+// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 CStage02::CStage02()
 {
@@ -22,6 +23,7 @@ void CStage02::Initialize()
 
 	m_ObjList[BOSS].push_back(AbstractFactory<CBoss01>::Create(300, 200));
 	dynamic_cast<CBoss01*>(m_ObjList[BOSS].front())->Set_Bullet(&m_ObjList[BULLET]);
+	dynamic_cast<CBoss01*>(m_ObjList[BOSS].front())->Set_Shield(&m_ObjList[SHIELD]);
 }
 
 void CStage02::Update()
@@ -35,7 +37,8 @@ void CStage02::LateUpdate()
 	CScene::LateUpdate();
 
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[BOSS]);
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[SHIELD]);
 }
 
 void CStage02::Render(HDC hdc)

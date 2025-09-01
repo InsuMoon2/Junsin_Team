@@ -142,6 +142,7 @@
     <ClInclude Include="CItem_AddBullet.h" />
     <ClInclude Include="CMonster02.h" />
     <ClInclude Include="CPlayerBullet.h" />
+    <ClInclude Include="CShield.h" />
     <ClInclude Include="CTempStage.h" />
     <ClInclude Include="CTimerMgr.h" />
     <ClInclude Include="Define.h" />
@@ -174,6 +175,7 @@
     <ClCompile Include="CItem_AddBullet.cpp" />
     <ClCompile Include="CMonster02.cpp" />
     <ClCompile Include="CPlayerBullet.cpp" />
+    <ClCompile Include="CShield.cpp" />
     <ClCompile Include="CTempStage.cpp" />
     <ClCompile Include="CTimerMgr.cpp" />
     <ClCompile Include="Jusin_Team_1945.cpp" />

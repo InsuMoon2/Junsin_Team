@@ -3,36 +3,70 @@
 
 class CTimerMgr
 {
+public:
+    CTimerMgr() { m_dwLastUpdateTime = GetTickCount(); }
+
 private:
-    DWORD m_dwLastUpdateTime = GetTickCount();
+    DWORD m_dwLastUpdateTime;
     int m_iTimeCount = 0;
+    bool m_bRoop = false;
 
 public:
-    int GetCurrentTimeCount(int seconds)
+    int GetCurrentTimeCount(int seconds, bool bRoop = true)
     {
         DWORD dwCurrentTime = GetTickCount();
         DWORD dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
 
-        // 잘 안돼서 그냥 강제로 종료
         if (m_iTimeCount == seconds)
         {
             m_iTimeCount++;
             m_iTimeCount = 0;
 
             m_dwLastUpdateTime = dwCurrentTime;
-
-            return m_iTimeCount;
         }
 
-        if (dwElapsedTime >= 1000)
+        else if (m_iTimeCount <= seconds)
+        {
+            if (dwElapsedTime >= 1000)
+            {
+                m_iTimeCount++;
+
+                if (m_iTimeCount > seconds)
+                {
+                    m_iTimeCount = 0;
+                }
+                m_dwLastUpdateTime = dwCurrentTime;
+            }
+        }
+
+        return m_iTimeCount;
+    }
+
+    float GetCurrentTimeCount(float seconds, bool bRoop = true)
+    {
+        DWORD dwCurrentTime = GetTickCount();
+        DWORD dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
+
+        if (m_iTimeCount == seconds)
         {
             m_iTimeCount++;
+            m_iTimeCount = 0;
 
-            if (m_iTimeCount > seconds)
-            {
-                m_iTimeCount = 0;
-            }
             m_dwLastUpdateTime = dwCurrentTime;
+        }
+
+        else if (m_iTimeCount <= seconds)
+        {
+            if (dwElapsedTime >= 1000)
+            {
+                m_iTimeCount++;
+
+                if (m_iTimeCount > seconds)
+                {
+                    m_iTimeCount = 0;
+                }
+                m_dwLastUpdateTime = dwCurrentTime;
+            }
         }
 
         return m_iTimeCount;

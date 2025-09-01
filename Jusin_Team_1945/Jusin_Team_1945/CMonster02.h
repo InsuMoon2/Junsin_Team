@@ -1,6 +1,7 @@
 #pragma once
 
 #include "CObj.h"
+#include "CTimerMgr.h"
 
 class CMonster02 : public CObj
 {
@@ -16,6 +17,12 @@ public:
 	void Release() override;
 
 private:
-	int	AttackTime = 0;
+
+	CTimerMgr Mgr1;
+	int attackTime1 = 0;
+
+	CTimerMgr Mgr2;
+	int attackTime2 = 0;
+
 };
 

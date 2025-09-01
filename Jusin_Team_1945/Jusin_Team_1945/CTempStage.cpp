@@ -26,7 +26,7 @@ void CTempStage::Initialize()
 	m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create(400, 200, 2));
 	dynamic_cast<CMonster01*>(m_ObjList[MONSTER01].front())->Set_Bullet(&m_ObjList[BULLET]);
 
-	m_ObjList[ITEM].push_back(AbstractFactory<CItem_AddBullet>::Create(200, 500));
+	m_ObjList[ITEM].push_back(AbstractFactory<CItem_AddBullet>::Create(200, 600));
 
 }
 
@@ -34,14 +34,17 @@ void CTempStage::Update()
 {
 	CScene::Update();
 
+	
 }
 
 void CTempStage::LateUpdate()
 {
 	CScene::LateUpdate();
 
-	// 공격 충돌처리
+	// 공격 충돌 처리
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
+
+	// 플레이어 충돌 처리
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
 
 	// 아이템 충돌 처리

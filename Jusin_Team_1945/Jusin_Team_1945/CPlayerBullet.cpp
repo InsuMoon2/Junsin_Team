@@ -30,35 +30,10 @@ int CPlayerBullet::Update()
 	if (m_bDead)
 		return OBJ_DEAD;
 
-	switch (m_eDir)
-	{
-	case DIR_LEFT:
-		m_tInfo.fX -= m_fSpeed;
-		break;
+	//m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed);// + m_tBarrel_Pos.X;
+	//m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed);// + m_tBarrel_Pos.Y;
 
-	case DIR_RIGHT:
-		m_tInfo.fX += m_fSpeed;
-
-		break;
-
-	case DIR_UP:
-		m_tInfo.fY -= m_fSpeed;
-		break;
-
-	case DIR_DOWN:
-		m_tInfo.fY += m_fSpeed;
-		break;
-
-	case DIR_LU:
-		m_tInfo.fX -= m_fSpeed;
-		m_tInfo.fY -= m_fSpeed;
-		break;
-
-	case DIR_RU:
-		m_tInfo.fX += m_fSpeed;
-		m_tInfo.fY -= m_fSpeed;
-		break;
-	}
+	m_tInfo.fY -= m_fSpeed;
 
 	__super::Update_Rect();
 
@@ -74,6 +49,8 @@ void CPlayerBullet::Late_Update()
 	{
 		m_bDead = true;
 	}
+
+	m_fAngle += m_fSpeed;
 }
 
 void CPlayerBullet::Render(HDC hDC)

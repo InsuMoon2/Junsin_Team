@@ -4,6 +4,7 @@
 #include "AbstractFactory.h"
 #include <cmath>
 
+#include "CPlayerBullet.h"
 #include "CSceneMgr.h"
 
 CPlayer::CPlayer()
@@ -22,18 +23,64 @@ void CPlayer::Initialize()
 	m_fSpeed = 10.f;
 	m_iHp = 100;
 
+    m_bDead = false;
+
     m_iBarrel_Len = 70;
-    
+    m_Barrel_Position.clear();
 }
 
 int CPlayer::Update()
 {
+    // 부활
+	if (m_bDead && (GetAsyncKeyState(VK_RETURN) & 0x0001))
+	{
+        CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
+        Initialize();
+	}
+
+    if (m_bDead)
+        return OBJ_DEAD;
+
     m_tBarrel_Pos.X = m_tInfo.fX;
     m_tBarrel_Pos.Y = m_tInfo.fY - m_iBarrel_Len;
 
 	__super::Update_Rect();
 
 	Key_Input();
+
+    // 포신 설정
+    float RectSize = m_tRect.right - m_tRect.left;
+    float movePosin = 0.f;
+
+
+    if (m_iBarrel_Number == 1)
+    {
+        m_Barrel_Position.push_back({ m_tBarrel_Pos });
+    }
+
+    else if (m_iBarrel_Number == 2)
+    {
+        m_Barrel_Position.clear();
+
+        movePosin = RectSize * 0.15f;
+        m_Barrel_Position.push_back({ m_tInfo.fX - movePosin, m_tBarrel_Pos.Y });
+        m_Barrel_Position.push_back({ m_tInfo.fX + movePosin, m_tBarrel_Pos.Y });
+    }
+
+    else if (m_iBarrel_Number == 3)
+    {
+        m_Barrel_Position.clear();
+        //    \ | / 이런 모양으로 
+    }
+
+    // 플레이어 사망
+    if (m_iHp <= 0)
+    {
+        m_iHp = 0;
+
+        Set_Dead();
+    }
+
 
 	return OBJ_NOEVENT;
 }
@@ -48,22 +95,51 @@ void CPlayer::Render(HDC hDC)
     // 충돌체
 	Rectangle(hDC, m_tRect.left + 20, m_tRect.top, m_tRect.right - 20, m_tRect.bottom);
 
+    // 비행기 그리기
+    float scale = 15.0f;
+    DrawPlane(hDC, m_tInfo.fX, m_tInfo.fY, scale);
+
+    // 포신 설정
+    float RectSize = m_tRect.right - m_tRect.left;
+    float movePosin = 0.f;
+
     if (m_iBarrel_Number == 1)
     {
         MoveToEx(hDC, m_tInfo.fX, m_tInfo.fY, nullptr);
         LineTo(hDC, m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
     }
-    
+
     else if (m_iBarrel_Number == 2)
     {
-        MoveToEx(hDC, m_tInfo.fX, m_tInfo.fY, nullptr);
-        LineTo(hDC, m_tBarrel_Pos.X, m_tBarrel_Pos.Y - 400);
+        movePosin = RectSize * 0.15f;
+
+        MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
+
+        MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
     }
 
-    // 비행기 그리기
-	float scale = 15.0f;
-	DrawPlane(hDC, m_tInfo.fX, m_tInfo.fY, scale);
+    else if (m_iBarrel_Number == 3)
+    {
+        //    \ | / 이런 모양으로
+        movePosin = RectSize * 0.15f;
 
+        // \ 
+        MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
+
+        // |
+        MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
+
+        // /
+    }
+
+    if (m_bDead == true)
+    {
+        CSceneMgr::GetInstance()->Render_GameOver(hDC, WINCX, WINCY);
+    }
 
     TCHAR szBuff[32] = L"";
     swprintf_s(szBuff, L"포신 개수 : %d", m_iBarrel_Number);
@@ -208,7 +284,16 @@ void CPlayer::Key_Input()
 
 	if (GetAsyncKeyState(VK_SPACE) & 0x0001)
 	{
-		m_pBullet->push_back(Create_PlayerBullet(DIR_UP));
+		if (m_iBarrel_Number == 1)
+		{
+            m_pBullet->push_back(Create_PlayerBullet(DIR_UP));
+		}
+
+		else
+		{
+            // 여러 포신 좌표에서 발사
+            Create_PlayerBullet(m_Barrel_Position, 1.0f);
+		}
 	}
 
     if (GetAsyncKeyState('G') & 0x0001)

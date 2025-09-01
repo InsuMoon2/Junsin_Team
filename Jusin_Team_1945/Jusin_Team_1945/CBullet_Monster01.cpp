@@ -3,6 +3,7 @@
 
 CBullet_Monster01::CBullet_Monster01()
 {
+
 }
 
 CBullet_Monster01::~CBullet_Monster01()
@@ -12,15 +13,17 @@ CBullet_Monster01::~CBullet_Monster01()
 
 void CBullet_Monster01::Initialize()
 {
-	m_tInfo.fCX = 5.f;
-	m_tInfo.fCY = 5.f;
+
+	__super::Update_Rect();
+
+	m_tInfo.fCX = 10.f;
+	m_tInfo.fCY = 10.f;
 
 	m_fSpeed = 5.f;
 
-	m_iAttack = 10;
+	m_iAttack = 60;
 
-
-
+	__super::Update_Rect();
 }
 
 int CBullet_Monster01::Update()
@@ -30,7 +33,9 @@ int CBullet_Monster01::Update()
 		return OBJ_DEAD;
 	}
 
+
 	if (m_eDir == DIR_DOWN)
+
 	{
 		m_tInfo.fY += m_fSpeed;
 	}
@@ -43,8 +48,8 @@ int CBullet_Monster01::Update()
 
 void CBullet_Monster01::Late_Update()
 {
-	if (0 >= m_tRect.left || WINCX <= m_tRect.right
-		|| 0 >= m_tRect.top || WINCY <= m_tRect.bottom)
+	if (0 >= m_tRect.left   || WINCX <= m_tRect.right ||
+		0 >= m_tRect.top	|| WINCY <= m_tRect.bottom)
 	{
 		m_bDead = true;
 	}
@@ -52,6 +57,7 @@ void CBullet_Monster01::Late_Update()
 
 void CBullet_Monster01::Render(HDC hDC)
 {
+	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 }
 
 void CBullet_Monster01::Release()

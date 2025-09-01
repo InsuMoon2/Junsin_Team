@@ -31,7 +31,10 @@ public:
 	void Release();
 
 public:
-	int ChangeScene(ESceneType _eSceneType);
+	int  ChangeScene(ESceneType _eSceneType);
+
+	void Render_StageClear();
+	void Render_GameOver(HDC hdc, int winCX, int winCY);
 
 private:
 	CScene*	   m_Scene;

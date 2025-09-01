@@ -35,6 +35,7 @@ void CSceneMgr::Update()
 
 	if (m_pPlayer)
 		m_pPlayer->Update();
+
 }
 
 void CSceneMgr::LateUpdate()
@@ -101,4 +102,42 @@ int CSceneMgr::ChangeScene(ESceneType _eSceneType)
 	newScene->Initialize();
 
 	return m_StageNumber;
+}
+
+void CSceneMgr::Render_StageClear()
+{
+
+}
+
+void CSceneMgr::Render_GameOver(HDC hdc, int winCX, int winCY)
+{
+	HFONT hFont = CreateFont(
+		80, 0,               
+		0, 0, FW_BOLD,       
+		FALSE, FALSE, FALSE,  
+		HANGEUL_CHARSET,      
+		OUT_DEFAULT_PRECIS,
+		CLIP_DEFAULT_PRECIS,
+		DEFAULT_QUALITY,
+		DEFAULT_PITCH | FF_SWISS,
+		L"Consolas"             
+	);
+
+	HFONT oldFont = (HFONT)SelectObject(hdc, hFont);
+
+	LPCWSTR text = L"[ GAME OVER ]";
+
+	SIZE size{};
+	GetTextExtentPoint32(hdc, text, lstrlen(text), &size);
+
+	int x = (winCX - size.cx) / 2;
+	int y = (winCY - size.cy) / 2;
+
+	SetBkMode(hdc, TRANSPARENT);
+
+	TextOut(hdc, x, y, text, lstrlen(text));
+
+	// 6. 리소스 원복/해제
+	SelectObject(hdc, oldFont);
+	DeleteObject(hFont);
 }

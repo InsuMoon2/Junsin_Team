@@ -1,6 +1,8 @@
 #pragma once
 
 #include "CScene.h"
+#include "CTimerMgr.h"
+
 
 class CTempStage : public CScene
 {
@@ -16,6 +18,10 @@ public:
 	void Release() override;
 
 private:
+	CTimerMgr Mgr1;
+	int attackTime1 = 0;
 
+	CTimerMgr Mgr2;
+	int attackTime2 = 0;
 };
 

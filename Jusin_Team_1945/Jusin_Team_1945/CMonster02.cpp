@@ -3,6 +3,7 @@
 #include "AbstractFactory.h"
 #include "CBullet.h"
 
+
 CMonster02::CMonster02()
 {
 }
@@ -37,9 +38,14 @@ int CMonster02::Update()
 
 	__super::Update_Rect();
 
+   	attackTime1 = Mgr1.GetCurrentTimeCount(2);
 
+	if(attackTime1==2)
+	{
+		m_pBullet->push_back(Create_MonsterBullet02(DIR_DOWN,m_fAngle));
+	}
 	return OBJ_NOEVENT;
-}
+ }
 
 void CMonster02::Late_Update()
 {
