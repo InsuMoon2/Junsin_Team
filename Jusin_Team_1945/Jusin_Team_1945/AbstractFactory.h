@@ -32,5 +32,19 @@ public:
 		pObj->Set_ID(ID);
 		return pObj;
 	}
+
+	static CObj* Create(CObj* target)
+	{
+		if (!target)
+			return nullptr;
+
+		CObj* pObj = new T;
+		pObj->Initialize();
+		pObj->Set_Target(target);
+
+
+		return pObj;
+	}
+
 };
 

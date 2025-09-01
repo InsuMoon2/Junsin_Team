@@ -32,6 +32,8 @@ public:
 	void			Set_Direction(DIRECTION eDir) { m_eDir = eDir; }
 	void			Set_PosinNumber(int _iNumber) { m_iBarrel_Number = _iNumber; }
 
+	void			Set_ShieldAngle(float fShieldAngle) { m_fShieldAngle = fShieldAngle; }
+
 	const RECT*		Get_Rect()	 { return &m_tRect; }
 	void			Set_Dead()	 { m_bDead = true; }
 	INFO			Get_Info()	 { return m_tInfo; }
@@ -82,6 +84,8 @@ protected:
 	CObj*		 m_pOwner;
 
 	list<CObj*>* m_pBullet;
+	list<CObj*>* m_pShield;
+
 
 	// 안은수 : 포신
 	float m_fAngle;
@@ -90,10 +94,12 @@ protected:
 
 	CObj* m_tTarget;
 
-	// 황유림 : 몬스터 ID
+	float m_fDistance;
+	float m_fShieldAngle;
+
 	int m_iID;
 
-	// 문인수 : 포신 개수
+
 	int m_iBarrel_Number;
 };
 

@@ -22,17 +22,23 @@ void CMainGame::Initialize()
 	m_hDC = GetDC(g_hWnd);
 
 	GetClientRect(g_hWnd, &m_rect);
+<<<<<<< HEAD
 
 	// 더블 버퍼링
 	{
 		m_hDC_back = CreateCompatibleDC(m_hDC);	
 		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom); 
+=======
+	{
+		m_hDC_back = CreateCompatibleDC(m_hDC);
+		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom);
+>>>>>>> origin/LEE
 		HBITMAP prev = (HBITMAP)::SelectObject(m_hDC_back, m_bmpBack);
 		DeleteObject(prev);
 	}
 	
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage02);
 
 }
 
@@ -48,7 +54,11 @@ void CMainGame::Late_Update()
 
 void CMainGame::Render()
 {
+<<<<<<< HEAD
 	// FPS 추가
+=======
+	// FPS
+>>>>>>> origin/LEE
 	++m_iFPS;
 
 	if (m_dwTime + 1000 < GetTickCount())
@@ -63,15 +73,21 @@ void CMainGame::Render()
 
 	// Scene Render
 	CSceneMgr::GetInstance()->Render(m_hDC_back);
+<<<<<<< HEAD
 
 	// 기존 Rectangle을 그려서 깜빡임 최소화 한걸 더블 버퍼링으로 바꿈
+=======
+>>>>>>> origin/LEE
 	{
 		//Rectangle(m_hDC, 0, 0, WINCX, WINCY);
 		BitBlt(m_hDC, 0, 0, m_rect.right, m_rect.bottom, m_hDC_back, 0, 0, SRCCOPY);
 		PatBlt(m_hDC_back, 0, 0, m_rect.right, m_rect.bottom, WHITENESS);
 	}
 	
+<<<<<<< HEAD
 	// Stage 출력
+=======
+>>>>>>> origin/LEE
 	{
 		int stage = CSceneMgr::GetInstance()->Get_Stage();
 		swprintf_s(m_szStage, L"Stage : %d", stage);

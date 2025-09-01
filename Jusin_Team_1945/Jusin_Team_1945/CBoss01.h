@@ -10,6 +10,12 @@ public:
     virtual ~CBoss01();
 
 public:
+    void Set_Shield(list<CObj*>* pShield)
+    {
+        m_pShield = pShield;
+    }
+
+public:
     void Initialize() override;
     int Update() override;
     void Late_Update() override;
@@ -27,6 +33,6 @@ private:
     int AttackTime = 0;
 
     CTimerMgr Mgr2;
-    int SkillTime = 0;
+    int ShieldTime = 0;
 };
 
