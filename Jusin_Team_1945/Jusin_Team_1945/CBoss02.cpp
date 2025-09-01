@@ -6,7 +6,7 @@
 #include "CBossBullet.h"
 
 
-CBoss02::CBoss02(): m_dwTime(GetTickCount()), m_fBarrel_Speed(0), m_bHp(false)
+CBoss02::CBoss02(): m_dwTime(GetTickCount()), m_fBarrel_Speed(0), m_bHp(false), m_dwTime01(GetTickCount())
 {
 	ZeroMemory(&m_tHpUi, sizeof(m_tHpUi));
 }
@@ -79,7 +79,7 @@ int CBoss02::Update()
 
 
 	
-	if (m_dwTime + 500 < GetTickCount())
+	if (m_dwTime + 1000 < GetTickCount())
 	{
 
 		if (m_iHp <= 50)
@@ -94,10 +94,17 @@ int CBoss02::Update()
 			m_dwTime = GetTickCount();
 	}
 
-	if (m_iHp <= 50)
+	if (m_dwTime01 + 5000 < GetTickCount())
 	{
-		Attack_Cos();
+
+		if (m_iHp <= 50)
+		{
+			Attack_Cos();
+		}
+		m_dwTime = GetTickCount();
 	}
+
+
 	__super::Update_Rect();
 	Key_Input();  
 

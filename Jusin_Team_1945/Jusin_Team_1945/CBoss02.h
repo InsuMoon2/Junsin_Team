@@ -28,6 +28,7 @@ public:
 
 
     DWORD		m_dwTime;
+    DWORD m_dwTime01;
 
     float m_fBarrel_Speed;
 

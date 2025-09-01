@@ -23,6 +23,7 @@ public:
     BT m_bulletType;
 
     DWORD m_dwTime;
+   
     
 
 
