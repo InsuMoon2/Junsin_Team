@@ -3,6 +3,7 @@
 
 CBullet_Monster01::CBullet_Monster01()
 {
+
 }
 
 CBullet_Monster01::~CBullet_Monster01()
@@ -22,7 +23,11 @@ void CBullet_Monster01::Initialize()
 
 	m_iAttack = 10;
 
+<<<<<<< HEAD
 
+=======
+	__super::Update_Rect();
+>>>>>>> Insu
 }
 
 int CBullet_Monster01::Update()
@@ -47,8 +52,8 @@ int CBullet_Monster01::Update()
 
 void CBullet_Monster01::Late_Update()
 {
-	if (0 >= m_tRect.left || WINCX <= m_tRect.right
-		|| 0 >= m_tRect.top || WINCY <= m_tRect.bottom)
+	if (0 >= m_tRect.left   || WINCX <= m_tRect.right ||
+		0 >= m_tRect.top	|| WINCY <= m_tRect.bottom)
 	{
 		m_bDead = true;
 	}

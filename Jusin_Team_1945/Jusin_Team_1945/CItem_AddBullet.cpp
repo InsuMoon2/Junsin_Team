@@ -59,7 +59,5 @@ void CItem_AddBullet::Use_Item(CObj* _pObj)
 
 	// 임시로 스피드 증가
 	_pObj->Set_Speed(_pObj->Get_Speed() * 2);
-
-	// 포신 개수 늘리기
 	_pObj->Set_PosinNumber(_pObj->Get_PosinNumber() + 1);
 }

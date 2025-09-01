@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  CBoss01.cpp
   CBoss01Bullet.cpp
 C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
@@ -183,3 +184,7 @@ C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\
   (소스 파일 '/Mouse.cpp'을(를) 컴파일하는 중)
   
   코드를 생성하고 있습니다...
+=======
+﻿  CPlayerBullet.cpp
+  Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
+>>>>>>> Insu

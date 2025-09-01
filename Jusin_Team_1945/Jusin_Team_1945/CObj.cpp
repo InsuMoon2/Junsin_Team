@@ -56,6 +56,22 @@ CObj* CObj::Create_PlayerBullet(DIRECTION eDir)
 	return pBullet;
 }
 
+void CObj::Create_PlayerBullet(vector<POS>& vPos, float angle)
+{
+	if (!m_pBullet) return;
+
+	for (auto& pos : vPos)
+	{
+		CObj* pBullet = AbstractFactory<CPlayerBullet>::Create(pos.X, pos.Y);
+		//pBullet->Set_Direction(eDir);
+		pBullet->Set_Angle(angle);
+		pBullet->Set_Owner(this);
+
+		m_pBullet->push_back(pBullet);
+	}
+}
+
+
 CObj* CObj::Create_Boss01Bullet(DIRECTION eDir)
 {
 	CObj* pBullet = AbstractFactory<CBoss01Bullet>::Create(m_tInfo.fX, m_tInfo.fY);
