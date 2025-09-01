@@ -120,7 +120,7 @@ CObj* CObj::Create_MonsterBullet01(DIRECTION eDir)
 
 CObj* CObj::Create_MonsterBullet02(DIRECTION eDir, float angle)
 {
-	CObj* pBullet = AbstractFactory<CBullet_Monster02>::Create(m_tInfo.fX, m_tInfo.fY);
+	CObj* pBullet = AbstractFactory<CBullet_Monster02>::Create(m_tInfo.fX, m_tInfo.fY+70);
 
 	pBullet->Set_Direction(eDir);
 	pBullet->Set_Owner(this);

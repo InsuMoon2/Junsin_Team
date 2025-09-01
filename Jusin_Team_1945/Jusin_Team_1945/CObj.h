@@ -100,8 +100,10 @@ protected:
 	float m_fShieldAngle;
 
 	int m_iID;
-
-
+	//황유림 ScrewBullet용 센터
+	POINT m_tCenter;
+	float m_fRotAngle;
+	float m_fRotSpeed;
 	int m_iBarrel_Number;
 };
 

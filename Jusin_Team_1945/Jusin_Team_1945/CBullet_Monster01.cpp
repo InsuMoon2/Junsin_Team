@@ -21,7 +21,7 @@ void CBullet_Monster01::Initialize()
 
 	m_fSpeed = 5.f;
 
-	m_iAttack = 60;
+	m_iAttack = 5;
 
 	__super::Update_Rect();
 }
@@ -37,6 +37,7 @@ int CBullet_Monster01::Update()
 	if (m_eDir == DIR_DOWN)
 
 	{
+		//기본 공격
 		m_tInfo.fY += m_fSpeed;
 	}
 

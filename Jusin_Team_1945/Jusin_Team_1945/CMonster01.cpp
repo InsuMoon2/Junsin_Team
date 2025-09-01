@@ -33,20 +33,40 @@ int CMonster01::Update()
     {
         m_tInfo.fY += m_fSpeed;
     }
+
     else
     {
         m_tInfo.fX += m_fSpeed;
     }
 
+
     __super::Update_Rect();
 
-    attackTime1 = Mgr1.GetCurrentTimeCount(2);
+    
+    attackTime1 = Mgr1.GetCurrentTimeCount(1);
 
-    if (attackTime1 == 2)
+    if (attackTime1 == 1)
     {
         m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
         
+        dTime = GetTickCount();
+
+
+        m_bShotDone = false;
     }
+
+
+    if (m_bShotDone == false && dTime + 250 <= GetTickCount())
+    {
+           m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
+
+           m_bShotDone = true;
+
+    }
+
+   
+
+
 
 
     return OBJ_NOEVENT;
@@ -54,6 +74,7 @@ int CMonster01::Update()
 
 void CMonster01::Late_Update()
 {
+
     if (m_iID == 1)
     {
         if (170 >= m_tRect.top || 550 <= m_tRect.bottom)
@@ -74,7 +95,6 @@ void CMonster01::Late_Update()
         m_bDead = true;
 
     }
-
 
 }
 

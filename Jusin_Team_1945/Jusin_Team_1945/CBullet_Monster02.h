@@ -16,6 +16,9 @@ public:
     void Render(HDC hDC) override;
     void Release() override;
 
+private:
+    BOOL m_bStart = true;
+
 
 };
 

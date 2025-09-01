@@ -2,6 +2,7 @@
 #include "CMonster02.h"
 #include "AbstractFactory.h"
 #include "CBullet.h"
+#include "CSceneMgr.h"
 
 
 CMonster02::CMonster02()
@@ -15,13 +16,13 @@ CMonster02::~CMonster02()
 
 void CMonster02::Initialize()
 {
-	m_tInfo.fCX = 60.f;
-	m_tInfo.fCY = 60.f;
+	m_tInfo.fCX = 100.f;
+	m_tInfo.fCY = 100.f;
 	//m_tInfo.fX = 300;
 	//m_tInfo.fY = 300;
 	m_fSpeed = 0.7f;
 
-	m_iHp = 100;
+	m_iHp = 1;
 }
 
 int CMonster02::Update()
@@ -42,7 +43,7 @@ int CMonster02::Update()
 
 	if(attackTime1==2)
 	{
-		m_pBullet->push_back(Create_MonsterBullet02(DIR_DOWN,m_fAngle));
+		m_pBullet->push_back(Create_MonsterBullet02(DIR_DOWN, -90.f));
 	}
 	return OBJ_NOEVENT;
  }
@@ -50,11 +51,15 @@ int CMonster02::Update()
 void CMonster02::Late_Update()
 {
 
-	if (m_iHp <= 0)
+	if (m_iHp <= 0 )
 	{
 		m_bDead = true;
 	}
 
+	if (m_tInfo.fY >= WINCY - (m_tInfo.fCY) * 0.5f)
+	{
+		CSceneMgr::GetInstance()->Get_Player()->Set_Dead();
+	}
 
 }
 
@@ -69,6 +74,8 @@ void CMonster02::Render(HDC hDC)
 
 
 }
+
+
 
 void CMonster02::Release()
 {
