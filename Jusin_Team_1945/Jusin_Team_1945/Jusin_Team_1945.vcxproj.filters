@@ -134,13 +134,22 @@
     <ClInclude Include="CPlayerBullet.h">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClInclude>
+<<<<<<< HEAD
+=======
     <ClInclude Include="CBoss01Bullet.h" />
+>>>>>>> Insu
     <ClInclude Include="CBullet_Monster02.h">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClInclude>
     <ClInclude Include="CBullet_Monster01.h">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClInclude>
+<<<<<<< HEAD
+    <ClInclude Include="CBoss01Bullet.h">
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+    </ClInclude>
+=======
+>>>>>>> Insu
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Jusin_Team_1945.cpp">
@@ -212,15 +221,24 @@
     <ClCompile Include="CPlayerBullet.cpp">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClCompile>
+<<<<<<< HEAD
+    <ClCompile Include="CBoss01Bullet.cpp">
+      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+    </ClCompile>
+=======
+>>>>>>> Insu
     <ClCompile Include="CBullet_Monster02.cpp">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClCompile>
     <ClCompile Include="CBullet_Monster01.cpp">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClCompile>
+<<<<<<< HEAD
+=======
     <ClCompile Include="CBoss01Bullet.cpp">
       <Filter>소스 파일\01. Object\02. Bullet</Filter>
     </ClCompile>
+>>>>>>> Insu
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Jusin_Team_1945.rc">

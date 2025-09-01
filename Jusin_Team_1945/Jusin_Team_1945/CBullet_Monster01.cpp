@@ -13,14 +13,21 @@ CBullet_Monster01::~CBullet_Monster01()
 
 void CBullet_Monster01::Initialize()
 {
-	m_tInfo.fCX = 5.f;
-	m_tInfo.fCY = 5.f;
+
+	__super::Update_Rect();
+
+	m_tInfo.fCX = 10.f;
+	m_tInfo.fCY = 10.f;
 
 	m_fSpeed = 5.f;
 
 	m_iAttack = 60;
 
+<<<<<<< HEAD
+
+=======
 	__super::Update_Rect();
+>>>>>>> Insu
 }
 
 int CBullet_Monster01::Update()
@@ -30,7 +37,9 @@ int CBullet_Monster01::Update()
 		return OBJ_DEAD;
 	}
 
+
 	if (m_eDir == DIR_DOWN)
+
 	{
 		m_tInfo.fY += m_fSpeed;
 	}

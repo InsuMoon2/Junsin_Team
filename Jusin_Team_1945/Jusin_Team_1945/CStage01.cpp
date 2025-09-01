@@ -34,11 +34,14 @@ void CStage01::Initialize()
     //    monster->Set_Bullet(&m_ObjList[BULLET]);
     //}
 
-    for (auto iter = m_ObjList[MONSTER01].begin(); iter != m_ObjList[MONSTER01].end(); iter++)
-    {
-         dynamic_cast<CMonster01*>(*iter)->Set_Bullet(&m_ObjList[BULLET]);
-    }
+        for (auto iter = m_ObjList[MONSTER01].begin(); iter != m_ObjList[MONSTER01].end(); iter++)
+        {
+            dynamic_cast<CMonster01*>(*iter)->Set_Bullet(&m_ObjList[BULLET]);
+        }
     
+    
+
+
 }
 
 void CStage01::Update()
@@ -66,15 +69,28 @@ void CStage01::LateUpdate()
 
             if (m_iKillCount == 3)
             {
-                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)100, (float)-30,1));
-                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)270, (float)-90,2));
-                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)490, (float)-90,2));
-                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)660, (float)-30,1));
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)100, (float)-30, 1));
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)270, (float)-90, 2));
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)490, (float)-90, 2));
+                m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create((float)660, (float)-30, 1));
+
+                for (auto iter = m_ObjList[MONSTER02].begin(); iter != m_ObjList[MONSTER02].end(); iter++)
+                {
+                    dynamic_cast<CMonster02*>(*iter)->Set_Bullet(&m_ObjList[BULLET]);
+                }
+
+
             }
-
         }
-    }
 
+<<<<<<< HEAD
+
+    }
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
+    CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER02]);
+
+=======
+>>>>>>> Insu
 }
 
 void CStage01::Render(HDC hdc)

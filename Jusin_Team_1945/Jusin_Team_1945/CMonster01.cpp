@@ -40,15 +40,21 @@ int CMonster01::Update()
 
     __super::Update_Rect();
 
+<<<<<<< HEAD
+    attackTime1 = Mgr1.GetCurrentTimeCount(1);
+    
+    if (attackTime1 == 1)
+=======
 
     attackTime1 = Mgr1.GetCurrentTimeCount(2);
 
     if (attackTime1 == 2)
+>>>>>>> Insu
     {
         m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
+        
     }
 
-    
 
     return OBJ_NOEVENT;
 }
@@ -89,7 +95,7 @@ void CMonster01::Render(HDC hDC)
 
     //TCHAR szBuff2[32] = L"";
     //swprintf_s(szBuff2, L"Time : %d", attackTime2);
-    //TextOut(hDC, 50, 140, szBuff2, lstrlen(szBuff2));
+    //TextOut(hDC, 50, 140, szBuff2, ls trlen(szBuff2));
 }
 
 void CMonster01::Release()
