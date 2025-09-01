@@ -38,9 +38,9 @@ int CBullet_Monster02::Update()
 		m_tInfo.fY += m_fSpeed;
 	}
 
-	m_tInfo.fX = m_pOwner->Get_Info().fX + m_iBarrel_Len * cosf(m_fAngle);
-	m_tInfo.fY = m_pOwner->Get_Info().fY - m_iBarrel_Len * sinf(m_fAngle);
-
+	//m_tInfo.fX = m_pOwner->Get_Info().fX + m_iBarrel_Len * cosf(m_fAngle);
+	//m_tInfo.fY = m_pOwner->Get_Info().fY - m_iBarrel_Len * sinf(m_fAngle);
+	
 	return 0;
 }
 
