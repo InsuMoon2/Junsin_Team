@@ -1,14 +1,13 @@
-<<<<<<< HEAD
 ﻿  CBoss01.cpp
-  CBoss01Bullet.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss01.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
   
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+  CBoss01Bullet.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss01Bullet.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CBoss01Bullet.cpp'을(를) 컴파일하는 중)
   
   CBoss02.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
 C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(98,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
@@ -33,7 +32,7 @@ C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\
   (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
   
   CBossBullet.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBossBullet.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CBossBullet.cpp'을(를) 컴파일하는 중)
   
 C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBossBullet.cpp(95,44): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
@@ -55,136 +54,159 @@ C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\
   (소스 파일 '/CBossBullet.cpp'을(를) 컴파일하는 중)
   
   CBullet.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CBullet.cpp'을(를) 컴파일하는 중)
   
   CBullet_Monster01.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet_Monster01.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CBullet_Monster01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet_Monster01.cpp(26,1): error C2059: 구문 오류: '<<'
+  (소스 파일 '/CBullet_Monster01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet_Monster01.cpp(30,1): error C2059: 구문 오류: '>>'
   (소스 파일 '/CBullet_Monster01.cpp'을(를) 컴파일하는 중)
   
   CBullet_Monster02.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet_Monster02.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CBullet_Monster02.cpp'을(를) 컴파일하는 중)
   
   CCollisionMgr.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CCollisionMgr.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CCollisionMgr.cpp'을(를) 컴파일하는 중)
   
   CItem.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CItem.cpp'을(를) 컴파일하는 중)
   
   CItem_AddBullet.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem_AddBullet.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CItem_AddBullet.cpp'을(를) 컴파일하는 중)
   
-  CMainGame.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMainGame.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CMainGame.cpp'을(를) 컴파일하는 중)
-  
-  CMonster01.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CMonster01.cpp'을(를) 컴파일하는 중)
-  
   CMonster02.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMonster02.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CMonster02.cpp'을(를) 컴파일하는 중)
   
-  CObj.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CObj.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.cpp(106,13): error C2511: 'CObj *CObj::Create_MonsterBullet02(DIRECTION,float)': 오버로드된 멤버 함수가 'CObj'에 없습니다.
-  (소스 파일 '/CObj.cpp'을(를) 컴파일하는 중)
-      C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(5,7):
-      'CObj' 선언을 참조하십시오.
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.cpp(108,54): error C2661: 'AbstractFactory<CBullet_Monster02>::Create': 오버로드된 함수에서 1개의 인수를 사용하지 않습니다.
-  (소스 파일 '/CObj.cpp'을(를) 컴파일하는 중)
-      C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.cpp(108,54):
-      인수 목록 '()'을(를) 일치시키는 동안
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.cpp(111,21): error C2671: 'CObj::Create_MonsterBullet02': 정적 멤버 함수에 'this' 포인터가 없습니다.
-  (소스 파일 '/CObj.cpp'을(를) 컴파일하는 중)
-  
-  CPlayer.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(53,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(53,30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(54,51): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(54,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(59,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(59,30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(60,54): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(60,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
-  
   CPlayerBullet.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayerBullet.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CPlayerBullet.cpp'을(를) 컴파일하는 중)
   
-  CScene.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CScene.cpp'을(를) 컴파일하는 중)
-  
-  CSceneMgr.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CSceneMgr.cpp'을(를) 컴파일하는 중)
-  
-  CStage01.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CStage01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage01.cpp(67,65): warning C4805: '==': 연산에 'BOOL' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
-  (소스 파일 '/CStage01.cpp'을(를) 컴파일하는 중)
-  
-  CStage02.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CStage02.cpp'을(를) 컴파일하는 중)
-  
-  코드를 생성하고 있습니다...
-  컴파일하고 있습니다...
-  CStage03.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/CStage03.cpp'을(를) 컴파일하는 중)
-  
   CTempStage.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTempStage.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/CTempStage.cpp'을(를) 컴파일하는 중)
   
+  CTimerMgr.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CTimerMgr.cpp'을(를) 컴파일하는 중)
+  
   Jusin_Team_1945.cpp
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Jusin_Team_1945.cpp(4,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/Jusin_Team_1945.cpp'을(를) 컴파일하는 중)
   
 C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Jusin_Team_1945.cpp(67,24): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/Jusin_Team_1945.cpp'을(를) 컴파일하는 중)
   
+  CMainGame.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMainGame.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMainGame.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CMainGame.cpp'을(를) 컴파일하는 중)
+  
+  CMonster01.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMonster01.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CMonster01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMonster01.cpp(43,1): error C2059: 구문 오류: '<<'
+  (소스 파일 '/CMonster01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMonster01.cpp(47,1): error C2059: 구문 오류: '=='
+  (소스 파일 '/CMonster01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMonster01.cpp(51,5): error C2143: 구문 오류: ';'이(가) '{' 앞에 없습니다.
+  (소스 파일 '/CMonster01.cpp'을(를) 컴파일하는 중)
+  
   Mouse.cpp
 C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\Mouse.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
   (소스 파일 '/Mouse.cpp'을(를) 컴파일하는 중)
   
-C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.h(58,55): error C2059: 구문 오류: ','
-  (소스 파일 '/Mouse.cpp'을(를) 컴파일하는 중)
+  CObj.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CObj.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CObj.cpp'을(를) 컴파일하는 중)
+  
+  CPlayer.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(43,20): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(94,20): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(99,42): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(99,30): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(100,51): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(100,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(107,54): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(107,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(108,58): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(108,32): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(111,54): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(111,34): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(112,58): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(112,32): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CPlayer.cpp'을(를) 컴파일하는 중)
   
   코드를 생성하고 있습니다...
-=======
-﻿  CPlayerBullet.cpp
-  Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
->>>>>>> Insu
+  컴파일하고 있습니다...
+  CScene.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CScene.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CScene.cpp'을(를) 컴파일하는 중)
+  
+  CSceneMgr.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CSceneMgr.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CSceneMgr.cpp'을(를) 컴파일하는 중)
+  
+  CStage01.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage01.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CStage01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage01.cpp(66,65): warning C4805: '==': 연산에 'BOOL' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+  (소스 파일 '/CStage01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage01.cpp(86,1): error C2059: 구문 오류: '<<'
+  (소스 파일 '/CStage01.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage01.cpp(92,1): error C2059: 구문 오류: '=='
+  (소스 파일 '/CStage01.cpp'을(를) 컴파일하는 중)
+  
+  CStage02.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage02.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CStage02.cpp'을(를) 컴파일하는 중)
+  
+  CStage03.cpp
+C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage03.cpp(1,10): error C2859: C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\vc143.idb은(는) 이 미리 컴파일된 헤더가 만들어졌을 때 사용된 idb 파일이 아닙니다. 미리 컴파일된 헤더를 다시 만드십시오.
+  (소스 파일 '/CStage03.cpp'을(를) 컴파일하는 중)
+  
+  코드를 생성하고 있습니다...
