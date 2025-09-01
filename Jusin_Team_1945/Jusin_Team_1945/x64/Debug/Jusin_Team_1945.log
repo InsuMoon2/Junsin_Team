@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿  CItem_AddBullet.cpp
   CSceneMgr.cpp
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(72,16): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
@@ -196,3 +197,28 @@ C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\
 >>>>>>> origin/Yurim
   Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
 >>>>>>> Insu
+=======
+﻿  CBoss02.cpp
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(127,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(127,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(128,44): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(128,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(206,40): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(206,19): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(211,24): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
+  
+  Jusin_Team_1945.vcxproj -> C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
+>>>>>>> origin/aneunsoo

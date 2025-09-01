@@ -15,17 +15,18 @@ CBossBullet::~CBossBullet()
 void CBossBullet::Initialize()
 {
 
-	m_tInfo.fCX = 30.f;
-	m_tInfo.fCY = 30.f;
+    m_tInfo.fCX = 20.f;
+    m_tInfo.fCY = 20.f;
+    
+    m_fSpeed = 3.f;
+    
+    m_iAttack = 10;
 
-	m_fSpeed = 5.f;
-
-	m_iAttack = 10;
-
-
-	m_fDistance = 0;
-	//prev_Degree = 0.f;
-	__super::Update_Rect();
+    m_fAngle = 90;
+ 
+          m_fDistance =0;
+          //prev_Degree = 0.f;
+    __super::Update_Rect();
 }
 
 
@@ -35,15 +36,11 @@ int CBossBullet::Update()
 	if (m_bDead == true)
 		return OBJ_DEAD;
 
-
-
-
-	// {
-	//     m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed)+ m_tBarrel_Pos.X;
-	//     m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed)+ m_tBarrel_Pos.Y;
-	// }
-	//
-	Attack_Circular();
+   // {
+   //     m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed)+ m_tBarrel_Pos.X;
+   //     m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed)+ m_tBarrel_Pos.Y;
+   // }
+   //
 
 	switch (m_bulletType)
 	{
@@ -98,8 +95,7 @@ void CBossBullet::Attack_Circular()
 
 void CBossBullet::Attack_Cos()
 {
-
-
+   m_tInfo.fY += m_fSpeed;
 }
 
 void CBossBullet::Attack_Guided()
@@ -120,42 +116,10 @@ void CBossBullet::Attack_Guided()
 			if (y < 0)
 				tmp_Angle = 2 * PI - tmp_Angle;
 
-
-			float tmp_Degree = tmp_Angle * (180.f / PI);
-
-			if (m_dwTime + 1000 < GetTickCount())
-			{
-				//   prev_Degree = tmp_Degree;
-
-				m_dwTime = GetTickCount();
-			}
-
-			//         if (tmp_Degree-prev_Degree > 10.f || tmp_Degree- prev_Degree < -10.f)
-			//         {
-			//
-			//
-			//
-			//             m_tInfo.fX += cos(prev_Degree * (PI/180)) * m_fSpeed;
-			//             m_tInfo.fY += sin(prev_Degree * (PI/180)) * m_fSpeed;
-			//         }
-			//         else
-			//         {
-			//
-			//             m_tInfo.fX += cos(tmp_Angle)*m_fSpeed;
-			//             m_tInfo.fY += sin(tmp_Angle)*m_fSpeed;
-			//
-			//         }
-			//     
-
-
-
-		}
-		else
-		{
-			m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.X;
-			m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed) + m_tBarrel_Pos.Y;
-		}
-	}
+            m_tInfo.fX += cos(tmp_Angle)* m_fSpeed;
+            m_tInfo.fY += sin(tmp_Angle)* m_fSpeed;
+        }
+    }
 
 
 }

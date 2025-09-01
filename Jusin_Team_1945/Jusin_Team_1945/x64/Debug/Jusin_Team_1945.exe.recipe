@@ -2,7 +2,11 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+<<<<<<< HEAD
       <FullPath>C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe</FullPath>
+=======
+      <FullPath>C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe</FullPath>
+>>>>>>> origin/aneunsoo
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

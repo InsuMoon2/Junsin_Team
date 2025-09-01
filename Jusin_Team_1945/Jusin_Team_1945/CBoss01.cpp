@@ -42,13 +42,13 @@ int CBoss01::Update()
 
 	if (AttackTime == 5)
 	{
-		m_pBullet->push_back(Create_Boss01Bullet(DIR_DOWN));
+		m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
 
 	}
 
 	if (SkillTime == 8)
 	{
-		m_pBullet->push_back(Create_Boss01Bullet(DIR_DOWN));
+		m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
 
 	}
 

@@ -1,5 +1,6 @@
 #pragma once
 #include "CObj.h"
+#include "CTimerMgr.h"
 class CBoss02 :
     public CObj
 {
@@ -34,6 +35,11 @@ public:
     void Attack_Cos();
     void Attack_Guided();
 
+
+    CTimerMgr Mgr1;
+    int attackTime1 = 0;
+
+    bool bCheck = true;
 
 };
 
