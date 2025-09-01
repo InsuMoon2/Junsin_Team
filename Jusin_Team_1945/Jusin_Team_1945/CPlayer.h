@@ -27,6 +27,7 @@ public:
 
 	void DrawPlane(HDC hdc, float cx, float cy, float s, COLORREF body = RGB(60, 90, 200),COLORREF wing = RGB(50, 60, 80), COLORREF stroke = RGB(20, 20, 30));
 
+
 private:
 	void		Key_Input();
 

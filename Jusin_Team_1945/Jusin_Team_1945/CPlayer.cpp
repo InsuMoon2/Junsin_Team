@@ -23,12 +23,21 @@ void CPlayer::Initialize()
 	m_fSpeed = 10.f;
 	m_iHp = 100;
 
+    m_bDead = false;
+
     m_iBarrel_Len = 70;
-    
+    m_Barrel_Position.clear();
 }
 
 int CPlayer::Update()
 {
+    // 부활
+	if (m_bDead && (GetAsyncKeyState(VK_RETURN) & 0x0001))
+	{
+        CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
+        Initialize();
+	}
+
     if (m_bDead)
         return OBJ_DEAD;
 
@@ -107,14 +116,29 @@ void CPlayer::Render(HDC hDC)
         MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
         LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
 
-
         MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
         LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
     }
 
     else if (m_iBarrel_Number == 3)
     {
-        //    \ | / 이런 모양으로 
+        //    \ | / 이런 모양으로
+        movePosin = RectSize * 0.15f;
+
+        // \ 
+        MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
+
+        // |
+        MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
+
+        // /
+    }
+
+    if (m_bDead == true)
+    {
+        CSceneMgr::GetInstance()->Render_GameOver(hDC, WINCX, WINCY);
     }
 
     TCHAR szBuff[32] = L"";

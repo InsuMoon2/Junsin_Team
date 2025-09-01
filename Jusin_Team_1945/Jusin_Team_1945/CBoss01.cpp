@@ -3,6 +3,7 @@
 #include "CObj.h"
 #include "CTimerMgr.h"
 #include "AbstractFactory.h"
+#include "CShield.h"
 
 CBoss01::CBoss01()
 {
@@ -37,19 +38,23 @@ int CBoss01::Update()
 
 	__super::Update_Rect();
 
-	AttackTime = Mgr1.GetCurrentTimeCount(5);
-	SkillTime = Mgr2.GetCurrentTimeCount(8);
+	AttackTime = Mgr1.GetCurrentTimeCount(1);
+	ShieldTime = Mgr2.GetCurrentTimeCount(8);
 
-	if (AttackTime == 5)
+	if (AttackTime == 1)
 	{
-		m_pBullet->push_back(Create_Boss01Bullet(DIR_DOWN));
+		m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
 
 	}
 
-	if (SkillTime == 8)
+	if (ShieldTime == 1)    
 	{
-		m_pBullet->push_back(Create_Boss01Bullet(DIR_DOWN));
-
+		m_pShield->push_back(AbstractFactory<CShield>::Create(this));
+		
+		for (auto iter = m_pShield->begin(); iter != m_pShield->end(); iter++)
+		{
+			(*iter)->Set_Owner(this);
+		}
 	}
 
 	return OBJ_NOEVENT;
@@ -96,7 +101,7 @@ void CBoss01::Render(HDC hDC)
 	TextOut(hDC, 50, 160, szBuff, lstrlen(szBuff));
 
 	TCHAR szBuff2[32] = L"";
-	swprintf_s(szBuff2, L"SkillTime : %d", SkillTime);
+	swprintf_s(szBuff2, L"ShieldTime : %d", ShieldTime);
 	TextOut(hDC, 50, 200, szBuff2, lstrlen(szBuff2));
 }
 

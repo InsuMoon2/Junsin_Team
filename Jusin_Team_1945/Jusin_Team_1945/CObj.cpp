@@ -11,7 +11,7 @@
 
 CObj::CObj()
 	: m_fSpeed(0.f), m_eDir(DIR_END), m_bDead(false),
-	  m_iHp(0), m_iAttack(0), m_iDef(0), m_pBullet(nullptr), m_pOwner(nullptr), m_iBarrel_Number(1), m_tTarget(nullptr)
+	  m_fShieldAngle(0.f), m_fDistance(0.f), m_iHp(0), m_iAttack(0), m_iDef(0), m_pBullet(nullptr), m_pOwner(nullptr), m_iBarrel_Number(1), m_tTarget(nullptr)
 {
 	ZeroMemory(&m_tInfo, sizeof(INFO));
 	ZeroMemory(&m_tRect, sizeof(RECT));
@@ -70,7 +70,6 @@ void CObj::Create_PlayerBullet(vector<POS>& vPos, float angle)
 		m_pBullet->push_back(pBullet);
 	}
 }
-
 
 CObj* CObj::Create_Boss01Bullet(DIRECTION eDir)
 {

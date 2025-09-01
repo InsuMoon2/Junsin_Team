@@ -34,6 +34,9 @@ void CCollisionMgr::Collision_Circle(list<CObj*> _bullet, list<CObj*> _monster)
 			if (Dst->Get_Owner() == Src)
 				continue;
 
+			if (Dst->Get_Owner() == Src->Get_Owner())
+				continue;
+
 			if (Check_Circle(Dst, Src))
 			{
 				Src->Set_Hp(Src->Get_Hp() - Dst->Get_Attack());

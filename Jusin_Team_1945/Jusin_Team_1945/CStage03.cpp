@@ -4,10 +4,7 @@
 #include "CBoss02.h"
 #include "CCollisionMgr.h"
 #include "CMonster01.h"
-
-
-
-// ���� ��������
+#include "CSceneMgr.h"
 
 CStage03::CStage03()
 {
@@ -27,7 +24,7 @@ void CStage03::Initialize()
 
 	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Bullet(&m_ObjList[BULLET]);
 
-	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Target(m_ObjList[PLAYER].front());
+	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Target(CSceneMgr::GetInstance()->Get_Player());
 
 }
 
@@ -44,7 +41,7 @@ void CStage03::LateUpdate()
 	CScene::LateUpdate();
 
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[BOSS]);
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[PLAYER]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
 }
 
 void CStage03::Render(HDC hdc)
