@@ -41,6 +41,8 @@ int CMonster01::Update()
     __super::Update_Rect();
 
 
+    attackTime1 = Mgr1.GetCurrentTimeCount(2);
+
     if (attackTime1 == 2)
     {
         m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
