@@ -55,7 +55,7 @@ public:
 	virtual CObj* Create_Boss01Bullet(float angle);
 	
 	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
-	virtual CObj* Create_MonsterBullet02(DIRECTION eDir);
+	virtual CObj* Create_MonsterBullet02(DIRECTION eDir,float angle);
 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
 	CObj* Get_Owner()			   { return m_pOwner; }
