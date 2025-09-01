@@ -1,280 +1,235 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="소스 파일\00. MainGame">
-      <UniqueIdentifier>{9534d3f1-e0f5-40b2-ba46-6082229253f6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. Object">
-      <UniqueIdentifier>{56419ed6-0d6d-4c3c-a941-3b5ab69fac80}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\99. Design">
-      <UniqueIdentifier>{fefa9032-b75b-4bd6-aef1-7a8e59ccf7bf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\02. Manager">
-      <UniqueIdentifier>{489b6988-a564-4dc5-9c33-35eb4ba37d51}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. Object\00. Player">
-      <UniqueIdentifier>{5b5b225b-7d7e-40ab-ad8e-ae7f8359f192}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. Object\01. Monster">
-      <UniqueIdentifier>{90873ec5-d724-4f71-aa58-00f836cf62bf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. Object\02. Bullet">
-      <UniqueIdentifier>{3d175c31-97a7-4f6c-92df-b99846a7446b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\01. Object\03. Mouse">
-      <UniqueIdentifier>{e6f45b32-a88b-4886-8982-4eee56f63aeb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{fe7e1851-043b-46a1-8338-53e22dc7d307}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\04. Scene">
-      <UniqueIdentifier>{c9cc615b-7b59-41d1-86d3-04b9a7232fbf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\04. Scene\00. Stage">
-      <UniqueIdentifier>{c864f2cd-8db4-4982-b56a-3d50d7f99fbc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\05.Boss">
-      <UniqueIdentifier>{3cde5288-fc5a-4593-99c8-cca2d4790dd2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="소스 파일\06. Item">
-      <UniqueIdentifier>{bcfe00cf-89e8-473c-961a-b372208962bb}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Jusin_Team_1945.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="CMainGame.h">
-      <Filter>소스 파일\00. MainGame</Filter>
-    </ClInclude>
-    <ClInclude Include="AbstractFactory.h">
-      <Filter>소스 파일\99. Design</Filter>
-    </ClInclude>
-    <ClInclude Include="CBullet.h">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="CPlayer.h">
-      <Filter>소스 파일\01. Object\00. Player</Filter>
-    </ClInclude>
-    <ClInclude Include="CObj.h">
-      <Filter>소스 파일\01. Object</Filter>
-    </ClInclude>
-    <ClInclude Include="CCollisionMgr.h">
-      <Filter>소스 파일\02. Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="CSceneMgr.h">
-      <Filter>소스 파일\02. Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="Define.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="framework.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Mouse.h">
-      <Filter>소스 파일\01. Object\03. Mouse</Filter>
-    </ClInclude>
-    <ClInclude Include="pch.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="CScene.h">
-      <Filter>소스 파일\04. Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="CStage01.h">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="CStage02.h">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="CStage03.h">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="CItem.h">
-      <Filter>소스 파일\06. Item</Filter>
-    </ClInclude>
-    <ClInclude Include="CTempStage.h">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="CBoss02.h">
-      <Filter>소스 파일\05.Boss</Filter>
-    </ClInclude>
-    <ClInclude Include="CBoss01.h">
-      <Filter>소스 파일\05.Boss</Filter>
-    </ClInclude>
-    <ClInclude Include="CTimerMgr.h">
-      <Filter>소스 파일\02. Manager</Filter>
-    </ClInclude>
-    <ClInclude Include="CMonster02.h">
-      <Filter>소스 파일\01. Object\01. Monster</Filter>
-    </ClInclude>
-    <ClInclude Include="CMonster01.h">
-      <Filter>소스 파일\01. Object\01. Monster</Filter>
-    </ClInclude>
-    <ClInclude Include="CBossBullet.h">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="CItem_AddBullet.h">
-      <Filter>소스 파일\06. Item</Filter>
-    </ClInclude>
-    <ClInclude Include="CPlayerBullet.h">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    <ClInclude Include="CBoss01Bullet.h" />
->>>>>>> Insu
-    <ClInclude Include="CBullet_Monster02.h">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="CBullet_Monster01.h">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
-<<<<<<< HEAD
-    <ClInclude Include="CBoss01Bullet.h">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
-=======
->>>>>>> Insu
-=======
-    <ClInclude Include="CBoss01Bullet.h" />
-    <ClInclude Include="CBullet_Monster01.h" />
-    <ClInclude Include="CBullet_Monster02.h" />
-    <ClInclude Include="CShield.h">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClInclude>
->>>>>>> origin/LEE
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Jusin_Team_1945.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="CBoss01.cpp">
+      <Filter>소스 파일\01. Object\02. Boss</Filter>
     </ClCompile>
-    <ClCompile Include="pch.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="CBoss01Bullet.cpp">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
-    <ClCompile Include="CMainGame.cpp">
-      <Filter>소스 파일\00. MainGame</Filter>
+    <ClCompile Include="CBoss02.cpp">
+      <Filter>소스 파일\01. Object\02. Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="CBossBullet.cpp">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
     <ClCompile Include="CBullet.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
-    <ClCompile Include="CPlayer.cpp">
-      <Filter>소스 파일\01. Object\00. Player</Filter>
+    <ClCompile Include="CBullet_Monster01.cpp">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
-    <ClCompile Include="CObj.cpp">
-      <Filter>소스 파일\01. Object</Filter>
+    <ClCompile Include="CBullet_Monster02.cpp">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
     <ClCompile Include="CCollisionMgr.cpp">
       <Filter>소스 파일\02. Manager</Filter>
     </ClCompile>
+    <ClCompile Include="CItem.cpp">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CItem_AddBullet.cpp">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonster01.cpp">
+      <Filter>소스 파일\01. Object\03. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="CMonster02.cpp">
+      <Filter>소스 파일\01. Object\03. Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="CObj.cpp">
+      <Filter>소스 파일\01. Object</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>소스 파일\01. Object\00. Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayerBullet.cpp">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClCompile>
     <ClCompile Include="CSceneMgr.cpp">
       <Filter>소스 파일\02. Manager</Filter>
     </ClCompile>
-    <ClCompile Include="Mouse.cpp">
-      <Filter>소스 파일\01. Object\03. Mouse</Filter>
+    <ClCompile Include="CShield.cpp">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
     <ClCompile Include="CScene.cpp">
-      <Filter>소스 파일\04. Scene</Filter>
+      <Filter>소스 파일\05. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CStage01.cpp">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
+      <Filter>소스 파일\05. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CStage02.cpp">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
+      <Filter>소스 파일\05. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CStage03.cpp">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="CItem.cpp">
-      <Filter>소스 파일\06. Item</Filter>
+      <Filter>소스 파일\05. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CTempStage.cpp">
-      <Filter>소스 파일\04. Scene\00. Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="CBoss02.cpp">
-      <Filter>소스 파일\05.Boss</Filter>
-    </ClCompile>
-    <ClCompile Include="CBoss01.cpp">
-      <Filter>소스 파일\05.Boss</Filter>
+      <Filter>소스 파일\05. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CTimerMgr.cpp">
       <Filter>소스 파일\02. Manager</Filter>
     </ClCompile>
-    <ClCompile Include="CMonster01.cpp">
-      <Filter>소스 파일\01. Object\01. Monster</Filter>
+    <ClCompile Include="Mouse.cpp">
+      <Filter>소스 파일\01. Object</Filter>
     </ClCompile>
-    <ClCompile Include="CMonster02.cpp">
-      <Filter>소스 파일\01. Object\01. Monster</Filter>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일\헤더 파일</Filter>
     </ClCompile>
-    <ClCompile Include="CBossBullet.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
+    <ClCompile Include="CMainGame.cpp">
+      <Filter>소스 파일\00. MainGame</Filter>
     </ClCompile>
-    <ClCompile Include="CItem_AddBullet.cpp">
-      <Filter>소스 파일\06. Item</Filter>
+    <ClCompile Include="Jusin_Team_1945.cpp">
+      <Filter>소스 파일\00. MainGame</Filter>
     </ClCompile>
-    <ClCompile Include="CPlayerBullet.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <ClCompile Include="CBoss01Bullet.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClCompile>
-=======
->>>>>>> Insu
-    <ClCompile Include="CBullet_Monster02.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="CBullet_Monster01.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClCompile>
-<<<<<<< HEAD
-=======
-    <ClCompile Include="CBoss01Bullet.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClCompile>
->>>>>>> Insu
-=======
-    <ClCompile Include="CBoss01Bullet.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="CBullet_Monster01.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="CBullet_Monster02.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="CShield.cpp">
-      <Filter>소스 파일\01. Object\02. Bullet</Filter>
-    </ClCompile>
->>>>>>> origin/LEE
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="Jusin_Team_1945.rc">
-      <Filter>리소스 파일</Filter>
-    </ResourceCompile>
+    <ClInclude Include="AbstractFactory.h">
+      <Filter>소스 파일\99. Design</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoss01.h">
+      <Filter>소스 파일\01. Object\02. Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoss01Bullet.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoss02.h">
+      <Filter>소스 파일\01. Object\02. Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="CBossBullet.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CBullet.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CBullet_Monster01.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CBullet_Monster02.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CCollisionMgr.h">
+      <Filter>소스 파일\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CItem.h">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CItem_AddBullet.h">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonster01.h">
+      <Filter>소스 파일\01. Object\03. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="CMonster02.h">
+      <Filter>소스 파일\01. Object\03. Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="CObj.h">
+      <Filter>소스 파일\01. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>소스 파일\01. Object\00. Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayerBullet.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CSceneMgr.h">
+      <Filter>소스 파일\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CShield.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene.h">
+      <Filter>소스 파일\05. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CStage01.h">
+      <Filter>소스 파일\05. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CStage02.h">
+      <Filter>소스 파일\05. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CStage03.h">
+      <Filter>소스 파일\05. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CTempStage.h">
+      <Filter>소스 파일\05. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CTimerMgr.h">
+      <Filter>소스 파일\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Mouse.h">
+      <Filter>소스 파일\01. Object</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CMainGame.h">
+      <Filter>소스 파일\00. MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Jusin_Team_1945.h">
+      <Filter>소스 파일\00. MainGame</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico">
-      <Filter>리소스 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </Image>
     <Image Include="Jusin_Team_1945.ico">
-      <Filter>리소스 파일</Filter>
+      <Filter>소스 파일\헤더 파일</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{a90496c6-0361-4924-9410-7bd817d274a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\00. MainGame">
+      <UniqueIdentifier>{8ed01b47-f585-40e4-86c8-fb9f7b23a6f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object">
+      <UniqueIdentifier>{aca52f8c-34ee-4a59-88fd-03b16ee8d756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\99. Design">
+      <UniqueIdentifier>{0cdd379a-0bc8-42b5-879a-6248028b38c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\02. Manager">
+      <UniqueIdentifier>{9116500c-d0d0-41c5-8334-d8027f192e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object\00. Player">
+      <UniqueIdentifier>{5345fb90-b5cb-4676-952d-f0876127d7a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object\01. Bullet">
+      <UniqueIdentifier>{824b15bc-fb10-42b8-b4be-cb42e0569c4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object\02. Boss">
+      <UniqueIdentifier>{c18ab2a9-6492-47c5-886c-549618aacaf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object\03. Monster">
+      <UniqueIdentifier>{de719c87-d17c-4b94-861a-bb22e6327912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\01. Object\04. Item">
+      <UniqueIdentifier>{fe9e9abc-69a2-48cf-aeeb-a43a20e89cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\05. Scene">
+      <UniqueIdentifier>{388a3e5a-8bc9-4a23-be16-4ced6bd4f90f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\헤더 파일">
+      <UniqueIdentifier>{d174a4c3-ef11-4bec-88d7-f5cf226dfe20}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Jusin_Team_1945.rc">
+      <Filter>소스 파일\헤더 파일</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
