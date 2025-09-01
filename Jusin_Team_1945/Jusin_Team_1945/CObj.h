@@ -51,11 +51,10 @@ public:
 	virtual CObj* Create_Bullet(float angle);
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
 
-	virtual CObj* Create_BossBullet(float angle);
+	//virtual CObj* Create_BossBullet(float angle);
 	virtual CObj* Create_BossBullet(float angle, BT type);
 
-	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
-	virtual CObj* Create_Boss01Bullet(float angle);
+
 	
 	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
 	virtual CObj* Create_MonsterBullet02(DIRECTION eDir);
