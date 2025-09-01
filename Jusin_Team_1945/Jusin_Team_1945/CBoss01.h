@@ -29,10 +29,15 @@ public:
 
 private:
 
+    float m_fBarrel_Speed;
+
     CTimerMgr Mgr1;
     int AttackTime = 0;
 
     CTimerMgr Mgr2;
     int ShieldTime = 0;
+
+    CTimerMgr Mgr3;
+    int SkillTime = 0;
 };
 

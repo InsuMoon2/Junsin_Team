@@ -9,22 +9,23 @@ CBoss01Bullet::CBoss01Bullet()
 
 CBoss01Bullet::~CBoss01Bullet()
 {
+
 }
 
 void CBoss01Bullet::Initialize()
 {
 
-    m_tInfo.fCX = 30.f;
-    m_tInfo.fCY = 30.f;
+    m_tInfo.fCX = 15.f;
+    m_tInfo.fCY = 15.f;
 
-    m_fSpeed = 5.f;
+    m_fSpeed = 2.f;
 
     m_iAttack = 10;
 
+	m_iHp = 10;
+
     __super::Update_Rect();
 }
-
-
 
 int CBoss01Bullet::Update()
 {
@@ -62,18 +63,25 @@ int CBoss01Bullet::Update()
 		m_tInfo.fY += m_fSpeed;
 		break;
 	}
+
     return 0;
 }
 
 void CBoss01Bullet::Late_Update()
 {
-
     if (m_tRect.right >= WINCX - 50 || m_tRect.left <= 50
         || m_tRect.top <= 50 || m_tRect.bottom >= WINCY - 50)
     {
         m_bDead = true;
     }
 
+	m_tInfo.fX += m_fSpeed * cosf(m_fAngle * (PI / 180.f));
+	m_tInfo.fY -= m_fSpeed * sinf(m_fAngle * (PI / 180.f));
+
+	if (m_iHp <= 0)
+	{
+		m_bDead = true;
+	}
 }
 
 void CBoss01Bullet::Render(HDC hDC)
