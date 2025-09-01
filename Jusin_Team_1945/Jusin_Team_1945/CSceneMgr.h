@@ -34,7 +34,8 @@ public:
 	int  ChangeScene(ESceneType _eSceneType);
 
 	void Render_StageClear();
-	void Render_GameOver(HDC hdc, int winCX, int winCY);
+	// 안은수 ui로 가져갑니다
+	//void Render_GameOver(HDC hdc, int winCX, int winCY);
 
 private:
 	CScene*	   m_Scene;

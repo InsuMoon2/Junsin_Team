@@ -145,6 +145,7 @@
     <ClInclude Include="CShield.h" />
     <ClInclude Include="CTempStage.h" />
     <ClInclude Include="CTimerMgr.h" />
+    <ClInclude Include="CUIMgr.h" />
     <ClInclude Include="Define.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Jusin_Team_1945.h" />
@@ -178,6 +179,7 @@
     <ClCompile Include="CShield.cpp" />
     <ClCompile Include="CTempStage.cpp" />
     <ClCompile Include="CTimerMgr.cpp" />
+    <ClCompile Include="CUIMgr.cpp" />
     <ClCompile Include="Jusin_Team_1945.cpp" />
     <ClCompile Include="CMainGame.cpp" />
     <ClCompile Include="CMonster01.cpp" />

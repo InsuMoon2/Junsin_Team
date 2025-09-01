@@ -6,6 +6,7 @@
 
 #include "CPlayerBullet.h"
 #include "CSceneMgr.h"
+#include "CUIMgr.h"
 
 CPlayer::CPlayer()
 {
@@ -138,7 +139,7 @@ void CPlayer::Render(HDC hDC)
 
     if (m_bDead == true)
     {
-        CSceneMgr::GetInstance()->Render_GameOver(hDC, WINCX, WINCY);
+        CUIMgr::Get_Instance()->Render_GameOver(hDC, WINCX, WINCY, true);
     }
 
     TCHAR szBuff[32] = L"";
@@ -148,6 +149,9 @@ void CPlayer::Render(HDC hDC)
     TCHAR szBuff2[32] = L"";
     swprintf_s(szBuff2, L"플레이어 HP : %d", m_iHp);
     TextOut(hDC, 50, 240, szBuff2, lstrlen(szBuff2));
+
+    //안은수 hp test. 없애도 댐
+   CUIMgr::Get_Instance()->Render_HP(hDC, this);
 }
 
 void CPlayer::Release()

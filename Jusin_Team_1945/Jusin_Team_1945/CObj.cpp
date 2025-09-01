@@ -96,7 +96,17 @@ CObj* CObj::Create_Boss01Bullet(float angle)
 
 CObj* CObj::Create_BossBullet(float angle, BT type)
 {
-	CBossBullet* bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
+	CBossBullet* bullet;
+	if (type == Around)
+	{
+		bullet = AbstractFactory<CBossBullet>::Create(m_tInfo.fX, m_tInfo.fY);
+
+	}
+	else
+	{
+		bullet = AbstractFactory<CBossBullet>::Create(m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
+
+	}
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);

@@ -4,20 +4,21 @@
 class CTimerMgr
 {
 public:
-    CTimerMgr() { m_dwLastUpdateTime = GetTickCount(); }
+    CTimerMgr() { m_dwLastUpdateTime = GetTickCount64(); }
 
 private:
     DWORD m_dwLastUpdateTime;
-    int m_iTimeCount = 0;
-    bool m_bRoop = false;
+    int   m_iTimeCount = 0;
+    float m_fTimeCount = 0.f;
+    bool  m_bRoop = false;
 
 public:
-    int GetCurrentTimeCount(int seconds, bool bRoop = true)
+    int GetCurrentTimeCount(int seconds)
     {
-        DWORD dwCurrentTime = GetTickCount();
+        DWORD dwCurrentTime = GetTickCount64();
         DWORD dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
 
-        if (m_iTimeCount == seconds)
+        if (m_iTimeCount >= seconds)
         {
             m_iTimeCount++;
             m_iTimeCount = 0;
@@ -42,33 +43,35 @@ public:
         return m_iTimeCount;
     }
 
-    float GetCurrentTimeCount(float seconds, bool bRoop = true)
+    float GetCurrentTimeCount(float seconds)
     {
-        DWORD dwCurrentTime = GetTickCount();
-        DWORD dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
+        float dwCurrentTime = GetTickCount64();
+        float dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
 
-        if (m_iTimeCount == seconds)
+        if (m_fTimeCount >= seconds)
         {
-            m_iTimeCount++;
-            m_iTimeCount = 0;
+            //m_fTimeCount += 0.1f;
+
+            m_fTimeCount = 0.0f;
 
             m_dwLastUpdateTime = dwCurrentTime;
         }
 
-        else if (m_iTimeCount <= seconds)
+        else if (m_fTimeCount <= seconds)
         {
-            if (dwElapsedTime >= 1000)
+            if (dwElapsedTime >= 100)
             {
-                m_iTimeCount++;
+                m_fTimeCount += 0.1f;
 
-                if (m_iTimeCount > seconds)
+                if (m_fTimeCount > seconds)
                 {
-                    m_iTimeCount = 0;
+                    m_fTimeCount = 0.f;
                 }
+
                 m_dwLastUpdateTime = dwCurrentTime;
             }
         }
 
-        return m_iTimeCount;
+        return m_fTimeCount;
     }
 };

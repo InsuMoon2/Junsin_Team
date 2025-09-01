@@ -5,6 +5,7 @@
 #include "CCollisionMgr.h"
 #include "CMonster01.h"
 #include "CSceneMgr.h"
+#include "CUIMgr.h"
 
 CStage03::CStage03()
 {
@@ -53,6 +54,11 @@ void CStage03::Render(HDC hdc)
 		TCHAR szBuff[32] = L"";
 		swprintf_s(szBuff, L"HP : %d", m_ObjList[BOSS].front()->Get_Hp());
 		TextOut(hdc, 50, 200, szBuff, lstrlen(szBuff));
+	}
+	else
+	{
+		CUIMgr::Get_Instance()->Render_GameOver(hdc, WINCX, WINCY, false);
+
 	}
 
 }
