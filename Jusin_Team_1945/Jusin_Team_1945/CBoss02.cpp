@@ -94,11 +94,10 @@ void CBoss02::Render(HDC hDC)
 	Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 	Rectangle(hDC, m_tRect.left + 10, m_tRect.top + 10, m_tRect.right - 10, m_tRect.bottom - 10);
 	
-	// ���� ���� (���� ������ ���� �ϼ�)
 	MoveToEx(hDC, m_tInfo.fX, m_tInfo.fY, NULL);
 	LineTo(hDC, m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
-	// hp ui ����
+	// hp ui
 	{
 		if (m_bHp == true)
 		{

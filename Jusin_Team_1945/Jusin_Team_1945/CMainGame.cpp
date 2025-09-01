@@ -22,18 +22,15 @@ void CMainGame::Initialize()
 	m_hDC = GetDC(g_hWnd);
 
 	GetClientRect(g_hWnd, &m_rect);
-
-	// ���� ���۸�
 	{
-		m_hDC_back = CreateCompatibleDC(m_hDC);	// hDC�� ȣȯ�Ǵ� DC�� ����
-		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom); // hDC�� ȣȯ�Ǵ� ��Ʈ�� ����
+		m_hDC_back = CreateCompatibleDC(m_hDC);
+		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom);
 		HBITMAP prev = (HBITMAP)::SelectObject(m_hDC_back, m_bmpBack);
 		DeleteObject(prev);
 	}
 	
-	// ���� �������� ����
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage02);
 
 }
 
@@ -51,7 +48,7 @@ void CMainGame::Late_Update()
 
 void CMainGame::Render()
 {
-	// FPS ���
+	// FPS
 	++m_iFPS;
 
 	if (m_dwTime + 1000 < GetTickCount())
@@ -66,15 +63,12 @@ void CMainGame::Render()
 
 	// Scene Render
 	CSceneMgr::GetInstance()->Render(m_hDC_back);
-
-	// ���� Rectangle �� �׷��� �������� �ּ�ȭ�Ѱ� ���� ���۸� ����
 	{
 		//Rectangle(m_hDC, 0, 0, WINCX, WINCY);
 		BitBlt(m_hDC, 0, 0, m_rect.right, m_rect.bottom, m_hDC_back, 0, 0, SRCCOPY);
 		PatBlt(m_hDC_back, 0, 0, m_rect.right, m_rect.bottom, WHITENESS);
 	}
 	
-	// Stage ���
 	{
 		int stage = CSceneMgr::GetInstance()->Get_Stage();
 		swprintf_s(m_szStage, L"Stage : %d", stage);
