@@ -23,5 +23,6 @@ private:
 
 	CTimerMgr Mgr2;
 	int attackTime2 = 0;
+
 };
 

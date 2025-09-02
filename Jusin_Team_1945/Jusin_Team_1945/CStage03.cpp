@@ -23,7 +23,6 @@ void CStage03::Initialize()
 	m_ObjList[BOSS].push_back(AbstractFactory<CBoss02>::Create());
 
 	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Bullet(&m_ObjList[BULLET]);
-
 	dynamic_cast<CBoss02*>(m_ObjList[BOSS].front())->Set_Target(CSceneMgr::GetInstance()->Get_Player());
 
 }
@@ -61,6 +60,3 @@ void CStage03::Release()
 {
 	CScene::Release();
 }
-
-
-

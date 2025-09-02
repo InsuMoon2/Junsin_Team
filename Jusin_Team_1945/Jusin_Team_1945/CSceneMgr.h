@@ -22,6 +22,7 @@ public:
 	int			 Get_Stage()		{ return m_StageNumber; }
 	CObj*		 Get_Player()		{ return m_pPlayer; }
 	ESceneType	 Get_SceneType()	{ return m_SceneType; }
+	CScene*		 Get_Scene()	    { return m_Scene; }
 
 public:
 	void Initialize();

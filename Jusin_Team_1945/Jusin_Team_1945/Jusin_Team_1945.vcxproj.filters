@@ -53,19 +53,19 @@
       <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
     <ClCompile Include="CScene.cpp">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CStage01.cpp">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CStage02.cpp">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CStage03.cpp">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CTempStage.cpp">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClCompile>
     <ClCompile Include="CTimerMgr.cpp">
       <Filter>소스 파일\02. Manager</Filter>
@@ -81,6 +81,24 @@
     </ClCompile>
     <ClCompile Include="Jusin_Team_1945.cpp">
       <Filter>소스 파일\00. MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="CItemMgr.cpp">
+      <Filter>소스 파일\02. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="CItem_Shield.cpp">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CItem_Potion.cpp">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CItem_Erase.cpp">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CItem_Pet.cpp">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClCompile>
+    <ClCompile Include="CEraser.cpp">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -139,19 +157,19 @@
       <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClInclude>
     <ClInclude Include="CScene.h">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClInclude>
     <ClInclude Include="CStage01.h">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClInclude>
     <ClInclude Include="CStage02.h">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClInclude>
     <ClInclude Include="CStage03.h">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClInclude>
     <ClInclude Include="CTempStage.h">
-      <Filter>소스 파일\05. Scene</Filter>
+      <Filter>소스 파일\03. Scene</Filter>
     </ClInclude>
     <ClInclude Include="CTimerMgr.h">
       <Filter>소스 파일\02. Manager</Filter>
@@ -179,6 +197,24 @@
     </ClInclude>
     <ClInclude Include="Jusin_Team_1945.h">
       <Filter>소스 파일\00. MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="CItemMgr.h">
+      <Filter>소스 파일\02. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="CItem_Shield.h">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CItem_Potion.h">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CItem_Erase.h">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CItem_Pet.h">
+      <Filter>소스 파일\01. Object\04. Item</Filter>
+    </ClInclude>
+    <ClInclude Include="CEraser.h">
+      <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -220,11 +256,11 @@
     <Filter Include="소스 파일\01. Object\04. Item">
       <UniqueIdentifier>{fe9e9abc-69a2-48cf-aeeb-a43a20e89cc9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="소스 파일\05. Scene">
-      <UniqueIdentifier>{388a3e5a-8bc9-4a23-be16-4ced6bd4f90f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="소스 파일\헤더 파일">
       <UniqueIdentifier>{d174a4c3-ef11-4bec-88d7-f5cf226dfe20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\03. Scene">
+      <UniqueIdentifier>{388a3e5a-8bc9-4a23-be16-4ced6bd4f90f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

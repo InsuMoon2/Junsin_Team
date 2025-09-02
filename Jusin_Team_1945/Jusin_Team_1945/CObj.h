@@ -44,15 +44,36 @@ public:
 	float			Get_Speed()  { return m_fSpeed; }
 
 	int				Get_PosinNumber() { return m_iBarrel_Number; }
+	list<CObj*>*	Get_Shield() { return m_pShield; }
+	list<CObj*>*	Get_Eraser() { return m_pEraser; }
+	list<CObj*>*	Get_Pet()	 { return m_pPet; }
+
 
 public:
+	void  Set_Eraser(list<CObj*>* pEraser) { m_pEraser = pEraser; }
+	void  Set_Shield(list<CObj*>* pShield, CObj* pTarget = nullptr)
+	{
+		if (pTarget)
+			m_pOwner = pTarget;
+
+		m_pShield = pShield;
+	}
+
+	void  Set_Pet(list<CObj*>* pPet, CObj* pTarget = nullptr)
+	{
+		if (pTarget)
+			m_pOwner = pTarget;
+
+		m_pPet = pPet;
+	}
 
 	void  Set_Bullet(list<CObj*>* pBullet) { m_pBullet = pBullet; }
 	virtual CObj* Create_Bullet(DIRECTION eDir);
 	virtual CObj* Create_Bullet(float angle);
 
 	virtual CObj* Create_PlayerBullet(DIRECTION eDir);
-	virtual void  Create_PlayerBullet(vector<POS>& vPos, float angle);
+	virtual void  Create_PlayerBullet(vector<POS>& vPos);
+	virtual CObj* Create_PetBullet(DIRECTION eDir);
 
 	virtual CObj* Create_BossBullet(float angle, BT type);
 
@@ -68,6 +89,7 @@ public:
 	 void Set_Angle(float angle) { m_fAngle = angle; }
 	 void Set_Target(CObj* target) { m_tTarget = target; }
 	 void Set_ID(int _ID) { m_iID = _ID; }
+
 
 protected:
 	void		Update_Rect();
@@ -87,6 +109,8 @@ protected:
 
 	list<CObj*>* m_pBullet;
 	list<CObj*>* m_pShield;
+	list<CObj*>* m_pEraser;
+	list<CObj*>* m_pPet;
 
 
 	// 안은수 : 포신
@@ -101,7 +125,9 @@ protected:
 
 	int m_iID;
 
-
 	int m_iBarrel_Number;
+
+	
+
 };
 

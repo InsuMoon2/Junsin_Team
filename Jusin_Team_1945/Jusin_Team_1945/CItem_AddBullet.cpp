@@ -15,24 +15,20 @@ void CItem_AddBullet::Initialize()
 {
 	CItem::Initialize();
 
-	m_tInfo.fCX = 30;
-	m_tInfo.fCY = 30;
+	
 }
 
 int CItem_AddBullet::Update()
 {
-	if (m_bDead)
-		return OBJ_DEAD;
-
-	__super::Update_Rect();
-
-
+	return CItem::Update();
 
 }
 
 void CItem_AddBullet::Late_Update()
 {
 	CItem::Late_Update();
+
+	
 }
 
 void CItem_AddBullet::Render(HDC hDC)
@@ -61,5 +57,4 @@ void CItem_AddBullet::Use_Item(CObj* _pObj)
 	{
 		_pObj->Set_PosinNumber(_pObj->Get_PosinNumber() + 1);
 	}
-	
 }

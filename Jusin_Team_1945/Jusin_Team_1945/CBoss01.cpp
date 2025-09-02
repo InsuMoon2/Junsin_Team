@@ -50,11 +50,6 @@ int CBoss01::Update()
 	if (ShieldTime == 1)    
 	{
 		m_pShield->push_back(AbstractFactory<CShield>::Create(this));
-		
-		for (auto iter = m_pShield->begin(); iter != m_pShield->end(); iter++)
-		{
-			(*iter)->Set_Owner(this);
-		}
 	}
 
 	return OBJ_NOEVENT;
@@ -64,7 +59,7 @@ void CBoss01::Late_Update()
 {
 	if ( m_tRect.left <= 0 || m_tRect.right >= WINCX )
 	{
-			m_fSpeed *= -1.f;
+		m_fSpeed *= -1.f;
 	}
 
 	if (m_iHp <= 0)

@@ -1,3 +1,29 @@
-﻿  CMonster01.cpp
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(72,16): warning C4244: 'return': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  CPlayer.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(55,17): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CScene.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CSceneMgr.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CStage01.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage01.cpp(59,65): warning C4805: '==': 연산에 'BOOL' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+  CStage02.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CStage03.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CTempStage.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
   Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe

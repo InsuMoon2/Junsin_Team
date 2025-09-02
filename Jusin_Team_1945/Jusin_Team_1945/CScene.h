@@ -1,5 +1,6 @@
 #pragma once
 
+#include "CTimerMgr.h"
 #include "Define.h"
 
 class CObj;
@@ -18,6 +19,14 @@ public:
 	virtual void Render(HDC hdc);
 	virtual void Release();
 
+public:
+	void Random_ItemSpawn();
+
 protected:
 	list<CObj*>	m_ObjList[OBJ_END];
+
+private:
+	ULONGLONG m_lastSpawnMS = 0;   
+	ULONGLONG m_spawnInterval = 1500; 
+
 };

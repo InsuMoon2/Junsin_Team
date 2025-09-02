@@ -27,17 +27,13 @@ void CMainGame::Initialize()
 	{
 		m_hDC_back = CreateCompatibleDC(m_hDC);
 		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom);
-		{
-			m_hDC_back = CreateCompatibleDC(m_hDC);
-			m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom);
-			HBITMAP prev = (HBITMAP)::SelectObject(m_hDC_back, m_bmpBack);
-			DeleteObject(prev);
-		}
 
-		CSceneMgr::GetInstance()->Initialize();
-		CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
-
+		HBITMAP prev = (HBITMAP)::SelectObject(m_hDC_back, m_bmpBack);
+		DeleteObject(prev);
 	}
+
+	CSceneMgr::GetInstance()->Initialize();
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
 }
 
 void CMainGame::Update()

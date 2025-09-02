@@ -45,7 +45,8 @@ int CMonster01::Update()
     if (attackTime1 == 2)
     {
         m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
-        
+
+       
     }
 
 

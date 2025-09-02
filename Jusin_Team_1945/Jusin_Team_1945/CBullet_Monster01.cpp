@@ -21,7 +21,7 @@ void CBullet_Monster01::Initialize()
 
 	m_fSpeed = 5.f;
 
-	m_iAttack = 60;
+	m_iAttack = 10;
 
 	__super::Update_Rect();
 }

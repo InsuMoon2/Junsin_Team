@@ -10,10 +10,7 @@ public:
     virtual ~CBoss01();
 
 public:
-    void Set_Shield(list<CObj*>* pShield)
-    {
-        m_pShield = pShield;
-    }
+    
 
 public:
     void Initialize() override;

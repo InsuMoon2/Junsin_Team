@@ -5,8 +5,6 @@
 #include "CBoss01.h"
 #include "CSceneMgr.h"
 
-// ���� ��������
-
 CStage02::CStage02()
 {
 
@@ -57,3 +55,4 @@ void CStage02::Release()
 {
 	CScene::Release();
 }
+

@@ -41,10 +41,24 @@ public:
 		CObj* pObj = new T;
 		pObj->Initialize();
 		pObj->Set_Target(target);
-
+		pObj->Set_Owner(target);
 
 		return pObj;
 	}
 
+	static CObj* Create(CObj* target, float fX, float fY)
+	{
+		if (!target)
+			return nullptr;
+
+		CObj* pObj = new T;
+
+		pObj->Set_Pos(fX, fY);
+		pObj->Initialize();
+		pObj->Set_Target(target);
+		pObj->Set_Owner(target);
+
+		return pObj;
+	}
 };
 

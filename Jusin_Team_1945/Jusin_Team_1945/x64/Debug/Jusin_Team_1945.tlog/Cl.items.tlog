@@ -6,8 +6,14 @@ D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet.cpp;D:\G
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet_Monster01.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CBullet_Monster01.obj
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBullet_Monster02.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CBullet_Monster02.obj
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CCollisionMgr.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CCollisionMgr.obj
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CEraser.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CEraser.obj
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CItem.obj
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItemMgr.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CItemMgr.obj
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem_AddBullet.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CItem_AddBullet.obj
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem_Erase.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CItem_Erase.obj
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem_Pet.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CItem_Pet.obj
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem_Potion.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CItem_Potion.obj
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CItem_Shield.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CItem_Shield.obj
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMonster02.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CMonster02.obj
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayerBullet.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CPlayerBullet.obj
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CShield.cpp;D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\x64\Debug\CShield.obj

@@ -83,8 +83,11 @@ void CCollisionMgr::Collision_Item(CObj* _pPlayer, list<CObj*> _pItem)
 
 		if (IntersectRect(&rcCol, _pPlayer->Get_Rect(), item->Get_Rect()))
 		{
-			dynamic_cast<CItem*>(item)->Use_Item(_pPlayer);
-			item->Set_Dead();
+			if (auto pItem = dynamic_cast<CItem*>(item)) 
+			{
+				pItem->Use_Item(_pPlayer);
+				item->Set_Dead();
+			}
 		}
 	}
 
