@@ -12,9 +12,12 @@ private:
 =======
     DWORD m_dwLastUpdateTime;
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/LEE
 =======
 >>>>>>> origin/Yurim
+=======
+>>>>>>> origin/aneunsoo
     int   m_iTimeCount = 0;
     float m_fTimeCount = 0.f;
     bool  m_bRoop = false;
@@ -54,6 +57,7 @@ public:
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         ULONGLONG now = GetTickCount64();
         ULONGLONG elapsed = now - m_dwLastUpdateTime;
 
@@ -80,6 +84,13 @@ public:
         if (m_fTimeCount >= seconds)
         {
 >>>>>>> origin/Yurim
+=======
+        float dwCurrentTime = GetTickCount64();
+        float dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
+
+        if (m_fTimeCount >= seconds)
+        {
+>>>>>>> origin/aneunsoo
             //m_fTimeCount += 0.1f;
 
             m_fTimeCount = 0.0f;
@@ -103,9 +114,12 @@ public:
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/LEE
 =======
 >>>>>>> origin/Yurim
+=======
+>>>>>>> origin/aneunsoo
         return m_fTimeCount;
     }
 };

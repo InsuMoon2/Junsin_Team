@@ -5,6 +5,7 @@
 #include "Mouse.h"
 #include "CCollisionMgr.h"
 #include "CSceneMgr.h"
+#include "CUIMgr.h"
 
 CMainGame::CMainGame() : m_dwTime(GetTickCount()), m_iFPS(0)
 {
@@ -27,23 +28,27 @@ void CMainGame::Initialize()
 	{
 		m_hDC_back = CreateCompatibleDC(m_hDC);
 		m_bmpBack = CreateCompatibleBitmap(m_hDC, m_rect.right, m_rect.bottom);
-
 		HBITMAP prev = (HBITMAP)::SelectObject(m_hDC_back, m_bmpBack);
 		DeleteObject(prev);
 	}
 
 	CSceneMgr::GetInstance()->Initialize();
-	CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
+	CUIMgr::Get_Instance()->Initialize();
 }
 
 void CMainGame::Update()
 {
 	CSceneMgr::GetInstance()->Update();
+	CUIMgr::Get_Instance()->Update();
+
 }
 
 void CMainGame::Late_Update()
 {
 	CSceneMgr::GetInstance()->LateUpdate();
+	CUIMgr::Get_Instance()->LateUpdate();
+
 }
 
 void CMainGame::Render()
@@ -62,8 +67,10 @@ void CMainGame::Render()
 
 
 	// Scene Render
-	CSceneMgr::GetInstance()->Render(m_hDC_back);
+	CUIMgr::Get_Instance()->Render_Barrel(m_hDC_back, 2);
+	CUIMgr::Get_Instance()->Render(m_hDC_back);
 
+	CSceneMgr::GetInstance()->Render(m_hDC_back);
 	// 기존 Rectangle을 그려서 깜빡임 최소화 한걸 더블 버퍼링으로 바꿈
 	{
 		//Rectangle(m_hDC, 0, 0, WINCX, WINCY);
@@ -71,12 +78,13 @@ void CMainGame::Render()
 		PatBlt(m_hDC_back, 0, 0, m_rect.right, m_rect.bottom, WHITENESS);
 	}
 	
-	// Stage 출력
-	{
-		int stage = CSceneMgr::GetInstance()->Get_Stage();
-		swprintf_s(m_szStage, L"Stage : %d", stage);
-		TextOut(m_hDC, 50, 50, m_szStage, lstrlen(m_szStage));
-	}
+	//// Stage 출력
+	//{
+	//	int stage = CSceneMgr::GetInstance()->Get_Stage();
+	//	swprintf_s(m_szStage, L"Stage : %d", stage);
+	//	TextOut(m_hDC, 50, 50, m_szStage, lstrlen(m_szStage));
+	//}
+
 	
 }
 

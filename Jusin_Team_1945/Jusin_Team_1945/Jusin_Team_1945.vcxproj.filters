@@ -82,6 +82,7 @@
     <ClCompile Include="Jusin_Team_1945.cpp">
       <Filter>소스 파일\00. MainGame</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="CItemMgr.cpp">
       <Filter>소스 파일\02. Manager</Filter>
     </ClCompile>
@@ -100,6 +101,11 @@
     <ClCompile Include="CEraser.cpp">
       <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClCompile>
+=======
+    <ClCompile Include="CUIMgr.cpp">
+      <Filter>소스 파일\02. Manager</Filter>
+    </ClCompile>
+>>>>>>> origin/aneunsoo
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AbstractFactory.h">
@@ -198,6 +204,7 @@
     <ClInclude Include="Jusin_Team_1945.h">
       <Filter>소스 파일\00. MainGame</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="CItemMgr.h">
       <Filter>소스 파일\02. Manager</Filter>
     </ClInclude>
@@ -216,6 +223,11 @@
     <ClInclude Include="CEraser.h">
       <Filter>소스 파일\01. Object\01. Bullet</Filter>
     </ClInclude>
+=======
+    <ClInclude Include="CUIMgr.h">
+      <Filter>소스 파일\02. Manager</Filter>
+    </ClInclude>
+>>>>>>> origin/aneunsoo
   </ItemGroup>
   <ItemGroup>
     <Image Include="small.ico">

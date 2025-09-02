@@ -19,11 +19,11 @@ public:
     void Attack_Circular();
     void Attack_Cos();
     void Attack_Guided();
+    void Attack_Around();
+
+    
 
     BT m_bulletType;
-
-    DWORD m_dwTime;
-    
 
 
 };

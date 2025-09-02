@@ -3,9 +3,9 @@
 #include "CBossBullet.h"
 #include "AbstractFactory.h"
 
-CBossBullet::CBossBullet() : m_bulletType(BT_END), m_dwTime(GetTickCount())
+CBossBullet::CBossBullet() : m_bulletType(BT_END)
 {
-
+	
 }
 
 CBossBullet::~CBossBullet()
@@ -20,12 +20,12 @@ void CBossBullet::Initialize()
     
     m_fSpeed = 3.f;
     
-    m_iAttack = 10;
+    m_iAttack = 1;
 
     m_fAngle = 90;
  
           m_fDistance =0;
-          //prev_Degree = 0.f;
+          
     __super::Update_Rect();
 }
 
@@ -52,6 +52,9 @@ int CBossBullet::Update()
 		break;
 	case Guided:
 		Attack_Guided();
+		break;
+	case Around:
+		Attack_Around();
 		break;
 	}
 
@@ -80,7 +83,29 @@ void CBossBullet::Late_Update()
 
 void CBossBullet::Render(HDC hDC)
 {
+	if (m_bulletType == Guided)
+	{
+
+
+		HBRUSH myBrush = CreateSolidBrush(RGB(200, 150, 0));
+		HPEN myPen = CreatePen(PS_SOLID, 1, RGB(200, 150, 0));
+
+		HBRUSH OldBrush = (HBRUSH)SelectObject(hDC, myBrush);
+		HPEN OldPen = (HPEN)SelectObject(hDC, myPen);
+
+		Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+
+		SelectObject(hDC, OldBrush);
+		SelectObject(hDC, OldPen);
+		DeleteObject(myBrush);
+		DeleteObject(myPen);
+
+	}
+	else
+	{
 	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+
+	}
 }
 
 void CBossBullet::Release()
@@ -100,7 +125,7 @@ void CBossBullet::Attack_Cos()
 
 void CBossBullet::Attack_Guided()
 {
-	m_fSpeed = 1.f;
+	m_fSpeed = 2.f;
 
 
 	{
@@ -117,10 +142,18 @@ void CBossBullet::Attack_Guided()
 				tmp_Angle = 2 * PI - tmp_Angle;
 
             m_tInfo.fX += cos(tmp_Angle)* m_fSpeed;
-            m_tInfo.fY += sin(tmp_Angle)* m_fSpeed;
+            m_tInfo.fY +=m_fSpeed;
         }
     }
 
 
+}
+
+void CBossBullet::Attack_Around()
+{
+	
+	m_fSpeed = 3;
+	m_tInfo.fX += (cos(m_fAngle * (PI / 180)) * m_fSpeed);
+	m_tInfo.fY += (sin(m_fAngle * (PI / 180)) * m_fSpeed);
 }
 
