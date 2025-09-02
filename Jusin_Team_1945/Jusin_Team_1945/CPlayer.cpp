@@ -7,6 +7,7 @@
 #include "CPlayerBullet.h"
 #include "CScene.h"
 #include "CSceneMgr.h"
+#include "CUIMgr.h"
 
 CPlayer::CPlayer()
 {
@@ -34,7 +35,6 @@ void CPlayer::Initialize()
 
 int CPlayer::Update()
 {
-	// 부활, 엔터
 	if (m_bDead && (GetAsyncKeyState(VK_RETURN) & 0x0001))
 	{
 		CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
@@ -51,7 +51,6 @@ int CPlayer::Update()
 
 	Key_Input();
 
-	// 포신 설정
 	float RectSize = m_tRect.right - m_tRect.left;
 	float movePosin = 0.f;
 
@@ -79,7 +78,6 @@ int CPlayer::Update()
 		m_Barrel_Position.push_back({ m_tInfo.fX + movePosin, m_tBarrel_Pos.Y });
 	}
 
-	// 플레이어 사망
 	if (m_iHp <= 0)
 		Player_Dead();
 
@@ -94,19 +92,44 @@ void CPlayer::Late_Update()
 
 void CPlayer::Render(HDC hDC)
 {
-	// 비행기 그리기
 	float scale = 15.0f;
 	DrawPlane(hDC, m_tInfo.fX, m_tInfo.fY, scale);
 
-	// 충돌체
 	//Rectangle(hDC, m_tRect.left + 40, m_tRect.top + 10, m_tRect.right - 40, m_tRect.bottom);
 
 	if (m_bDead == true)
-		CSceneMgr::GetInstance()->Render_GameOver(hDC, WINCX, WINCY);
+        CUIMgr::Get_Instance()->Render_GameOver(hDC, WINCX, WINCY, true);
 
-	TCHAR szBuff2[32] = L"";
-	swprintf_s(szBuff2, L"플레이어 HP : %d", m_iHp);
-	TextOut(hDC, 50, 240, szBuff2, lstrlen(szBuff2));
+    CUIMgr::Get_Instance()->Render_HP(hDC, this);
+
+    if (m_iBarrel_Number == 1)
+    {
+        MoveToEx(hDC, m_tInfo.fX, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
+    }
+
+    else if (m_iBarrel_Number == 2)
+    {
+        movePosin = RectSize * 0.15f;
+
+        MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
+
+        MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
+    }
+
+    else if (m_iBarrel_Number == 3)
+    {
+        movePosin = RectSize * 0.15f;
+
+        MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
+
+        MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
+        LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
+    }
+
 }
 
 void CPlayer::Release()
@@ -118,7 +141,6 @@ void CPlayer::DrawPlane(HDC hdc, float cx, float cy, float s, COLORREF body, COL
 {
 	auto I = [](float v) -> LONG { return static_cast<LONG>(std::lround(v)); };
 
-	// 펜/브러시 준비
 	HPEN   pen = CreatePen(PS_SOLID, max(1, (int)std::lround(s * 0.15f)), stroke);
 	HBRUSH bodyBrush = CreateSolidBrush(body);
 	HBRUSH wingBrush = CreateSolidBrush(wing);
@@ -127,24 +149,21 @@ void CPlayer::DrawPlane(HDC hdc, float cx, float cy, float s, COLORREF body, COL
 	HPEN   oldPen = (HPEN)SelectObject(hdc, pen);
 	HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, bodyBrush);
 
-	// === 동체 (fuselage): 길게 뻗은 몸통 ===
-	// 위가 기수(앞). s는 전체 스케일.
 	POINT fus[6] = {
-		{ I(cx + 0.0f * s),  I(cy - 3.0f * s) }, // 0: Nose
-		{ I(cx + 0.6f * s),  I(cy - 1.5f * s) }, // 1: 우측 어깨
-		{ I(cx + 0.6f * s),  I(cy + 1.8f * s) }, // 2: 우측 허리
-		{ I(cx + 0.0f * s),  I(cy + 3.0f * s) }, // 3: Tail 끝
-		{ I(cx - 0.6f * s),  I(cy + 1.8f * s) }, // 4: 좌측 허리
-		{ I(cx - 0.6f * s),  I(cy - 1.5f * s) }, // 5: 좌측 어깨
+		{ I(cx + 0.0f * s),  I(cy - 3.0f * s) }, 
+		{ I(cx + 0.6f * s),  I(cy - 1.5f * s) }, 
+		{ I(cx + 0.6f * s),  I(cy + 1.8f * s) }, 
+		{ I(cx + 0.0f * s),  I(cy + 3.0f * s) }, 
+		{ I(cx - 0.6f * s),  I(cy + 1.8f * s) }, 
+		{ I(cx - 0.6f * s),  I(cy - 1.5f * s) }, 
 	};
 	Polygon(hdc, fus, 6);
 
-	// === 주익 (main wings): 좌우 삼각형 ===
 	SelectObject(hdc, wingBrush);
 	POINT wL[3] = {
-		{ I(cx - 0.6f * s), I(cy - 0.7f * s) },   // 동체 접점
-		{ I(cx - 2.0f * s), I(cy + 0.2f * s) },   // 좌익 끝
-		{ I(cx - 0.6f * s), I(cy + 0.6f * s) },   // 동체 접점 아래
+		{ I(cx - 0.6f * s), I(cy - 0.7f * s) },   
+		{ I(cx - 2.0f * s), I(cy + 0.2f * s) },   
+		{ I(cx - 0.6f * s), I(cy + 0.6f * s) },   
 	};
 	POINT wR[3] = {
 		{ I(cx + 0.6f * s), I(cy - 0.7f * s) },
@@ -154,7 +173,6 @@ void CPlayer::DrawPlane(HDC hdc, float cx, float cy, float s, COLORREF body, COL
 	Polygon(hdc, wL, 3);
 	Polygon(hdc, wR, 3);
 
-	// === 미익 (tail fins): 작은 좌우 삼각형 ===
 	POINT tL[3] = {
 		{ I(cx - 0.4f * s), I(cy + 2.0f * s) },
 		{ I(cx - 1.2f * s), I(cy + 2.6f * s) },
@@ -168,13 +186,11 @@ void CPlayer::DrawPlane(HDC hdc, float cx, float cy, float s, COLORREF body, COL
 	Polygon(hdc, tL, 3);
 	Polygon(hdc, tR, 3);
 
-	// === 조종석 캔피 (cockpit) ===
 	SelectObject(hdc, cockpitBrush);
 	Ellipse(hdc,
 		I(cx - 0.35f * s), I(cy - 2.2f * s),
 		I(cx + 0.35f * s), I(cy - 1.2f * s));
 
-	// === 흡입구/엔진 포인트 (디테일용 원) ===
 	SelectObject(hdc, wingBrush);
 	int r = max(1, (int)std::lround(s * 0.25f));
 	Ellipse(hdc, I(cx - 0.9f * s) - r, I(cy - 0.3f * s) - r,
@@ -182,7 +198,6 @@ void CPlayer::DrawPlane(HDC hdc, float cx, float cy, float s, COLORREF body, COL
 	Ellipse(hdc, I(cx + 0.9f * s) - r, I(cy - 0.3f * s) - r,
 		I(cx + 0.9f * s) + r, I(cy - 0.3f * s) + r);
 
-	// 리소스 복구/해제
 	SelectObject(hdc, oldPen);
 	SelectObject(hdc, oldBrush);
 	DeleteObject(pen);

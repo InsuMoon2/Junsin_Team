@@ -4,10 +4,13 @@
 #include "AbstractFactory.h"
 #include "CBullet.h"
 #include "CBossBullet.h"
+#include "CUIMgr.h"
+#include "CSceneMgr.h"
 
 
-CBoss02::CBoss02(): m_dwTime(GetTickCount()), m_fBarrel_Speed(0), m_bHp(false)
+CBoss02::CBoss02(): m_dwTime(GetTickCount()), m_fBarrel_Speed(0), m_bHp(false), m_dwTime01(GetTickCount()), m_dwTime02(GetTickCount()), m_dwTime03(GetTickCount())
 {
+
 	ZeroMemory(&m_tHpUi, sizeof(m_tHpUi));
 }
 
@@ -37,9 +40,15 @@ void CBoss02::Initialize()
 
 int CBoss02::Update()
 {
+	// ��Ȱ
+	//if (m_bDead )//&& (GetAsyncKeyState(VK_RETURN) & 0x0001))
+	//{
+	//	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
+	//	Initialize();
+	//}
+
 	if (m_bDead == true)
 		return OBJ_DEAD;
-
 	
 	if (m_tInfo.fY <= 150)
 	{
@@ -56,37 +65,14 @@ int CBoss02::Update()
 
 	if (m_bHp == true)
 	{
-
-	
 		attackTime1 = Mgr1.GetCurrentTimeCount(2);
 
 		m_tInfo.fX -= m_fSpeed;
-
-		if (attackTime1 == 2 && bCheck)
-		{
-			Attack_Guided();
-	
-
-	
-	
-	
-	
-			bCheck = false;
-		}
-	
-
 	}
-
-
 	
-	if (m_dwTime + 500 < GetTickCount())
+	if (m_dwTime + 1200 < GetTickCount())
 	{
-
-		if (m_iHp <= 50)
-		{
-			Attack_Guided();
-		}
-		else
+		if(m_iHp > 50)
 		{
 			Attack_Circular();
 
@@ -94,12 +80,41 @@ int CBoss02::Update()
 			m_dwTime = GetTickCount();
 	}
 
-	if (m_iHp <= 50)
+	if (m_dwTime01 + 100 < GetTickCount())
 	{
-		Attack_Cos();
+		if (m_iHp <= 50)
+		{
+
+			Attack_Cos();
+		}
+
+		m_dwTime01 = GetTickCount();
 	}
+
+	if (m_dwTime02 + 1000 < GetTickCount())
+	{
+
+		if (m_iHp <= 50)
+		{
+
+			Attack_Guided();
+		}
+
+		m_dwTime02 = GetTickCount();
+	}
+
+	if (m_dwTime03 + 5000 < GetTickCount())
+	{
+
+
+		Attack_Around();
+		
+
+		m_dwTime03 = GetTickCount();
+	}
+
 	__super::Update_Rect();
-	Key_Input();  
+	//Key_Input();  
 
 	return 0;
 }
@@ -130,23 +145,12 @@ void CBoss02::Render(HDC hDC)
 	{
 		if (m_bHp == true)
 		{
-			Rectangle(hDC, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right, m_tHpUi.bottom);
-
-			HBRUSH myBrush = CreateSolidBrush(RGB(255, 0, 0));
-			HPEN myPen = CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
-
-			HBRUSH OldBrush = (HBRUSH)SelectObject(hDC, myBrush);
-			HPEN OldPen = (HPEN)SelectObject(hDC, myPen);
-
-			Rectangle(hDC, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right * m_iHp / 100, m_tHpUi.bottom);
-
-			SelectObject(hDC, OldBrush);
-			SelectObject(hDC, OldPen);
-			DeleteObject(myBrush);
-			DeleteObject(myPen);
+			CUIMgr::Get_Instance()->Render_HP(hDC, this);
 
 		}
 	}
+
+
 }
 
 void CBoss02::Release()
@@ -163,33 +167,6 @@ void CBoss02::Key_Input()
 		Attack_Guided();
 
 	}
-
-	//if (GetAsyncKeyState(VK_RIGHT))
-	//{
-	//
-	//	{
-	//		m_tInfo.fX += m_fSpeed;
-	//	}
-	//}
-	//
-	//if (GetAsyncKeyState(VK_LEFT))
-	//{
-	//
-	//	{
-	//		m_tInfo.fX -= m_fSpeed;
-	//	}
-	//}
-	//
-	//
-	//if (GetAsyncKeyState(VK_UP))
-	//{
-	//	m_tInfo.fY -= m_fSpeed;
-	//}
-	//
-	//if (GetAsyncKeyState(VK_DOWN))
-	//{
-	//	m_tInfo.fY += m_fSpeed;
-	//}
 }
 
 void CBoss02::Attack_Circular()
@@ -225,7 +202,11 @@ void CBoss02::Attack_Cos()
 
 	m_iBarrel_Len = 200;
 
-	m_fAngle += m_fBarrel_Speed;
+	double m = normalize(m_tInfo.fX, 0 + m_tInfo.fCX*.5f, WINCX- m_tInfo.fCX * .5f);
+	double resize_X = rescale(m, 135,45);
+	
+	m_fAngle = resize_X;
+
 	if (m_fAngle >= 135 || m_fAngle <= 45)
 	{
 		m_fBarrel_Speed *= -1;
@@ -247,4 +228,13 @@ void CBoss02::Attack_Guided()
 
 }
 
- 
+void CBoss02::Attack_Around()
+{
+	for (int i = 0; i < 360; i += 20)
+	{
+		CObj* tmp1 = Create_BossBullet(i, Around);
+		m_pBullet->push_back(tmp1);
+
+	}
+}
+

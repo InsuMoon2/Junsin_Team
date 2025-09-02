@@ -48,12 +48,12 @@ public:
         ULONGLONG now = GetTickCount64();
         ULONGLONG elapsed = now - m_dwLastUpdateTime;
 
-        if (elapsed >= 100)
+        if (elapsed >= 100) 
         {
             m_fTimeCount += 0.1f;
             m_dwLastUpdateTime = now;
 
-            if (m_fTimeCount + 1e-4f >= static_cast<float>(seconds))
+            if (m_fTimeCount + 1e-4f >= static_cast<float>(seconds)) 
             {
                 m_fTimeCount = 0.0f;
             }

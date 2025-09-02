@@ -20,7 +20,7 @@ void CPlayerBullet::Initialize()
 
 	m_fSpeed = 7.5f;
 
-	m_iAttack = 100;
+	m_iAttack = 30;
 
 	__super::Update_Rect();
 }
