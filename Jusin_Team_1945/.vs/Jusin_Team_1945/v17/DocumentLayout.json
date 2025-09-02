@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\",
+  "WorkspaceRootPath": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -45,6 +46,197 @@
     {
       "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CObj.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+=======
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CShield.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CShield.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CShield.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CShield.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBoss01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CObj.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CStage02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBoss02.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CObj.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBoss01Bullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\AbstractFactory.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet_Monster01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBullet_Monster01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CPlayer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayerBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CPlayerBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBossBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBossBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBoss01Bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CStage03.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CMonster01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CPlayer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss02.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBoss02.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage03.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CStage03.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBossBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBossBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CMainGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CSceneMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CSceneMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBoss01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage02.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CStage02.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTempStage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CTempStage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CStage01.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem_AddBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CItem_AddBullet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CMainGame.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTempStage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CTempStage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CSceneMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CSceneMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CCollisionMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CCollisionMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTimerMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CTimerMgr.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTimerMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CTimerMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CMonster01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayerBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CPlayerBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CStage01.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Jusin_Team_1945.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CScene.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CCollisionMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CCollisionMgr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CScene.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CItem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem_AddBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\CItem_AddBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Mouse.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A1DA8C3-0977-4478-BE78-6F4FDA1A0BE4}|Jusin_Team_1945\\Jusin_Team_1945.vcxproj|solutionrelative:Jusin_Team_1945\\Mouse.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+>>>>>>> origin/LEE
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -56,16 +248,228 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
+<<<<<<< HEAD
           "DockedWidth": 179,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+=======
+          "DockedWidth": 216,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Define.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Define.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Define.h",
+              "RelativeToolTip": "Jusin_Team_1945\\Define.h",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAAEoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T01:21:01.427Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CStage02.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage02.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CStage02.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage02.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CStage02.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T15:32:02.364Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CObj.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CObj.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CObj.h",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T01:38:53.086Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CMainGame.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CMainGame.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CMainGame.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T14:55:04.709Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CBoss01Bullet.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01Bullet.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBoss01Bullet.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01Bullet.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CBoss01Bullet.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-01T07:15:11.868Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CBoss01.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBoss01.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CBoss01.h",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T14:11:18.996Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CSceneMgr.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CSceneMgr.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CSceneMgr.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CSceneMgr.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CSceneMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T15:00:37.242Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CShield.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CShield.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CShield.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CShield.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CShield.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-01T08:35:09.558Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CBossBullet.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBossBullet.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBossBullet.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBossBullet.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CBossBullet.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-01T07:43:14.8Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CMonster01.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster01.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CMonster01.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster01.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CMonster01.h",
+              "ViewState": "AgIAAAgAAAAAAAAAAIAwwBgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-30T10:41:54.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CPlayer.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayer.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CPlayer.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayer.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CPlayer.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T15:07:28.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CTimerMgr.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTimerMgr.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CTimerMgr.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTimerMgr.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CTimerMgr.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-30T10:18:56.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "CPlayerBullet.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayerBullet.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CPlayerBullet.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayerBullet.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CPlayerBullet.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-30T13:41:12.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CTempStage.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTempStage.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CTempStage.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTempStage.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CTempStage.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-30T09:21:19.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CStage01.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage01.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CStage01.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage01.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CStage01.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T15:31:52.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+>>>>>>> origin/LEE
               "Title": "CScene.h",
-              "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.h",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\CScene.h",
-              "ToolTip": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.h",
               "RelativeToolTip": "Jusin_Team_1945\\CScene.h",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -74,6 +478,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 2,
               "Title": "CTimerMgr.h",
               "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTimerMgr.h",
@@ -84,22 +489,119 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-02T02:31:41.026Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 40,
+              "Title": "CCollisionMgr.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CCollisionMgr.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CCollisionMgr.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CCollisionMgr.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CCollisionMgr.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T06:10:34.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CBullet.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBullet.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CBullet.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T04:51:27.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CBoss02.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss02.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBoss02.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss02.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CBoss02.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T07:39:21.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CMonster.h",
+              "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster.h",
+              "ToolTip": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster.h",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T05:05:51.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CStage03.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage03.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CStage03.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage03.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CStage03.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T04:10:24.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Mouse.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Mouse.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Mouse.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Mouse.h",
+              "RelativeToolTip": "Jusin_Team_1945\\Mouse.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-29T06:52:30.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "pch.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\pch.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\pch.h",
+              "RelativeToolTip": "Jusin_Team_1945\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T14:51:53.357Z"
+>>>>>>> origin/LEE
             }
           ]
         },
         {
+<<<<<<< HEAD
           "DockedWidth": 279,
           "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 5,
+=======
+          "DockedWidth": 242,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+>>>>>>> origin/LEE
               "Title": "CMainGame.cpp",
-              "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.cpp",
               "RelativeDocumentMoniker": "Jusin_Team_1945\\CMainGame.cpp",
-              "ToolTip": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMainGame.cpp",
               "RelativeToolTip": "Jusin_Team_1945\\CMainGame.cpp",
+<<<<<<< HEAD
               "ViewState": "AQIAABsAAAAAAAAAAAAAACsAAAAdAAAA",
+=======
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAA7AAAAAAAAAA==",
+>>>>>>> origin/LEE
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-28T14:55:06.072Z",
               "IsPinned": true,
@@ -107,6 +609,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 3,
               "Title": "CSceneMgr.cpp",
               "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CSceneMgr.cpp",
@@ -131,10 +634,104 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-30T10:47:19.239Z",
               "IsPinned": true,
+=======
+              "DocumentIndex": 6,
+              "Title": "CObj.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CObj.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CObj.cpp",
+              "ViewState": "AgIAACUAAAAAAAAAAAAlwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-29T04:06:40.684Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CBoss01.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBoss01.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CBoss01.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-29T14:11:20.28Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CStage02.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage02.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CStage02.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage02.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CStage02.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-29T01:24:43.922Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CBoss01Bullet.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01Bullet.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBoss01Bullet.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss01Bullet.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CBoss01Bullet.cpp",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFMAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-31T11:11:40.3Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CShield.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CShield.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CShield.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CShield.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CShield.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-01T08:27:40.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CBoss02.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss02.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBoss02.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBoss02.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CBoss02.cpp",
+              "ViewState": "AgIAANQAAAAAAAAAAAAAwOQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-29T07:40:57.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CBossBullet.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBossBullet.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBossBullet.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBossBullet.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CBossBullet.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-31T06:25:39.64Z",
+>>>>>>> origin/LEE
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 10,
               "Title": "CObj.cpp",
               "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.cpp",
@@ -142,12 +739,22 @@
               "ToolTip": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CObj.cpp",
               "RelativeToolTip": "Jusin_Team_1945\\CObj.cpp",
               "ViewState": "AQIAACEAAAAAAAAAAIAwwDAAAAAMAAAA",
+=======
+              "DocumentIndex": 15,
+              "Title": "CStage03.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage03.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CStage03.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage03.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CStage03.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+>>>>>>> origin/LEE
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-29T04:06:40.684Z",
-              "IsPinned": true
+              "WhenOpened": "2025-08-29T04:11:11.955Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 8,
               "Title": "CPlayerBullet.cpp",
               "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayerBullet.cpp",
@@ -168,9 +775,18 @@
               "ToolTip": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTempStage.cpp",
               "RelativeToolTip": "Jusin_Team_1945\\CTempStage.cpp",
               "ViewState": "AQIAAB0AAAAAAAAAAIAwwCsAAAAdAAAA",
+=======
+              "DocumentIndex": 28,
+              "Title": "CItem_AddBullet.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem_AddBullet.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CItem_AddBullet.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem_AddBullet.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CItem_AddBullet.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAA3AAAAAAAAAA==",
+>>>>>>> origin/LEE
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-29T14:09:23.837Z",
-              "IsPinned": true
+              "WhenOpened": "2025-08-30T13:50:20.158Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -201,9 +817,196 @@
             {
               "$type": "Document",
               "DocumentIndex": 11,
+<<<<<<< HEAD
+=======
+              "Title": "CPlayer.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayer.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CPlayer.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayer.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CPlayer.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAMUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-28T15:07:27.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "CTempStage.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTempStage.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CTempStage.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTempStage.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CTempStage.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-29T14:09:23.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CPlayerBullet.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayerBullet.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CPlayerBullet.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayerBullet.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CPlayerBullet.cpp",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-31T06:09:36.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CSceneMgr.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CSceneMgr.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CSceneMgr.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CSceneMgr.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CSceneMgr.cpp",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAGoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-28T15:35:35.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CMonster01.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster01.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CMonster01.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CMonster01.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CMonster01.cpp",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-30T10:41:47.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CTimerMgr.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTimerMgr.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CTimerMgr.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CTimerMgr.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CTimerMgr.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-30T10:25:43.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CBullet_Monster01.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet_Monster01.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBullet_Monster01.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet_Monster01.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CBullet_Monster01.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-31T11:10:38.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CStage01.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage01.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CStage01.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CStage01.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CStage01.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-29T14:09:50.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Jusin_Team_1945.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\Jusin_Team_1945.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\Jusin_Team_1945.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\Jusin_Team_1945.cpp",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowBYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-28T14:49:18.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AbstractFactory.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\AbstractFactory.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\AbstractFactory.h",
+              "RelativeToolTip": "Jusin_Team_1945\\AbstractFactory.h",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-28T15:35:49.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CBullet.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CBullet.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CBullet.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CBullet.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-28T15:07:14.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CScene.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CScene.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CScene.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CScene.cpp",
+              "ViewState": "AgIAAD8AAAAAAAAAAIAwwEsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-30T10:47:19.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CCollisionMgr.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CCollisionMgr.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CCollisionMgr.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CCollisionMgr.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CCollisionMgr.cpp",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-29T06:08:45.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CItem.cpp",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem.cpp",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CItem.cpp",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem.cpp",
+              "RelativeToolTip": "Jusin_Team_1945\\CItem.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAIAwwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-30T13:53:41.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+>>>>>>> origin/LEE
               "Title": "WinBase.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h",
               "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\WinBase.h",
               "ViewState": "AQIAAE8AAAAAAAAAAAAgwF4AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-08-30T09:58:10.836Z",
@@ -211,6 +1014,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 4,
               "Title": "CPlayer.cpp",
               "DocumentMoniker": "D:\\GitDesktop\\Jusin\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CPlayer.cpp",
@@ -221,6 +1025,17 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-02T02:35:09.71Z",
               "IsPinned": true,
+=======
+              "DocumentIndex": 44,
+              "Title": "CItem_AddBullet.h",
+              "DocumentMoniker": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem_AddBullet.h",
+              "RelativeDocumentMoniker": "Jusin_Team_1945\\CItem_AddBullet.h",
+              "ToolTip": "C:\\Users\\ryuga\\OneDrive\\Documents\\GitHub\\Junsin_Team\\Jusin_Team_1945\\Jusin_Team_1945\\CItem_AddBullet.h",
+              "RelativeToolTip": "Jusin_Team_1945\\CItem_AddBullet.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-08-30T13:54:16.816Z",
+>>>>>>> origin/LEE
               "EditorCaption": ""
             }
           ]

@@ -92,12 +92,10 @@ CObj* CObj::Create_Boss01Bullet(DIRECTION eDir)
 
 CObj* CObj::Create_Boss01Bullet(float angle)
 {
-	CObj* bullet = AbstractFactory<CBoss01Bullet>::Create();
+	CObj* bullet = AbstractFactory<CBoss01Bullet>::Create(m_tInfo.fX, m_tInfo.fY);
 
 	bullet->Set_Angle(angle);
 	bullet->Set_Owner(this);
-
-	bullet->Set_Pos(m_tInfo.fX, m_tInfo.fY);
 
 	return bullet;
 

@@ -8,6 +8,7 @@
 CBoss01::CBoss01()
 {
 	ZeroMemory(&m_tHpUi, sizeof(m_tHpUi));
+	ZeroMemory(&m_tBarrel_Pos, sizeof(POS));
 }
 
 CBoss01::~CBoss01()
@@ -17,14 +18,18 @@ CBoss01::~CBoss01()
 
 void CBoss01::Initialize()
 {
-	m_tInfo.fCX = 100.f;
-	m_tInfo.fCY = 75.f;
+	m_tInfo.fCX = 60.f;
+	m_tInfo.fCY = 60.f;
 
 	m_tHpUi = { 50,50,WINCX - 50,70 };
 
-	m_fSpeed = 3.f;
+	m_fSpeed = 10.f;
 
-	m_iHp = 4000;
+	m_iBarrel_Len = 100.f;
+	m_fAngle = 90.f;
+	m_fBarrel_Speed = 10.f;
+
+	m_iHp = 300;
 
 	m_bHp = true;
 }
@@ -36,20 +41,30 @@ int CBoss01::Update()
 
 	m_tInfo.fX += m_fSpeed;
 
+	m_tBarrel_Pos.X = LONG(m_tInfo.fX + (m_iBarrel_Len * cosf(m_fAngle * (PI / 180.f))));
+	m_tBarrel_Pos.Y = LONG(m_tInfo.fY + (m_iBarrel_Len * sinf(m_fAngle * (PI / 180.f))));
+
 	__super::Update_Rect();
 
 	AttackTime = Mgr1.GetCurrentTimeCount(1);
-	ShieldTime = Mgr2.GetCurrentTimeCount(8);
+	ShieldTime = Mgr2.GetCurrentTimeCount(4);
+	SkillTime = Mgr3.GetCurrentTimeCount(4);
 
 	if (AttackTime == 1)
 	{
-		m_pBullet->push_back(Create_MonsterBullet01(DIR_DOWN));
-
+		m_pBullet->push_back(Create_Boss01Bullet(DIR_DOWN));
+	
 	}
 
-	if (ShieldTime == 1)    
+	if (ShieldTime == 2)
 	{
 		m_pShield->push_back(AbstractFactory<CShield>::Create(this));
+	}
+
+	if (SkillTime <= 3 && SkillTime >= 0)
+	{
+		m_fAngle += 3.f;
+		m_pBullet->push_back(Create_Boss01Bullet(m_fAngle));
 	}
 
 	return OBJ_NOEVENT;
@@ -66,6 +81,8 @@ void CBoss01::Late_Update()
 	{
 		m_bDead = true;
 	}
+
+
 } 
 
 void CBoss01::Render(HDC hDC)
@@ -82,7 +99,7 @@ void CBoss01::Render(HDC hDC)
 		HBRUSH OldBrush = (HBRUSH)SelectObject(hDC, myBrush);
 		HPEN OldPen = (HPEN)SelectObject(hDC, myPen);
 
-		Rectangle(hDC, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right * m_iHp / 4000, m_tHpUi.bottom);
+		Rectangle(hDC, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right * m_iHp / 300, m_tHpUi.bottom);
 
 		SelectObject(hDC, OldBrush);
 		SelectObject(hDC, OldPen);
@@ -93,11 +110,15 @@ void CBoss01::Render(HDC hDC)
 
 	TCHAR szBuff[32] = L"";
 	swprintf_s(szBuff, L"AttackTime : %d", AttackTime);
-	TextOut(hDC, 50, 160, szBuff, lstrlen(szBuff));
+	TextOut(hDC, 50, 400, szBuff, lstrlen(szBuff));
 
 	TCHAR szBuff2[32] = L"";
 	swprintf_s(szBuff2, L"ShieldTime : %d", ShieldTime);
-	TextOut(hDC, 50, 200, szBuff2, lstrlen(szBuff2));
+	TextOut(hDC, 50, 450, szBuff2, lstrlen(szBuff2));
+
+	TCHAR szBuff3[32] = L"";
+	swprintf_s(szBuff3, L"SkillTime : %d", SkillTime);
+	TextOut(hDC, 50, 500, szBuff3, lstrlen(szBuff3));
 }
 
 void CBoss01::Release()
