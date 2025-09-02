@@ -5,7 +5,7 @@
 #include "CBullet.h"
 #include "CBossBullet.h"
 #include "CUIMgr.h"
-
+#include "CSceneMgr.h"
 
 
 CBoss02::CBoss02(): m_dwTime(GetTickCount()), m_fBarrel_Speed(0), m_bHp(false), m_dwTime01(GetTickCount()), m_dwTime02(GetTickCount()), m_dwTime03(GetTickCount())
@@ -40,6 +40,13 @@ void CBoss02::Initialize()
 
 int CBoss02::Update()
 {
+	// ºÎÈ°
+	//if (m_bDead )//&& (GetAsyncKeyState(VK_RETURN) & 0x0001))
+	//{
+	//	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
+	//	Initialize();
+	//}
+
 	if (m_bDead == true)
 		return OBJ_DEAD;
 
