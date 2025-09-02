@@ -26,12 +26,6 @@ void CStage01::Initialize()
     m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create(360.f, 200.f, 2));
     m_ObjList[MONSTER01].push_back(AbstractFactory<CMonster01>::Create(100.f, 200.f, 1));
    
-
-    //for (auto& monster : m_ObjList[MONSTER01])
-    //{
-    //    monster->Set_Bullet(&m_ObjList[BULLET]);
-    //}
-
     for (auto iter = m_ObjList[MONSTER01].begin(); iter != m_ObjList[MONSTER01].end(); iter++)
     {
         dynamic_cast<CMonster01*>(*iter)->Set_Bullet(&m_ObjList[BULLET]);
@@ -52,7 +46,6 @@ void CStage01::LateUpdate()
     CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER01]);
     CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[MONSTER02]);
 
-
     for (auto iter : m_ObjList[MONSTER01])
     {
         if (dynamic_cast<CMonster01*>(iter)->Get_DeadState() == true)
@@ -65,19 +58,26 @@ void CStage01::LateUpdate()
                 m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create(360.f, -90, 2));
                 m_ObjList[MONSTER02].push_back(AbstractFactory<CMonster02>::Create(WINCX-150.f, -30, 2));
                
-
                 for (auto iter = m_ObjList[MONSTER02].begin(); iter != m_ObjList[MONSTER02].end(); iter++)
                 {
                     dynamic_cast<CMonster02*>(*iter)->Set_Bullet(&m_ObjList[BULLET]);
-              
                 }
-
-
             }
         }
-
     }
 
+    for (auto iter : m_ObjList[MONSTER02])
+    {
+        if (dynamic_cast<CMonster02*>(iter)->Get_DeadState() == true)
+        {
+            m_iKillCount++;
+        }
+    }
+
+    if (m_iKillCount == 6)
+    {
+        CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage02);
+    }
 }
 
 void CStage01::Render(HDC hdc)

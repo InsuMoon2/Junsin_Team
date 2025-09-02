@@ -28,6 +28,11 @@ void CStage02::Update()
 {
 	CScene::Update();
 
+	if (m_ObjList[BOSS].empty())
+	{
+		CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage03);
+
+	}
 }
 
 void CStage02::LateUpdate()
@@ -44,12 +49,6 @@ void CStage02::Render(HDC hdc)
 {
 	CScene::Render(hdc);
 	
-	if (!m_ObjList[BOSS].empty())
-	{
-		TCHAR szBuff[32] = L"";
-		swprintf_s(szBuff, L"BOSS HP : %d", m_ObjList[BOSS].front()->Get_Hp());
-		TextOut(hdc, 50, 120, szBuff, lstrlen(szBuff));
-	}
 }
 
 void CStage02::Release()

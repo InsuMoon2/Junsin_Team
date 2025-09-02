@@ -41,10 +41,6 @@ int CBullet_Monster02::Update()
 		
 	__super::Update_Rect();
 
-	
-
-	
-
 	return OBJ_NOEVENT;
 }
 
@@ -70,20 +66,15 @@ void CBullet_Monster02::Late_Update()
 	
 	m_tInfo.fX = m_tCenter.x + m_fDistance * cosf(m_fRotAngle * (PI / 180.f));
 	m_tInfo.fY = m_tCenter.y - m_fDistance * sinf(m_fRotAngle * (PI / 180.f));
-
-	
 }
 
 void CBullet_Monster02::Render(HDC hDC)
 {
 	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
-
-	TCHAR szBuff[32] = L"";
-	swprintf_s(szBuff, L" x : %f", m_tInfo.fX);
-	TextOut(hDC, 50, 180, szBuff, lstrlen(szBuff));
-
-	
+	//TCHAR szBuff[32] = L"";
+	//swprintf_s(szBuff, L" x : %f", m_tInfo.fX);
+	//TextOut(hDC, 50, 180, szBuff, lstrlen(szBuff));
 }
 
 void CBullet_Monster02::Release()

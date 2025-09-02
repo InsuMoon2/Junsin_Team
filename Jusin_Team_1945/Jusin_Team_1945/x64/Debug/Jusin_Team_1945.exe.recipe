@@ -2,19 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-<<<<<<< HEAD
       <FullPath>D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe</FullPath>
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <FullPath>C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe</FullPath>
-=======
-      <FullPath>C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe</FullPath>
->>>>>>> origin/Yurim
-=======
-      <FullPath>C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe</FullPath>
->>>>>>> origin/aneunsoo
->>>>>>> Dev
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

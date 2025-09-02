@@ -24,7 +24,8 @@ void CBoss02::Initialize()
 	m_tInfo = { WINCX / 2, -10, 100, 100 };
 	m_fSpeed = 7.f;
 
-	m_iHp = 100;
+	m_iMaxHp = 500;
+	m_iHp = 500;
 
 	m_tHpUi = { 50,50,WINCX - 50,70 };
 
@@ -33,14 +34,12 @@ void CBoss02::Initialize()
 	m_fAngle = 90.f;
 	m_fBarrel_Speed = 10.f;
 
-
 	__super::Update_Rect();
 
 }
 
 int CBoss02::Update()
 {
-	// ��Ȱ
 	//if (m_bDead )//&& (GetAsyncKeyState(VK_RETURN) & 0x0001))
 	//{
 	//	CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
@@ -61,8 +60,6 @@ int CBoss02::Update()
 	m_tBarrel_Pos.X = m_tInfo.fX + (m_iBarrel_Len * cosf(m_fAngle * (PI / 180)));
 	m_tBarrel_Pos.Y = m_tInfo.fY + (m_iBarrel_Len * sinf(m_fAngle * (PI / 180)));
 
-
-
 	if (m_bHp == true)
 	{
 		attackTime1 = Mgr1.GetCurrentTimeCount(2);
@@ -72,17 +69,16 @@ int CBoss02::Update()
 	
 	if (m_dwTime + 1200 < GetTickCount())
 	{
-		if(m_iHp > 50)
+		if(m_iHp > m_iMaxHp * 0.5f)
 		{
 			Attack_Circular();
-
 		}
-			m_dwTime = GetTickCount();
+		m_dwTime = GetTickCount();
 	}
 
 	if (m_dwTime01 + 100 < GetTickCount())
 	{
-		if (m_iHp <= 50)
+		if (m_iHp <= m_iMaxHp * 0.5f)
 		{
 
 			Attack_Cos();
@@ -94,7 +90,7 @@ int CBoss02::Update()
 	if (m_dwTime02 + 1000 < GetTickCount())
 	{
 
-		if (m_iHp <= 50)
+		if (m_iHp <= m_iMaxHp * 0.5f)
 		{
 
 			Attack_Guided();
@@ -105,11 +101,8 @@ int CBoss02::Update()
 
 	if (m_dwTime03 + 5000 < GetTickCount())
 	{
-
-
 		Attack_Around();
 		
-
 		m_dwTime03 = GetTickCount();
 	}
 

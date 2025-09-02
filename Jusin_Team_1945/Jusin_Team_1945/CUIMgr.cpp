@@ -45,7 +45,7 @@ void CUIMgr::Render_HP(HDC hdc, CObj* my)
 		HBRUSH OldBrush = (HBRUSH)SelectObject(hdc, myBrush);
 		HPEN OldPen = (HPEN)SelectObject(hdc, myPen);
 
-		Rectangle(hdc, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right * my->Get_Hp() / 100, m_tHpUi.bottom);
+		Rectangle(hdc, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right * my->Get_Hp() / my->Get_MaxHp(), m_tHpUi.bottom);
 
 		SelectObject(hdc, OldBrush);
 		SelectObject(hdc, OldPen);

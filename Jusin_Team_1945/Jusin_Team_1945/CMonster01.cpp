@@ -61,11 +61,6 @@ int CMonster01::Update()
 
     }
 
-   
-
-
-
-
     return OBJ_NOEVENT;
 }
 
@@ -99,9 +94,9 @@ void CMonster01::Render(HDC hDC)
 {
     Rectangle(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
 
-    TCHAR szBuff[32] = L"";
-    swprintf_s(szBuff, L"Time : %d", attackTime1);
-    TextOut(hDC, 50, 120, szBuff, lstrlen(szBuff));
+    //TCHAR szBuff[32] = L"";
+    //swprintf_s(szBuff, L"Time : %d", attackTime1);
+    //TextOut(hDC, 50, 120, szBuff, lstrlen(szBuff));
 
     //TCHAR szBuff2[32] = L"";
     //swprintf_s(szBuff2, L"Time : %d", attackTime2);

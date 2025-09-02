@@ -41,6 +41,7 @@ void CStage03::LateUpdate()
 	CScene::LateUpdate();
 
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[BOSS]);
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[SHIELD]);
 	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], CSceneMgr::GetInstance()->Get_Player());
 }
 

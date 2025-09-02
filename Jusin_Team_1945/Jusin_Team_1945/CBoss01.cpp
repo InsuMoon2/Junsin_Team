@@ -3,7 +3,9 @@
 #include "CObj.h"
 #include "CTimerMgr.h"
 #include "AbstractFactory.h"
+#include "CSceneMgr.h"
 #include "CShield.h"
+#include "CUiMgr.h"
 
 CBoss01::CBoss01()
 {
@@ -29,7 +31,8 @@ void CBoss01::Initialize()
 	m_fAngle = 90.f;
 	m_fBarrel_Speed = 10.f;
 
-	m_iHp = 300;
+	m_iMaxHp = 100;
+	m_iHp = m_iMaxHp;
 
 	m_bHp = true;
 }
@@ -37,7 +40,14 @@ void CBoss01::Initialize()
 int CBoss01::Update()
 {
 	if (m_bDead)
+	{
 		return OBJ_DEAD;
+	}
+
+	if (m_iHp <= 0)
+	{
+		m_bDead = true;
+	}
 
 	m_tInfo.fX += m_fSpeed;
 
@@ -67,6 +77,8 @@ int CBoss01::Update()
 		m_pBullet->push_back(Create_Boss01Bullet(m_fAngle));
 	}
 
+	
+
 	return OBJ_NOEVENT;
 }
 
@@ -75,11 +87,6 @@ void CBoss01::Late_Update()
 	if ( m_tRect.left <= 0 || m_tRect.right >= WINCX )
 	{
 		m_fSpeed *= -1.f;
-	}
-
-	if (m_iHp <= 0)
-	{
-		m_bDead = true;
 	}
 
 
@@ -91,34 +98,9 @@ void CBoss01::Render(HDC hDC)
 
 	if (m_bHp == true)
 	{
-		Rectangle(hDC, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right, m_tHpUi.bottom);
-
-		HBRUSH myBrush = CreateSolidBrush(RGB(255, 0, 0));
-		HPEN myPen = CreatePen(PS_SOLID, 1, RGB(255, 0, 0));
-
-		HBRUSH OldBrush = (HBRUSH)SelectObject(hDC, myBrush);
-		HPEN OldPen = (HPEN)SelectObject(hDC, myPen);
-
-		Rectangle(hDC, m_tHpUi.left, m_tHpUi.top, m_tHpUi.right * m_iHp / 300, m_tHpUi.bottom);
-
-		SelectObject(hDC, OldBrush);
-		SelectObject(hDC, OldPen);
-		DeleteObject(myBrush);
-		DeleteObject(myPen);
-
+		CUIMgr::Get_Instance()->Render_HP(hDC, this);
 	}
 
-	TCHAR szBuff[32] = L"";
-	swprintf_s(szBuff, L"AttackTime : %d", AttackTime);
-	TextOut(hDC, 50, 400, szBuff, lstrlen(szBuff));
-
-	TCHAR szBuff2[32] = L"";
-	swprintf_s(szBuff2, L"ShieldTime : %d", ShieldTime);
-	TextOut(hDC, 50, 450, szBuff2, lstrlen(szBuff2));
-
-	TCHAR szBuff3[32] = L"";
-	swprintf_s(szBuff3, L"SkillTime : %d", SkillTime);
-	TextOut(hDC, 50, 500, szBuff3, lstrlen(szBuff3));
 }
 
 void CBoss01::Release()

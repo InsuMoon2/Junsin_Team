@@ -20,11 +20,10 @@ void CBossBullet::Initialize()
     
     m_fSpeed = 3.f;
     
-    m_iAttack = 1;
+    m_iAttack = 5;
 
     m_fAngle = 90;
- 
-          m_fDistance =0;
+    m_fDistance =0;
           
     __super::Update_Rect();
 }

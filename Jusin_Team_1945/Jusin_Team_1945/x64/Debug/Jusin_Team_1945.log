@@ -1,114 +1,11 @@
-<<<<<<< HEAD
-﻿  Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-﻿  CPlayer.cpp
+﻿  CMainGame.cpp
+D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CMainGame.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.cpp(55,17): warning C4244: '초기화 중': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   CScene.cpp
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CSceneMgr.cpp
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CStage01.cpp
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CPlayer.h(41,27): warning C4244: '초기화 중': 'float'에서 'ULONGLONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CStage01.cpp(59,65): warning C4805: '==': 연산에 'BOOL' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
-  CStage02.cpp
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CStage03.cpp
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  CTempStage.cpp
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(19,29): warning C4244: '초기화 중': 'unsigned __int64'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다...
   Jusin_Team_1945.vcxproj -> D:\GitDesktop\Jusin\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
-=======
-﻿  CBoss01.cpp
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(7,54): warning C4244: '=': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(48,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(57,34): warning C4244: '=': 'float'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(71,38): warning C4244: '=': 'float'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss01.cpp(28,18): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss01.cpp(44,24): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss01.cpp(45,24): warning C4244: '=': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss01.cpp'을(를) 컴파일하는 중)
-  
-  Jusin_Team_1945.vcxproj -> C:\Users\ryuga\OneDrive\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
->>>>>>> origin/LEE
-=======
-﻿  CObj.cpp
-  Jusin_Team_1945.vcxproj -> C:\Users\황유림\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
->>>>>>> origin/Yurim
-=======
-﻿  CBoss02.cpp
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(7,54): warning C4244: '=': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(18,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(48,29): warning C4244: '초기화 중': 'ULONGLONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(57,34): warning C4244: '=': 'float'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CTimerMgr.h(71,38): warning C4244: '=': 'float'에서 'DWORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(153,35): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(153,23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(154,44): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(154,27): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(221,40): warning C4244: '인수': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(221,19): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(226,24): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(247,13): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\Jusin_Team_1945\CBoss02.cpp(274,34): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/CBoss02.cpp'을(를) 컴파일하는 중)
-  
-  Jusin_Team_1945.vcxproj -> C:\Users\LG\Documents\GitHub\Junsin_Team\Jusin_Team_1945\x64\Debug\Jusin_Team_1945.exe
->>>>>>> origin/aneunsoo
->>>>>>> Dev

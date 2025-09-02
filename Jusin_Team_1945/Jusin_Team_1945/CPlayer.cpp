@@ -97,39 +97,13 @@ void CPlayer::Render(HDC hDC)
 
 	//Rectangle(hDC, m_tRect.left + 40, m_tRect.top + 10, m_tRect.right - 40, m_tRect.bottom);
 
+	CUIMgr::Get_Instance()->Render_Barrel(hDC, m_iBarrel_Number);
+
 	if (m_bDead == true)
         CUIMgr::Get_Instance()->Render_GameOver(hDC, WINCX, WINCY, true);
 
     CUIMgr::Get_Instance()->Render_HP(hDC, this);
-
-    if (m_iBarrel_Number == 1)
-    {
-        MoveToEx(hDC, m_tInfo.fX, m_tInfo.fY, nullptr);
-        LineTo(hDC, m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
-    }
-
-    else if (m_iBarrel_Number == 2)
-    {
-        movePosin = RectSize * 0.15f;
-
-        MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
-        LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
-
-        MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
-        LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
-    }
-
-    else if (m_iBarrel_Number == 3)
-    {
-        movePosin = RectSize * 0.15f;
-
-        MoveToEx(hDC, m_tInfo.fX - movePosin, m_tInfo.fY, nullptr);
-        LineTo(hDC, m_tInfo.fX - movePosin, m_tBarrel_Pos.Y);
-
-        MoveToEx(hDC, m_tInfo.fX + movePosin, m_tInfo.fY, nullptr);
-        LineTo(hDC, m_tInfo.fX + movePosin, m_tBarrel_Pos.Y);
-    }
-
+	
 }
 
 void CPlayer::Release()

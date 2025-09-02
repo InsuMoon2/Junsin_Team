@@ -28,7 +28,7 @@ void CScene::Initialize()
 	{
 		obj->Set_Bullet(&m_ObjList[BULLET]);
 		obj->Set_Shield(&m_ObjList[SHIELD], obj);
-		obj->Set_Eraser(&m_ObjList[ERASER]);
+		obj->Set_Eraser(&m_ObjList[ERASER_BULLET]);
 	}
 	
 }
@@ -65,6 +65,18 @@ void CScene::Update()
 
 void CScene::LateUpdate()
 {
+	// 아이템 충돌 처리
+	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[ITEM]);
+	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[SHIELD]);
+	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[POTION]);
+	//CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[PET]);
+	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[ERASER_ITEM]);
+
+	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[ERASER_BULLET]); 
+
+	
+	//CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[ERASER]);
+
 	for (UINT i = 0; i < OBJ_END; ++i)
 	{
 		for (auto& iter : m_ObjList[i])
@@ -72,15 +84,6 @@ void CScene::LateUpdate()
 			iter->Late_Update();
 		}
 	}
-
-	// 아이템 충돌 처리
-	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[ITEM]);
-	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[SHIELD]);
-	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[POTION]);
-	//CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[PET]);
-
-	CCollisionMgr::Collision_Item(CSceneMgr::GetInstance()->Get_Player(), m_ObjList[ERASER]);
-	CCollisionMgr::Collision_Circle(m_ObjList[BULLET], m_ObjList[ERASER]);
 }
 
 void CScene::Render(HDC hdc)
@@ -124,7 +127,7 @@ void CScene::Random_ItemSpawn()
 		break;
 
 	case 3:
-		m_ObjList[ERASER].push_back(AbstractFactory<CItem_Erase>::Create(randomX, 0));
+		m_ObjList[ERASER_ITEM].push_back(AbstractFactory<CItem_Erase>::Create(randomX, 0));
 		break;
 	}
 

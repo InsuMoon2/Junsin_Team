@@ -28,8 +28,6 @@ public:
 
 	static void Render_GameOver(HDC hdc, int winCX, int winCY, bool over = true);
 
-
-
 	//static CUIMgr* Get_Instance()
 	//{
 	//	if (m_pInstance == nullptr)

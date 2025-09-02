@@ -39,6 +39,7 @@ public:
 	INFO			Get_Info()	 { return m_tInfo; }
 
 	int			    Get_Hp()	 { return m_iHp; }
+	int			    Get_MaxHp()	 { return m_iMaxHp; }
 	int				Get_Attack() { return m_iAttack; }
 	int				Get_Def()    { return m_iDef; }
 	float			Get_Speed()  { return m_fSpeed; }
@@ -102,6 +103,7 @@ protected:
 	bool		m_bDead;
 	
 	int			m_iHp;
+	int			m_iMaxHp;
 	int			m_iAttack;
 	int			m_iDef;
 		

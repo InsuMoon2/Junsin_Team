@@ -12,6 +12,7 @@
 CObj::CObj()
 	: m_fSpeed(0.f), m_eDir(DIR_END), m_bDead(false),
 	  m_fShieldAngle(0.f), m_fDistance(0.f), m_iHp(0), m_iAttack(0), m_iDef(0), m_pBullet(nullptr), m_pOwner(nullptr), m_iBarrel_Number(1), m_tTarget(nullptr)
+	, m_iMaxHp(0)
 {
 	ZeroMemory(&m_tInfo, sizeof(INFO));
 	ZeroMemory(&m_tRect, sizeof(RECT));
