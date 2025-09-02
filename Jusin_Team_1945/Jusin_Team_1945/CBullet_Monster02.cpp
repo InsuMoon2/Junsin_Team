@@ -27,6 +27,9 @@ void CBullet_Monster02::Initialize()
 	m_fDistance = 50.f;
 
 	m_bStart = true;
+
+
+	m_iBarrel_Len = 100;
 }
 
 int CBullet_Monster02::Update()
@@ -37,15 +40,10 @@ int CBullet_Monster02::Update()
 	}
 		
 	__super::Update_Rect();
-	//if (m_eDir == DIR_DOWN && m_bStart == true)
-	
 
 	
 
-	//m_tInfo.fY += m_fSpeed;
-
-	//m_tInfo.fX = m_pOwner->Get_Info().fX + m_iBarrel_Len * cosf(m_fAngle);
-	//m_tInfo.fY = m_pOwner->Get_Info().fY - m_iBarrel_Len * sinf(m_fAngle);
+	
 
 	return OBJ_NOEVENT;
 }
@@ -64,7 +62,7 @@ void CBullet_Monster02::Late_Update()
 		m_tCenter.y = m_tInfo.fY;
 		m_bStart = false;
 	}																							
-
+	
 	m_tCenter.x += long(m_fSpeed * cosf(m_fAngle * (PI / 180.f)));
 	m_tCenter.y -= long(m_fSpeed * sinf(m_fAngle * (PI / 180.f)));
 	
@@ -72,11 +70,15 @@ void CBullet_Monster02::Late_Update()
 	
 	m_tInfo.fX = m_tCenter.x + m_fDistance * cosf(m_fRotAngle * (PI / 180.f));
 	m_tInfo.fY = m_tCenter.y - m_fDistance * sinf(m_fRotAngle * (PI / 180.f));
+
+	
 }
 
 void CBullet_Monster02::Render(HDC hDC)
 {
 	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+
+
 	TCHAR szBuff[32] = L"";
 	swprintf_s(szBuff, L" x : %f", m_tInfo.fX);
 	TextOut(hDC, 50, 180, szBuff, lstrlen(szBuff));

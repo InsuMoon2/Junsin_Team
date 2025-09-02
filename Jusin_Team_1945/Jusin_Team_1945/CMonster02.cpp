@@ -18,11 +18,12 @@ void CMonster02::Initialize()
 {
 	m_tInfo.fCX = 100.f;
 	m_tInfo.fCY = 100.f;
-	//m_tInfo.fX = 300;
-	//m_tInfo.fY = 300;
+
 	m_fSpeed = 0.7f;
 
 	m_iHp = 1;
+
+	m_iBarrel_Len = 100;
 }
 
 int CMonster02::Update()
@@ -33,9 +34,10 @@ int CMonster02::Update()
 		return OBJ_DEAD;
 	}
 
+	m_tInfo.fY += m_fSpeed;
 
-		m_tInfo.fY += m_fSpeed;
-	
+	m_tBarrel_Pos.X = m_tInfo.fX;
+	m_tBarrel_Pos.Y = m_tInfo.fY + m_iBarrel_Len;;
 
 	__super::Update_Rect();
 
@@ -43,7 +45,7 @@ int CMonster02::Update()
 
 	if(attackTime1==2)
 	{
-		m_pBullet->push_back(Create_MonsterBullet02(DIR_DOWN, -90.f));
+		m_pBullet->push_back(Create_MonsterBullet02(-90.f));
 	}
 	return OBJ_NOEVENT;
  }
@@ -67,6 +69,10 @@ void CMonster02::Render(HDC hDC)
 {
 
 	Ellipse(hDC, m_tRect.left, m_tRect.top, m_tRect.right, m_tRect.bottom);
+
+
+	MoveToEx(hDC, m_tInfo.fX, m_tInfo.fY, NULL);
+	LineTo(hDC, m_tBarrel_Pos.X, m_tBarrel_Pos.Y);
 
 	TCHAR szBuff[32] = L"";
 	swprintf_s(szBuff, L" HP : %d", m_iHp);

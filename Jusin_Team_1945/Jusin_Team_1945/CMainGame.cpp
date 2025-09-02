@@ -35,7 +35,7 @@ void CMainGame::Initialize()
 		}
 
 		CSceneMgr::GetInstance()->Initialize();
-		CSceneMgr::GetInstance()->ChangeScene(ESceneType::TempStage);
+		CSceneMgr::GetInstance()->ChangeScene(ESceneType::Stage01);
 
 	}
 }
