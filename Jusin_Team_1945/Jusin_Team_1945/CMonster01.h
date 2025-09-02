@@ -27,5 +27,8 @@ private:
 	CTimerMgr Mgr2;
 	int attackTime2 = 0;
 
+//발사 시간 저장용
+	DWORD dTime = 0;
+	BOOL	m_bShotDone;
 
 };

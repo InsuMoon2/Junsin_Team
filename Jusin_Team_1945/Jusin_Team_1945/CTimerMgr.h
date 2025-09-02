@@ -11,7 +11,10 @@ private:
     unsigned long long m_dwLastUpdateTime;
 =======
     DWORD m_dwLastUpdateTime;
+<<<<<<< HEAD
 >>>>>>> origin/LEE
+=======
+>>>>>>> origin/Yurim
     int   m_iTimeCount = 0;
     float m_fTimeCount = 0.f;
     bool  m_bRoop = false;
@@ -50,6 +53,7 @@ public:
     float GetCurrentTimeCount(float seconds)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         ULONGLONG now = GetTickCount64();
         ULONGLONG elapsed = now - m_dwLastUpdateTime;
 
@@ -69,6 +73,13 @@ public:
 
         if (m_fTimeCount >= seconds)
         {
+=======
+        float dwCurrentTime = GetTickCount64();
+        float dwElapsedTime = dwCurrentTime - m_dwLastUpdateTime;
+
+        if (m_fTimeCount >= seconds)
+        {
+>>>>>>> origin/Yurim
             //m_fTimeCount += 0.1f;
 
             m_fTimeCount = 0.0f;
@@ -91,7 +102,10 @@ public:
             }
         }
 
+<<<<<<< HEAD
 >>>>>>> origin/LEE
+=======
+>>>>>>> origin/Yurim
         return m_fTimeCount;
     }
 };

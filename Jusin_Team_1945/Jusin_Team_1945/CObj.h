@@ -81,7 +81,7 @@ public:
 	virtual CObj* Create_Boss01Bullet(DIRECTION eDir);
 	
 	virtual CObj* Create_MonsterBullet01(DIRECTION eDir);
-	virtual CObj* Create_MonsterBullet02(DIRECTION eDir,float angle);
+	virtual CObj* Create_MonsterBullet02(float angle);
 
 	void  Set_Owner(CObj* _pOwner) { m_pOwner = _pOwner; }
 	CObj* Get_Owner()			   { return m_pOwner; }
@@ -125,6 +125,10 @@ protected:
 
 	int m_iID;
 
+	//황유림 ScrewBullet용 센터
+	POINT m_tCenter;
+	float m_fRotAngle;
+	float m_fRotSpeed;
 	int m_iBarrel_Number;
 
 	
